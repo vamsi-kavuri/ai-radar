@@ -1,5 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>A daily, curated digest of AI-assisted engineering: tools, patterns, releases and research. Every pick links to its source.</description><item><title>AI Engineering Radar · Fri 02 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-02.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-02.html</guid><pubDate>Fri, 02 Oct 2026 11:30:00 +0000</pubDate><description>&lt;p&gt;&lt;strong&gt;15 picks&lt;/strong&gt; from 74 new items across 9 sources · curated by &lt;code&gt;claude-haiku-4-5-20251001&lt;/code&gt; · about 3 min read&lt;/p&gt;
+<rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>A daily, curated digest of AI-assisted engineering: tools, patterns, releases and research. Every pick links to its source.</description><item><title>AI Engineering Radar · Sat 03 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-03.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-03.html</guid><pubDate>Sat, 03 Oct 2026 11:30:00 +0000</pubDate><description>&lt;p&gt;&lt;strong&gt;15 picks&lt;/strong&gt; from 56 new items across 30 sources · curated by &lt;code&gt;claude-haiku-4-5-20251001&lt;/code&gt; · about 3 min read&lt;/p&gt;
+&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/" rel="noopener"&gt;Gemini 4 Argon: our next era of frontier intelligence&lt;/a&gt;&lt;/strong&gt; — Google DeepMind
+  Google DeepMind announces Gemini 4 Argon, described as 'next era of frontier intelligence'.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Major model release may shift what capabilities are practical for engineering teams; warrants evaluation for coding tasks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://openai.com/index/practical-guide-building-gpt-6" rel="noopener"&gt;A model guide for the GPT-6 family&lt;/a&gt;&lt;/strong&gt; — OpenAI news
+  OpenAI guide on choosing GPT-6 models, tuning reasoning effort, improving prompts, coordinating tools, and preparing workflows for production.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Practical guidance for adopting GPT-6 family in engineering workflows; covers reasoning tuning and production readiness patterns.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/scarletkc/seiso" rel="noopener"&gt;scarletkc/seiso&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 171
+  Seiso: Markdown convention and linter for AI-written project docs readable by humans and agents; supports Claude Code and coding agents.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Practical tooling for standardizing agent-generated documentation; addresses real workflow pain point of maintaining doc quality in agentic workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://developers.googleblog.com/turn-your-rest-apis-into-mcp-tools-with-google-cloud-api-gateway/" rel="noopener"&gt;Turn your REST APIs into MCP tools with Google Cloud API Gateway&lt;/a&gt;&lt;/strong&gt; — Google Developers
+  Google Cloud API Gateway now acts as native MCP server; converts REST APIs to agent tools via OpenAPI annotations without custom middleware.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Directly enables agents to access existing APIs with minimal setup; reduces boilerplate for integrating REST services into agentic workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://developers.googleblog.com/why-client-sdk-generation-belongs-in-the-open/" rel="noopener"&gt;Why client SDK generation belongs in the open&lt;/a&gt;&lt;/strong&gt; — Google Developers
+  Google open-sources Speakeasy OpenAPI code generation suite (AGPLv3) with deterministic multi-language SDK generators, SSE streaming, agent-native CLIs, and MCP documentation servers.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Open-source SDK generation in CI pipelines eliminates hand-rolled middleware; directly supports agent integration by auto-generating client libraries and MCP servers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.288" rel="noopener"&gt;v2.1.288&lt;/a&gt;&lt;/strong&gt; — Claude Code releases
+  Claude Code v2.1.288: added selection tracking, built-in gh api, recovery for Ctrl+C prompts, OAuth re-auth, and various bug fixes.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Incremental improvements to Claude Code tooling your team may use daily; selection tracking and recovery features aid workflow efficiency.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.287" rel="noopener"&gt;v2.1.287&lt;/a&gt;&lt;/strong&gt; — Claude Code releases
+  Claude Code v2.1.287: added Claude Mods for deeper behavior modification, built-in 'You should know' agent, session filtering, and OpenTelemetry improvements.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Claude Mods introduce plugin-based behavior customization; 'You should know' agent provides real-time oversight relevant to agentic coding workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/cline/cline/releases/tag/sdk%2Fsdk%2Fv0.0.90" rel="noopener"&gt;SDK v0.0.90&lt;/a&gt;&lt;/strong&gt; — Cline releases
+  Cline SDK v0.0.90: optimized multi-agent team state persistence; stream chunks no longer re-save full transcripts; summaries replace transcripts; SQLite storage capped and migrated.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Addresses scalability bottleneck (1.66GB databases) for multi-agent teams; persistence improvements enable practical long-running agentic workflows.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://martinfowler.com/fragments/2026-09-29.html" rel="noopener"&gt;Fragments: September 29&lt;/a&gt;&lt;/strong&gt; — Martin Fowler
+  Martin Fowler citing Simon Willison: coding agents enable amazing things but require extraordinary discipline and sophisticated techniques to unlock full potential.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Honest assessment of agentic coding discipline requirements; directly challenges hype and grounds expectations for engineering teams adopting agents.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://developers.googleblog.com/the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents/" rel="noopener"&gt;The Anatomy of Harness Engineering: How to Evaluate, Iterate, and Guard AI Coding Agents&lt;/a&gt;&lt;/strong&gt; — Google Developers
+  Google framework advocates behavioral evaluations—fast local unit-style tests on discrete agent actions—alongside macro benchmarks like SWE-bench for root-cause diagnostics and confident iteration.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Essential evals and reliability practice for coding agents: fast behavioral tests replace slow end-to-end benchmarks, enabling rapid iteration and debugging.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://hamel.dev/blog/posts/claude-auto-evals/" rel="noopener"&gt;Claude’s new auto eval tool&lt;/a&gt;&lt;/strong&gt; — Hamel Husain
+  Review of Anthropic's new eval tooling for Claude Code: build_eval and hill-climb commands for building evals and improving applications against them.
+  &lt;em&gt;Why it matters:&lt;/em&gt; First-party eval tools directly address reliability and iteration patterns for AI-assisted coding; practical assessment of grading and improvement workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.thoughtworks.com/insights/blog/architecture/engineering-the-harness-a-practical-pattern-for-reliable-coding-agents" rel="noopener"&gt;Engineering the harness: A practical pattern for reliable coding agents&lt;/a&gt;&lt;/strong&gt; — Thoughtworks
+  Thoughtworks article on 'engineering the harness,' a practical pattern for reliable coding agents.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Direct pattern for building reliable AI coding agents—core infrastructure topic for teams adopting agentic coding workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://addyo.substack.com/p/the-code-nobody-reads" rel="noopener"&gt;The Code Nobody Reads&lt;/a&gt;&lt;/strong&gt; — Addy Osmani
+  Addy Osmani essay on disappearance of line-by-line code review and what must replace it for trust in AI-assisted code.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Critical shift in code review practices under AI-assisted workflows; essential reading for adopting teams rebuilding quality gates.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://developers.googleblog.com/4-engineering-patterns-behind-the-strongest-ai-agents-challenge-submissions/" rel="noopener"&gt;4 engineering patterns behind the strongest AI Agents Challenge submissions&lt;/a&gt;&lt;/strong&gt; — Google Developers
+  Google AI Agents Challenge analysis identifies four foundational patterns in winning systems: bidirectional MCP, async event buses, strict validation, and tiered routing—prioritized over raw model power.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Proven architecture patterns for resilient multi-agent systems; directly applicable to engineering teams building production agentic workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://newsletter.pragmaticengineer.com/p/distributed-databases-with-peter" rel="noopener"&gt;Distributed databases with Peter Mattis&lt;/a&gt;&lt;/strong&gt; — Pragmatic Engineer
+  Cockroach Labs co-founder discusses building reliable distributed systems and how AI helps write more code without sacrificing quality.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Real-world perspective on AI-assisted coding quality trade-offs from an infrastructure leader relevant to teams scaling coding velocity.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Fri 02 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-02.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-02.html</guid><pubDate>Fri, 02 Oct 2026 11:30:00 +0000</pubDate><description>&lt;p&gt;&lt;strong&gt;15 picks&lt;/strong&gt; from 74 new items across 9 sources · curated by &lt;code&gt;claude-haiku-4-5-20251001&lt;/code&gt; · about 3 min read&lt;/p&gt;
 &lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
