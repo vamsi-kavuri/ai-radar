@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>A daily, curated digest of AI-assisted engineering: tools, patterns, releases and research. Every pick links to its source.</description><item><title>AI Engineering Radar · Fri 02 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-02.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-02.html</guid><pubDate>Fri, 02 Oct 2026 11:30:00 +0000</pubDate><description>&lt;p&gt;&lt;strong&gt;15 picks&lt;/strong&gt; from 74 new items across 9 sources · curated by &lt;code&gt;claude-haiku-4-5-20251001&lt;/code&gt; · about 3 min read&lt;/p&gt;
+&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/dzhng/jevgrep" rel="noopener"&gt;dzhng/jevgrep&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 2,072
+  CLI tool for coding agents: search codebase by semantic description of what code does, returning relevant files and context using Jev.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Directly improves coding agent performance by providing better context discovery—addresses critical bottleneck in agentic coding workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/zhuyansen/awesome-claude-video-skills" rel="noopener"&gt;zhuyansen/awesome-claude-video-skills&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 380
+  Open-source collection of 180 skills and toolkits enabling Claude Code, Codex, and coding agents to produce video, with security grades.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Practical library of agent skills for extending coding agents; directly usable by teams building with Claude Code and similar tools.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/Louis-CFM/coucou" rel="noopener"&gt;Louis-CFM/coucou&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 3,017
+  macOS/Windows/Linux utility that monitors multiple coding agents (Claude Code, Codex, Cursor, Gemini, Antigravity) running locally.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Useful tool for teams running multiple agentic coding systems; helps track and manage concurrent agent activity.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/magnitudedev/magnitude" rel="noopener"&gt;Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents&lt;/a&gt;&lt;/strong&gt; — Hacker News · 194 points · 97 comments · &lt;a href="https://news.ycombinator.com/item?id=49911995" rel="noopener"&gt;discussion&lt;/a&gt;
+  Magnitude: self-optimizing inference engine for local agents, 2x faster than llama.cpp, runs on Mac/Linux/Windows consumer hardware.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Enables faster local agent inference for engineering teams wanting on-device agentic workflows without cloud dependency.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.00890" rel="noopener"&gt;Cross-Benchmark Transfer from RL on Agentic Coding Tasks&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Post-training Kimi K2.7 Code (32B active MoE) with RL on 1,700 expert agentic coding tasks; shows transfer across benchmarks and last-mile improvements.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Demonstrates RL on real coding agent tasks closes gaps in requirement tracking, testing, and regression handling; shows practical path to improve models.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.00917" rel="noopener"&gt;Finding the Right Fit: Model-Harness Interactions across Agent Tasks&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Benchmark study of 66 model-harness configurations (4 harnesses × 5 models) on coding tasks; model rankings reverse across harnesses.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Critical finding: strong models/harnesses don't transfer; teams must evaluate their specific combination. Avoids costly wrong choices in agent adoption.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://news.ycombinator.com/item?id=49911500" rel="noopener"&gt;Show HN: Open-source model routing for coding agents at Astra-level performance&lt;/a&gt;&lt;/strong&gt; — Hacker News · 115 points · 39 comments
+  Weave Router: model routing system for coding agents intelligently switches between LLMs (Astra, Deepseek) for different task types, achieving Astra-level performance.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Novel pattern for cost and performance optimization in agentic coding: routes complex debugging to capable models, simple tasks to fast/cheap ones.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.00027" rel="noopener"&gt;Software Project Management with LLM-Based Automation: Coordination, Validation, and Governance in Practice&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  arXiv study: software project managers' evolving work demands with LLM-based automation; investigates coordination of human work and automated workflows.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Addresses management patterns for AI adoption; bridges gap between developer-level and team-level LLM integration challenges.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/justxor/claude-code-pro-course" rel="noopener"&gt;justxor/claude-code-pro-course&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 187
+  Russian-language course on Claude Code PRO: settings, skills, subagents, hooks, MCP, plugins, CI with 8 labs, prompt library, and starter kit.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Structured guidance on production Claude Code setup patterns; covers skills, MCP, CI integration—directly applicable for engineering teams.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://twitter.com/GayaniFigma/status/2105295629941350454" rel="noopener"&gt;Figma restricts MCP access to whitelisted clients, excluding Pi&lt;/a&gt;&lt;/strong&gt; — Hacker News · 186 points · 104 comments · &lt;a href="https://news.ycombinator.com/item?id=49922729" rel="noopener"&gt;discussion&lt;/a&gt;
+  Figma restricts MCP (Model Context Protocol) access to whitelisted clients, excluding Pi agent.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Important governance change affecting agent accessibility to design tools; teams using Pi or non-whitelisted agents will be blocked from Figma MCP.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/" rel="noopener"&gt;AI is changing developer work. Here are three skills to strengthen.&lt;/a&gt;&lt;/strong&gt; — GitHub Blog
+  GitHub Blog: three skills for AI-assisted development: directing AI agents, critically reviewing output, maintaining technical judgment in workflow.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Practical guidance on human-agent collaboration patterns; reinforces critical review discipline for engineering teams adopting AI.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Research&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Oct/1/matthew-green/" rel="noopener"&gt;Quoting Matthew Green&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Matthew Green quote: AI agents in isolated sandboxes can communicate via shared package caches; pattern mirrors cross-agent worm propagation via email/Slack/docs.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Critical security insight for teams deploying autonomous agents: agent-to-agent communication channels create worm vectors; requires isolation and governance.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.youtube.com/watch?v=NnV_cWeoo5Q" rel="noopener"&gt;Greg Kroah-Hartman – Security in the LLM Age [video]&lt;/a&gt;&lt;/strong&gt; — Hacker News · 194 points · 52 comments · &lt;a href="https://news.ycombinator.com/item?id=49929391" rel="noopener"&gt;discussion&lt;/a&gt;
+  Video: Greg Kroah-Hartman on security implications of LLM integration (title only).
+  &lt;em&gt;Why it matters:&lt;/em&gt; Kernel maintainer perspective on LLM security risks; relevant for teams evaluating code generation and agent reliability.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Industry &amp;amp; adoption&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2604.20779" rel="noopener"&gt;SWE-chat: Coding Agent Interactions From Real Users in the Wild&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  SWE-chat: large-scale dataset of 18,000 real coding agent sessions from open-source developers, with 229,000 prompts and 2 million tool calls.
+  &lt;em&gt;Why it matters:&lt;/em&gt; First empirical data on actual agent usage in the wild. Shows what users really ask agents to do and tool call patterns—essential for understanding adoption patterns.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.latent.space/p/airbnb" rel="noopener"&gt;Inside-Out AI: Rebuilding Airbnb Behind the Scenes and Across the Guest Experience&lt;/a&gt;&lt;/strong&gt; — Latent Space
+  Ahmad Al-Dahle, formerly of Meta's Llama team, is now transforming Airbnb's product development and guest experience using AI.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Case study of AI adoption at scale by an experienced leader; relevant for understanding how large orgs integrate AI into engineering workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
