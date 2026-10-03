@@ -2,16 +2,7 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-
-Every morning a small program goes through about forty-five sources: release notes for
-Claude Code, Codex and Cursor, blogs by engineers who write honestly about coding with AI,
-research papers, Hacker News and a handful of newsletters. It skips anything I have already
-seen and keeps around fifteen things a working developer might want to know about.
-
-The notes under each link are a starting point, not a review. Click through and read the
-original; that is where the good stuff is.
-</description><item><title>AI Engineering Radar · Sat 03 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-03.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-03.html</guid><pubDate>Sat, 03 Oct 2026 11:30:00 +0000</pubDate><description>&lt;p&gt;&lt;strong&gt;15 picks&lt;/strong&gt; from 56 new items across 30 sources · curated by &lt;code&gt;claude-haiku-4-5-20251001&lt;/code&gt; · about 3 min read&lt;/p&gt;
-&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Sat 03 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-03.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-03.html</guid><pubDate>Sat, 03 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/" rel="noopener"&gt;Gemini 4 Argon: our next era of frontier intelligence&lt;/a&gt;&lt;/strong&gt; — Google DeepMind
@@ -95,8 +86,7 @@ original; that is where the good stuff is.
   Cockroach Labs co-founder discusses building reliable distributed systems and how AI helps write more code without sacrificing quality.
   &lt;em&gt;Why it matters:&lt;/em&gt; Real-world perspective on AI-assisted coding quality trade-offs from an infrastructure leader relevant to teams scaling coding velocity.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Fri 02 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-02.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-02.html</guid><pubDate>Fri, 02 Oct 2026 11:30:00 +0000</pubDate><description>&lt;p&gt;&lt;strong&gt;15 picks&lt;/strong&gt; from 74 new items across 9 sources · curated by &lt;code&gt;claude-haiku-4-5-20251001&lt;/code&gt; · about 3 min read&lt;/p&gt;
-&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Fri 02 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-02.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-02.html</guid><pubDate>Fri, 02 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/dzhng/jevgrep" rel="noopener"&gt;dzhng/jevgrep&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 2,072
