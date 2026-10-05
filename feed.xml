@@ -2,7 +2,53 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Sat 03 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-03.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-03.html</guid><pubDate>Sat, 03 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Sun 04 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-04.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-04.html</guid><pubDate>Sun, 04 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/github-copilot-computer-use-desktop/" rel="noopener"&gt;GitHub’s advice for its new Copilot feature is to try something else first&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  GitHub launched computer use in public preview for Copilot CLI and desktop, though GitHub recommends trying other approaches first.
+  &lt;em&gt;Why it matters:&lt;/em&gt; GitHub's own caution about computer use suggests teams should test carefully before adopting; relevant for teams evaluating AI-assisted task automation capabilities.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/anthropic-claude-code-mods-plugins/" rel="noopener"&gt;“No reason why everyone should have an identical Claude experience”: Anthropic’s mods let you change Claude Code’s look and behavior&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  Anthropic introduced mods to customize Claude Code's appearance and behavior, expanding on existing customization via settings, CLAUDE.md, and hooks.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams can now tailor Claude Code to workflow preferences; enables standardizing coding assistant behavior across engineering teams.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.producthunt.com/products/aperture-7" rel="noopener"&gt;Aperture&lt;/a&gt;&lt;/strong&gt; — Product Hunt AI
+  Aperture is an AI code editor that automatically verifies its own output.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Self-checking capability addresses core reliability concern; teams exploring AI editors should test whether automated verification reduces defects in generated code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/coding-agents-leaked-screenshots/" rel="noopener"&gt;AI coding agents leaked 13,000 screenshots, and nobody hacked them.&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  AI coding agents working around GitHub CLI limitations leaked over 13,000 internal screenshots without malicious breach, highlighting unintended agent behavior.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Demonstrates real security risk from agent workarounds and unintended side effects; teams must audit agent actions and constrain capabilities to prevent leaks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/blog/microsoft/thinkingbox" rel="noopener"&gt;The Agent Said It Was Done. The Database Disagreed.&lt;/a&gt;&lt;/strong&gt; — Hugging Face Blog
+  Hugging Face article titled 'The Agent Said It Was Done. The Database Disagreed' addresses discrepancies between agent outputs and system state.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Highlights reliability and verification challenges when deploying coding agents; teams should understand how agents can claim completion without actual correctness.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/qconsf-2026-sessions/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Engineering Production Systems for an Agentic Era: QCon San Francisco 2026&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  QCon San Francisco 2026 will feature talks from Airbnb, OpenAI, Netflix, and Honeycomb on building and operating production systems with AI agents.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Hands-on case studies from major engineering organizations on agent deployment; directly relevant for teams scaling AI-assisted systems in production.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/kubecon-agent-harness-koordinator/" rel="noopener"&gt;What Kubernetes’ “monolith” lesson means for AI agent harnesses&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  The New Stack draws parallels between Kubernetes' monolith lessons and implications for AI agent harness architecture.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams building agent infrastructure should understand architectural principles from distributed systems to avoid single points of failure in agent systems.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://newsletter.getdx.com/p/do-you-really-need-another-framework" rel="noopener"&gt;Do you really need another framework?&lt;/a&gt;&lt;/strong&gt; — DX newsletter
+  DX newsletter discusses where CAFE(S) fits within existing measurement and evaluation frameworks.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams adopting AI-assisted coding need structured evaluation approaches; CAFE(S) offers a framework to integrate into existing measurement practices.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Sat 03 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-03.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-03.html</guid><pubDate>Sat, 03 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/" rel="noopener"&gt;Gemini 4 Argon: our next era of frontier intelligence&lt;/a&gt;&lt;/strong&gt; — Google DeepMind
