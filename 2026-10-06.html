@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Tue 06 Oct 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-10-05.html">← 2026-10-05</a></nav>
+<h1>AI Engineering Radar · Tue 06 Oct 2026</h1>
+<p class="muted">13 links worth a look</p>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/" rel="noopener">ReviewBench: An open benchmark for AI code review</a></strong> — GitHub Blog
+  GitHub launched ReviewBench, a benchmark for code review agents using representative pull requests, multi-source ground truth, calibrated evaluation, and production-aligned metrics.
+  <em>Why it matters:</em> A standard benchmark lets teams measure code review agent quality against real-world PR patterns, critical for adopting agentic code review at scale.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/VoltAgent/official-mcp-servers" rel="noopener">VoltAgent/official-mcp-servers</a></strong> — GitHub new repos · ★ 144
+  VoltAgent published a curated directory of 280+ official MCP servers from product creators, excluding unofficial forks and abandoned projects.
+  <em>Why it matters:</em> A single source for vetted MCP servers reduces time spent finding working integrations for Claude Code and agentic workflows.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/hamzafer/claude-code-mods" rel="noopener">hamzafer/claude-code-mods</a></strong> — GitHub new repos · ★ 118
+  Hamza Fer released Claude Code mods, TypeScript plugins built on hooks that add UI elements like context bars, usage meters, code review watches, and markdown previews.
+  <em>Why it matters:</em> Open-source mods extend Claude Code with custom UI and monitoring capabilities engineers can adapt to their workflow without waiting for official features.</p>
+</li>
+<li>
+<p><strong><a href="https://simonwillison.net/2026/Oct/5/felix-rieseberg/" rel="noopener">Quoting Felix Rieseberg</a></strong> — Simon Willison
+  Felix Rieseberg discusses how Cowork moved model inference and VM execution from local to cloud, eliminating local resource overhead while enabling persistent sessions across device sleep.
+  <em>Why it matters:</em> Cloud-based agent execution removes the local resource cost engineers face when running AI coding tools, making continuous background work feasible.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.290" rel="noopener">v2.1.290</a></strong> — Claude Code releases
+  Claude Code v2.1.290 added serverToolUses tracking to hook results, agentId to permission checks, and organization approval ceilings for tool access.
+  <em>Why it matters:</em> Better visibility into tool calls executed by subagents and organization-level tool governance helps teams audit and control agentic workflows.</p>
+</li>
+<li>
+<p><strong><a href="https://www.producthunt.com/products/review-2" rel="noopener">Review</a></strong> — Product Hunt AI
+  Review is a code review tool that runs AI on your own machine.
+  <em>Why it matters:</em> Self-hosted code review with AI is a practical workflow to try for teams concerned with data privacy or customization.</p>
+</li>
+</ul>
+<h2>Agentic coding &amp; workflows</h2>
+<ul>
+<li><strong><a href="https://leaddev.com/software-quality/meta-turned-engineers-judgment-into-agent-skills?utm_source=leaddev&amp;utm_medium=RSS" rel="noopener">Meta turned engineers’ judgment into agent skills</a></strong> — LeadDev
+  Meta turned engineers' judgment into reusable agent skills.
+  <em>Why it matters:</em> Demonstrates a pattern for encoding engineering expertise as agent capabilities; worth reading for how teams can formalize tribal knowledge into agent instructions.</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.04433" rel="noopener">What Does a Harness Buy? Tokens, Mostly</a></strong> — arXiv cs.SE
+  Testing three production harnesses (Claude Code, mini-SWE-agent, OpenCode) with five models on SWE-bench Verified, isolating how much the harness versus the model drives performance gains.
+  <em>Why it matters:</em> Harness design significantly impacts agent performance; this empirical breakdown helps teams understand whether gains come from model capability or harness engineering, informing investment decisions.</p>
+</li>
+<li>
+<p><strong><a href="https://www.thoughtworks.com/insights/articles/context-challenge-ai-agents" rel="noopener">Why context is the real bottleneck for AI agents</a></strong> — Thoughtworks
+  Thoughtworks identifies context as the real bottleneck for AI agents.
+  <em>Why it matters:</em> Context engineering is critical for agent reliability. Understanding what limits agent performance helps teams design better prompts and harnesses.</p>
+</li>
+<li>
+<p><strong><a href="https://leaddev.com/ai/ai-coding-tools-could-be-breaking-the-junior-engineer-pipeline?utm_source=leaddev&amp;utm_medium=RSS" rel="noopener">AI-coding tools could be breaking the junior engineer pipeline</a></strong> — LeadDev
+  LeadDev argues that AI coding tools help junior engineers write code faster but may not support learning fundamentals.
+  <em>Why it matters:</em> Teams hiring or developing junior engineers should examine whether AI tools accelerate code output at the cost of understanding basics.</p>
+</li>
+</ul>
+<h2>Research</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.03969" rel="noopener">How Do Coding Agents Optimize Software and Report Performance Validation? A Large-Scale Empirical Study of Open-Source Pull Requests</a></strong> — arXiv cs.SE
+  Empirical study analyzing 1,130 agentic and 1,130 human-authored performance optimization pull requests to assess whether coding agents use established practices and substantiate claimed improvements.
+  <em>Why it matters:</em> Reveals whether agentic performance optimization follows engineering best practices or cuts corners, informing trust in agent-generated optimization code.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.04658" rel="noopener">RETRACE: From Entangled Repair Histories to Reusable Experience for CI Repair</a></strong> — arXiv cs.SE
+  RETRACE reconstructs problem-level repair experience from messy pull request histories, disentangling multiple CI failures, failed attempts, and unrelated changes for agent reuse.
+  <em>Why it matters:</em> Enables agents to learn from real repair histories by isolating which changes fix which problems, improving CI repair agents' ability to reuse prior fixes.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.04779" rel="noopener">Asymmetric Repository Lineage Modeling and Verifier-Guided Coordination in Concurrent AI Coding Agents</a></strong> — arXiv cs.SE
+  MERGEGYM benchmark studies coordination between concurrent AI coding agents through verification-guided conflict resolution, finding 47.3% conflicts occur in disjoint file sets.
+  <em>Why it matters:</em> Reveals hidden coordination failures when multiple agents edit independently; teams running parallel agents need to handle non-obvious merge conflicts.</p>
+</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>

@@ -2,7 +2,81 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Mon 05 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-05.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-05.html</guid><pubDate>Mon, 05 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Tue 06 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-06.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-06.html</guid><pubDate>Tue, 06 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/" rel="noopener"&gt;ReviewBench: An open benchmark for AI code review&lt;/a&gt;&lt;/strong&gt; — GitHub Blog
+  GitHub launched ReviewBench, a benchmark for code review agents using representative pull requests, multi-source ground truth, calibrated evaluation, and production-aligned metrics.
+  &lt;em&gt;Why it matters:&lt;/em&gt; A standard benchmark lets teams measure code review agent quality against real-world PR patterns, critical for adopting agentic code review at scale.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/VoltAgent/official-mcp-servers" rel="noopener"&gt;VoltAgent/official-mcp-servers&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 144
+  VoltAgent published a curated directory of 280+ official MCP servers from product creators, excluding unofficial forks and abandoned projects.
+  &lt;em&gt;Why it matters:&lt;/em&gt; A single source for vetted MCP servers reduces time spent finding working integrations for Claude Code and agentic workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/hamzafer/claude-code-mods" rel="noopener"&gt;hamzafer/claude-code-mods&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 118
+  Hamza Fer released Claude Code mods, TypeScript plugins built on hooks that add UI elements like context bars, usage meters, code review watches, and markdown previews.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Open-source mods extend Claude Code with custom UI and monitoring capabilities engineers can adapt to their workflow without waiting for official features.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Oct/5/felix-rieseberg/" rel="noopener"&gt;Quoting Felix Rieseberg&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Felix Rieseberg discusses how Cowork moved model inference and VM execution from local to cloud, eliminating local resource overhead while enabling persistent sessions across device sleep.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Cloud-based agent execution removes the local resource cost engineers face when running AI coding tools, making continuous background work feasible.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.290" rel="noopener"&gt;v2.1.290&lt;/a&gt;&lt;/strong&gt; — Claude Code releases
+  Claude Code v2.1.290 added serverToolUses tracking to hook results, agentId to permission checks, and organization approval ceilings for tool access.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Better visibility into tool calls executed by subagents and organization-level tool governance helps teams audit and control agentic workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.producthunt.com/products/review-2" rel="noopener"&gt;Review&lt;/a&gt;&lt;/strong&gt; — Product Hunt AI
+  Review is a code review tool that runs AI on your own machine.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Self-hosted code review with AI is a practical workflow to try for teams concerned with data privacy or customization.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://leaddev.com/software-quality/meta-turned-engineers-judgment-into-agent-skills?utm_source=leaddev&amp;amp;utm_medium=RSS" rel="noopener"&gt;Meta turned engineers’ judgment into agent skills&lt;/a&gt;&lt;/strong&gt; — LeadDev
+  Meta turned engineers' judgment into reusable agent skills.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Demonstrates a pattern for encoding engineering expertise as agent capabilities; worth reading for how teams can formalize tribal knowledge into agent instructions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.04433" rel="noopener"&gt;What Does a Harness Buy? Tokens, Mostly&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Testing three production harnesses (Claude Code, mini-SWE-agent, OpenCode) with five models on SWE-bench Verified, isolating how much the harness versus the model drives performance gains.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Harness design significantly impacts agent performance; this empirical breakdown helps teams understand whether gains come from model capability or harness engineering, informing investment decisions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.thoughtworks.com/insights/articles/context-challenge-ai-agents" rel="noopener"&gt;Why context is the real bottleneck for AI agents&lt;/a&gt;&lt;/strong&gt; — Thoughtworks
+  Thoughtworks identifies context as the real bottleneck for AI agents.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Context engineering is critical for agent reliability. Understanding what limits agent performance helps teams design better prompts and harnesses.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://leaddev.com/ai/ai-coding-tools-could-be-breaking-the-junior-engineer-pipeline?utm_source=leaddev&amp;amp;utm_medium=RSS" rel="noopener"&gt;AI-coding tools could be breaking the junior engineer pipeline&lt;/a&gt;&lt;/strong&gt; — LeadDev
+  LeadDev argues that AI coding tools help junior engineers write code faster but may not support learning fundamentals.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams hiring or developing junior engineers should examine whether AI tools accelerate code output at the cost of understanding basics.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Research&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.03969" rel="noopener"&gt;How Do Coding Agents Optimize Software and Report Performance Validation? A Large-Scale Empirical Study of Open-Source Pull Requests&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Empirical study analyzing 1,130 agentic and 1,130 human-authored performance optimization pull requests to assess whether coding agents use established practices and substantiate claimed improvements.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Reveals whether agentic performance optimization follows engineering best practices or cuts corners, informing trust in agent-generated optimization code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.04658" rel="noopener"&gt;RETRACE: From Entangled Repair Histories to Reusable Experience for CI Repair&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  RETRACE reconstructs problem-level repair experience from messy pull request histories, disentangling multiple CI failures, failed attempts, and unrelated changes for agent reuse.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Enables agents to learn from real repair histories by isolating which changes fix which problems, improving CI repair agents' ability to reuse prior fixes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.04779" rel="noopener"&gt;Asymmetric Repository Lineage Modeling and Verifier-Guided Coordination in Concurrent AI Coding Agents&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  MERGEGYM benchmark studies coordination between concurrent AI coding agents through verification-guided conflict resolution, finding 47.3% conflicts occur in disjoint file sets.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Reveals hidden coordination failures when multiple agents edit independently; teams running parallel agents need to handle non-obvious merge conflicts.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Mon 05 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-05.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-05.html</guid><pubDate>Mon, 05 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://pipod.dev/" rel="noopener"&gt;Show HN: Pi pod – Run your pi coding agent in sandboxes on your own server&lt;/a&gt;&lt;/strong&gt; — Hacker News · 116 points · 47 comments · &lt;a href="https://news.ycombinator.com/item?id=49937304" rel="noopener"&gt;discussion&lt;/a&gt;
