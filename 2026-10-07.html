@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Wed 07 Oct 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-10-06.html">← 2026-10-06</a></nav>
+<h1>AI Engineering Radar · Wed 07 Oct 2026</h1>
+<p class="muted">15 links worth a look</p>
+<h2>Models &amp; releases</h2>
+<ul>
+<li><strong><a href="https://simonwillison.net/2026/Oct/6/le-chonk/" rel="noopener">Introducing Mistral Large 4: Le chonk</a></strong> — Simon Willison
+  Mistral released a preview of Mistral Large 4, a 1 trillion parameter model with 49 billion active parameters, trained on 3,800 NVIDIA Grace Blackwell GPUs, with open weights coming end of month.
+  <em>Why it matters:</em> Major open model release; changes what engineering teams can run locally or self-host for coding tasks.</li>
+</ul>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.292" rel="noopener">v2.1.292</a></strong> — Claude Code releases
+  Claude Code v2.1.292 adds marketplace source parameter to plugin install, an effort parameter for sub-agents, configurable retry delays for overloaded requests, and prompt caching to the model API.
+  <em>Why it matters:</em> Teams using Claude Code can now control agent effort levels per task and manage plugin dependencies programmatically; prompt caching improves latency for repetitive workflows.</p>
+</li>
+<li>
+<p><strong><a href="https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/" rel="noopener">Building Git infrastructure for agent-scale development</a></strong> — GitHub Blog
+  GitHub is rebuilding its Git infrastructure to support agent-scale software development while keeping the service running.
+  <em>Why it matters:</em> Teams using agents at scale need to understand how GitHub is redesigning core infrastructure to handle agent workloads efficiently.</p>
+</li>
+<li>
+<p><strong><a href="https://www.producthunt.com/products/reika" rel="noopener">Reika</a></strong> — Product Hunt AI
+  Reika is a coding agent CLI designed around small local models first.
+  <em>Why it matters:</em> Local-first coding agents reduce latency and privacy concerns; worth testing if your team wants to avoid cloud dependencies.</p>
+</li>
+</ul>
+<h2>Agentic coding &amp; workflows</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.07557" rel="noopener">CheckerBench: Can Long-Horizon Agents Synthesize Static-Analysis Checkers?</a></strong> — arXiv cs.SE
+  CheckerBench is an executable benchmark of 300 tasks evaluating whether coding agents can synthesize static-analysis checkers from CVE specs across repositories.
+  <em>Why it matters:</em> Tests agents on long-horizon tasks closer to real work: interpreting specs, implementing logic, refining via feedback.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/pi-agent-mcp-codemode/" rel="noopener">One MCP server used 18,000 tokens before doing anything. Here’s the workaround.</a></strong> — The New Stack
+  An MCP server used 18,000 tokens before doing anything; a workaround was found. Pi's coding agent avoided MCP for a year before finding this solution.
+  <em>Why it matters:</em> Practical gotcha with MCP integration in coding agents; teams building agents with MCP should understand token efficiency trade-offs.</p>
+</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.07289" rel="noopener">Catching Developers in the Flow: Low-Latency Agentic Program Repair at Google Scale</a></strong> — arXiv cs.SE
+  Google's FlowAge system enables low-latency agentic program repair within the pre-submit CI phase, assisting developers in real-time during their workflow rather than post-submit. Balances automated repair with developer context.
+  <em>Why it matters:</em> Teams should study how Google keeps agent-assisted repair low-latency and in-flow at pre-submit; shows practical pattern for integrating agents into developer workflows without context switching.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.07534" rel="noopener">The EPIC Framework for Spec-Driven Development</a></strong> — arXiv cs.SE
+  EPIC framework for spec-driven development guides developers to write specifications, plans, and tasks before agents write code. Research shows developers struggle to judge specification completeness; 'must' versus 'should' wording significantly affects agent behavior.
+  <em>Why it matters:</em> Teams adopting agent-assisted development should adopt spec-driven templates and audit instruction clarity. Small wording choices directly affect agent assumptions and output quality.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.08651" rel="noopener">A Case Study in Assuring AI-Written Software</a></strong> — arXiv cs.SE
+  Case study of a production healthcare platform built through coding agents by a non-engineer operator, evolved into a meta-agent system with human oversight.
+  <em>Why it matters:</em> Honest real-world example of agent-assisted development at scale; shows how workflow changes and oversight mechanisms work in practice.</p>
+</li>
+<li>
+<p><strong><a href="https://lucumr.pocoo.org/2026/10/6/codemode/" rel="noopener">What is Codemode</a></strong> — Armin Ronacher
+  Armin Ronacher explains Codemode in Pi 1.0's MCP support. He revisits earlier arguments against loading custom tools into context, advocating scripts instead, and details what Codemode means for MCP-agent interaction patterns.
+  <em>Why it matters:</em> Hands-on guidance from Ronacher on context engineering: clarifies when to use MCP versus inline scripts, helping teams design agent tool architectures efficiently.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/presentations/elastic-ai-agent-evaluations/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Presentation: Building Reusable Evaluation Frameworks for Agentic AI Products</a></strong> — InfoQ AI
+  Susan Chang describes how Elastic built a unified evaluation framework for agentic AI, balancing LLM-as-a-judge with deterministic rules, bridging Python and TypeScript layers, and using deep tracing to catch regressions on RAG and cybersecurity workloads.
+  <em>Why it matters:</em> Teams should adopt deep tracing and hybrid eval patterns as shown by Elastic; bridges data science and production code for robust agent quality gates.</p>
+</li>
+<li>
+<p><strong><a href="https://newsletter.getdx.com/p/how-meta-reduced-diff-authoring-time" rel="noopener">How Meta reduced diff authoring time by 40%</a></strong> — DX newsletter
+  Meta researcher Moritz Beller shared how Meta reduced diff authoring time by 40% using AI and how the company measures developer productivity.
+  <em>Why it matters:</em> Concrete case study from a major engineering organization on AI-assisted workflows, productivity measurement, and testing changes.</p>
+</li>
+<li>
+<p><strong><a href="https://huggingface.co/papers/2610.07753" rel="noopener">From Evidence to Action: How Tool-Using Agents Fail</a></strong> — HF Daily Papers · 29 upvotes
+  Research paper studying where tool-using agents fail in the evidence-to-action chain across ten model configurations. Agents often stop with incomplete investigation or act before establishing required evidence.
+  <em>Why it matters:</em> Teams building agentic systems should audit whether agents complete evidence gathering before acting; weak investigation precedes weak execution.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/articles/platform-engineering-playbook-production-llms/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Article: The Platform Engineering Playbook for Production LLMs</a></strong> — InfoQ AI
+  Aditya Mulik describes treating LLM stacks as platform infrastructure with shared services: prompt registry, versioning, schema enforcement, and token cost attribution. Applies lessons from solving hallucinations in an inventory recommendation system.
+  <em>Why it matters:</em> Teams scaling agent use should establish centralized LLM platform services; Mulik shows concrete patterns for prompt governance and cost tracking across applications.</p>
+</li>
+<li>
+<p><strong><a href="https://newsletter.getdx.com/p/dont-measure-ai-code-percentage-on" rel="noopener">Don’t measure AI Code Percentage on its own</a></strong> — DX newsletter
+  A DX newsletter piece advises treating AI code percentage as a lens for measurement rather than a standalone KPI.
+  <em>Why it matters:</em> Teams measuring AI adoption need guidance on what metrics actually matter; this directly challenges naive adoption metrics.</p>
+</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>
