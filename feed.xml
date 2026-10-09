@@ -2,7 +2,90 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Thu 08 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-08.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-08.html</guid><pubDate>Thu, 08 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Fri 09 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-09.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-09.html</guid><pubDate>Fri, 09 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2610.12242" rel="noopener"&gt;TokenRouter: Efficient Serving System for Token-Level LLM Routing&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 88 upvotes
+  TokenRouter is a serving system for efficient token-level LLM routing, distributing inference across models at finer granularity than session-level routing. It addresses step desynchronization and batch admission issues in existing systems.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Token-level routing yields cost-quality gains; engineering teams can evaluate this for multi-model serving infrastructure to optimize inference costs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/openai/codex/releases/tag/rust-v0.162.0" rel="noopener"&gt;0.162.0&lt;/a&gt;&lt;/strong&gt; — Codex releases
+  Codex 0.162.0 adds managed Git worktrees for trusted projects, pinnable tasks in Command Center, transcript copying with /copy, clickable URLs in prompts and banners, and mouse-wheel scrolling tuning.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Pinnable tasks and worktree automation reduce context switching; teams using Codex for workflow automation can streamline agentic engineering tasks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://developers.googleblog.com/the-outer-loop-insights-first-an-ambient-quality-agent-that-diagnoses-your-production-agent/" rel="noopener"&gt;The Outer Loop, Insights First: An Ambient Quality Agent That Diagnoses Your Production Agent&lt;/a&gt;&lt;/strong&gt; — Google Developers
+  Google open-sources AQuA, an ambient quality agent that runs alongside production agents to diagnose silent quality regressions by analyzing failure clusters against transcripts.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Addresses critical gap: teams can use AQuA to detect when agents silently degrade in production, anchoring diagnoses to deployed source versions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://stackoverflow.blog/2026/10/07/part-6-an-operating-system-for-coding-agents-the-disciplined-build/" rel="noopener"&gt;Part 6: An operating system for coding agents: the disciplined build&lt;/a&gt;&lt;/strong&gt; — Stack Overflow blog
+  Stack Overflow part 6 on maintaining coding agent quality over months: specific file structures, rules, and configurations that prevent quality decay across thousands of agent edits on the same repo.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Hands-on framework for running reliable coding agent fleets; practical configs help teams maintain quality when scaling from one agent to many.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.langchain.com/blog/how-snyk-turned-an-internal-support-agent-into-a-customer-feature" rel="noopener"&gt;How Snyk Turned an Internal Support Agent into a Customer Feature&lt;/a&gt;&lt;/strong&gt; — LangChain blog
+  Snyk built Snyk Assist by turning an internal support agent into a customer-facing feature using LangChain, LangGraph, and LangSmith.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Working example of productionizing an agent; shows how teams can move from internal tools to customer features using LangChain ecosystem.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.10610" rel="noopener"&gt;Code Understanding is a Bottleneck for Coding Agents&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  CABRA (Coding Ability Blueprint for Rigorous Agent evaluation) presents a benchmark built from scratch as call graph transformations, scaling difficulty via function traversal, search, runtime resolution, and instruction following. Tests eight LLMs and six coding agents to isolate which abilities drive agent errors.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Repository benchmarks like SWE-bench conflate code complexity with task difficulty, masking which abilities fail; CABRA isolates variables so teams can diagnose real bottlenecks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.10619" rel="noopener"&gt;TestJack: Should you trust the results in coding benchmarks? Agentic Coding Benchmarks Auditing via Evaluator Evolution&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  TestJack audits coding benchmarks by evolving evaluators, revealing that fixed unit tests are insufficient and agents can pass all tests while hacking or silently missing required behavior. Benchmark scores partly reflect adaptation to the evaluator, not true capability.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Benchmark scores are unreliable if tests don't cover actual requirements; teams need stronger evaluation criteria before shipping agentic coding systems.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2610.12289" rel="noopener"&gt;TestPrism: Rethinking Test Evaluation Beyond a Single Reference&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 23 upvotes · also on arXiv cs.SE
+  TestPrism introduces a benchmark of 3000 candidate implementations with 300 test tasks, showing that evaluating generated tests against a single reference overlooks valid alternatives and overstates test quality. Joint Success Function requires tests to reject invalid candidates and accept all valid ones.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Flawed test evaluation masks weak agents; TestPrism's multi-candidate approach reveals test quality more accurately, directly applicable to your agentic coding benchmarks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.10604" rel="noopener"&gt;Beyond Type-checking: Towards Holistic Evaluation of Formal Specification Generation&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Beyond Type-checking examines holistic evaluation of formal specification generation for verifiable code. It notes that proof generation gets deterministic feedback from theorem provers, but specification generation lacks a definitive check that specs capture user intent correctly.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Specs are agents' correctness target but LLMs often miss user intent; teams doing spec-driven development need better evals before running theorem provers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://stackoverflow.blog/2026/10/08/production-grade-llms-and-agents-a-field-guide/" rel="noopener"&gt;Production-grade LLMs and agents: a field guide&lt;/a&gt;&lt;/strong&gt; — Stack Overflow blog
+  Stack Overflow maturity model for moving AI agents from demos to production systems, with self-assessment and deep-dive guidance.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Practical framework for teams deploying agents; assesses current state and charts path from proof-of-concept to reliable production operations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://stackoverflow.blog/2026/10/08/part-5-operating-an-llm-system-observability-cost-routing-and-the-platform-underneath/" rel="noopener"&gt;Part 5: Operating an LLM system: observability, cost, routing, and the platform underneath&lt;/a&gt;&lt;/strong&gt; — Stack Overflow blog
+  Stack Overflow part 5 on operating LLM systems: observability, cost control, routing between models, and the underlying platform infrastructure.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Essential guidance for teams running agents at scale: catching silent failures, controlling spend, failover mechanics, and platform architecture.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://stackoverflow.blog/2026/10/08/a-green-exit-code-is-not-evidence-that-the-work-happened/" rel="noopener"&gt;A green exit code is not evidence that the work happened&lt;/a&gt;&lt;/strong&gt; — Stack Overflow blog
+  Stack Overflow argues that exit codes don't prove agents work correctly, and that feedback loops for learning agent behavior are broken at the measurement point.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Identifies why teams struggle to trust agents: missing observability of actual behavior. Addresses root cause of silent failures in agentic systems.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.10961" rel="noopener"&gt;Cross-Provider Review as a Runtime Contract for Coding Agents: A Controlled Pilot and Fault-Injection Study&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  ArXiv paper proposes cross-provider review contracts for coding agents sharing a workstation, defining resource pools, execution bounds, reviewer scope, and evidence tracking to reduce wasted inference calls.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams running multiple agent providers need cost and safety boundaries; this outlines a testable contract design for agent review workflows with fault-injection validation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/presentations/netflix-observability-aiops-ontology-scale/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Presentation: Ontology‐Driven Observability: Building the E2E Knowledge Graph at Netflix Scale&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Netflix engineers describe replacing reactive monitoring with an AI-driven operational ontology and agentic workflows using Claude and graph databases at 38M events per second.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Case study showing how agentic systems enable automated triaging and self-healing; demonstrates scaling agents in high-volume production environments.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/ai-sre-agent-autonomy-phases/" rel="noopener"&gt;Most AI incident tools still leave a key decision to humans&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  Most AI SRE incident tools help troubleshoot but leave final decisions to humans; article questions whether agents can be trusted to decide autonomously.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Highlights the automation boundary: teams must define which decisions agents make independently versus escalate to humans; critical for safe production operations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Thu 08 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-08.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-08.html</guid><pubDate>Thu, 08 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/" rel="noopener"&gt;Claude Haiku 5.5&lt;/a&gt;&lt;/strong&gt; — Simon Willison
