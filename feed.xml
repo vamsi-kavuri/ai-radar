@@ -2,7 +2,43 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Sat 10 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-10.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-10.html</guid><pubDate>Sat, 10 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Sun 11 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-11.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-11.html</guid><pubDate>Sun, 11 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://openai.com/index/asana-browser-agent" rel="noopener"&gt;Asana cuts model costs 76x in browser tests with GPT-6.1 Sol&lt;/a&gt;&lt;/strong&gt; — OpenAI news
+  Asana reduced browser agent costs by 76x and improved speed by 5x using GPT-6.1 Sol in Codex, compared to prior models.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete cost and performance improvement from a recent model release for browser automation. Shows what engineering teams can achieve by swapping models in existing agent workflows.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/aindeev/agent-chrome-relay" rel="noopener"&gt;aindeev/agent-chrome-relay&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 251
+  Alexey Indeev released agent-chrome-relay, a tool that lets AI agents control your Chrome browser, signed in as you, in background tabs using Chrome DevTools Protocol.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Enables agents to interact with arbitrary web applications while authenticated. Useful pattern for testing, automation, and browser-based agent workflows teams could experiment with.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/liyupi/ai-promo-video-maker" rel="noopener"&gt;liyupi/ai-promo-video-maker&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 131
+  Liyupi built a tool that uses Claude Code or Cursor to generate product promo videos end-to-end: researches the product, creates design options, captures pages, cuts to music timing, generates voiceover, and delivers a 4K video. Based on Remotion and ElevenLabs, installable as an Agent Skill.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Shows how to compose agents with specialized tools (video, speech synthesis, browser capture) for a complex workflow. Worth studying the architecture and MCP integration pattern.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.cockroachlabs.com/blog/experiment-running-hospital-code/" rel="noopener"&gt;Five months treating bugs like patients and coding agents like a medical team&lt;/a&gt;&lt;/strong&gt; — Hacker News · 146 points · 58 comments · &lt;a href="https://news.ycombinator.com/item?id=50021899" rel="noopener"&gt;discussion&lt;/a&gt;
+  A developer describes five months of treating software bugs like patients and organizing coding agents as a medical team. Discussed on Hacker News.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Working developer perspective on organizing agents for diagnosis and repair. Read to see whether the medical team metaphor for agent orchestration produced actionable insights or workflow changes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/ai-agent-evaluation-loop/" rel="noopener"&gt;How to turn AI production feedback into better agents&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  The New Stack article on connecting production traces and curated data to improve live agents based on real-world feedback.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete approach to monitoring agent quality in production. Teams can measure what traces and data capture would improve their deployed agents.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.latent.space/p/standard-bots" rel="noopener"&gt;Building AI for Reliable Execution: Lessons From Industrial Robotics&lt;/a&gt;&lt;/strong&gt; — Latent Space
+  Latent Space piece on Standard Bots' AI stack for industrial robotics: pretrained models learn factory tasks from demonstrations and improve through corrections deployed in the real world.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Shows learning-from-feedback loop at scale in production. Relevant for engineering teams deploying agents that need continuous improvement from live deployments.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Sat 10 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-10.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-10.html</guid><pubDate>Sat, 10 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/franzenzenhofer/big-arrow-on-the-screen" rel="noopener"&gt;franzenzenhofer/big-arrow-on-the-screen&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 541
