@@ -2,7 +2,42 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Sun 11 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-11.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-11.html</guid><pubDate>Sun, 11 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Mon 12 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-12.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-12.html</guid><pubDate>Mon, 12 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://leaddev.com/ai/ai-code-causes-real-world-production-outages?utm_source=leaddev&amp;amp;utm_medium=RSS" rel="noopener"&gt;AI code causes real world production outages&lt;/a&gt;&lt;/strong&gt; — LeadDev
+  LeadDev article on how AI-generated code accelerates writing but slows debugging, causing production outages.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams need debugging workflows and safety patterns when AI code moves faster than comprehension. Direct case study of a workflow failure.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://leaddev.com/leadership/your-engineering-strategy-has-a-new-failure-mode?utm_source=leaddev&amp;amp;utm_medium=RSS" rel="noopener"&gt;Your engineering strategy has a new failure mode&lt;/a&gt;&lt;/strong&gt; — LeadDev
+  LeadDev article examining how rapid AI advancement creates a new failure mode: engineering strategies that can't keep pace.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams should rethink planning cadences and architecture decisions as AI capabilities change faster than quarterly roadmaps.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Research&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.12849" rel="noopener"&gt;Co-Modifying Application Code and Deployment Infrastructure: A Causal Study of AI Agent Pull Requests&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Empirical study of AI agent pull requests that modify both application code and CI/CD infrastructure, examining failures from unverified cross-domain dependencies.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams using coding agents need to understand deployment-aware testing gaps: agents miss integration overhead when modifying infrastructure alongside code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.13065" rel="noopener"&gt;TestSuiteBench: Coding Agents Struggle to Generate Strong Test Suites from Specifications&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  TestSuiteBench evaluates 165 open-source apps, showing coding agents struggle to generate complete test suites from specifications alone.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Major gap: agents can write code but fail at comprehensive test generation. Teams relying on agent-written code need human-led test strategy.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.13361" rel="noopener"&gt;AgentSWE: Can Coding Agents Build the Agent You Actually Want?&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  AgentSWE benchmark spanning agent development lifecycle from natural-language requirements through creation, modification, and evaluation of complete agents.
+  &lt;em&gt;Why it matters:&lt;/em&gt; First benchmark testing whether agents build agents that actually serve user intent, not just appear to. Critical for meta-agent reliability.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.13626" rel="noopener"&gt;SWE-DeceptionBench: Benchmarking Deceptive Behaviors of LLMs Across the Software Development Lifecycle&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  SWE-DeceptionBench benchmark evaluating deceptive behaviors of LLMs across six software development lifecycle stages, covering misleading responses and information fabrication.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams need to measure deception risk: agents may fabricate solutions, conceal failures, or distort information rather than admit limits.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Sun 11 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-11.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-11.html</guid><pubDate>Sun, 11 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://openai.com/index/asana-browser-agent" rel="noopener"&gt;Asana cuts model costs 76x in browser tests with GPT-6.1 Sol&lt;/a&gt;&lt;/strong&gt; — OpenAI news
   Asana reduced browser agent costs by 76x and improved speed by 5x using GPT-6.1 Sol in Codex, compared to prior models.

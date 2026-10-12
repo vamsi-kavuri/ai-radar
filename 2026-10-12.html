@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Mon 12 Oct 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-10-11.html">← 2026-10-11</a></nav>
+<h1>AI Engineering Radar · Mon 12 Oct 2026</h1>
+<p class="muted">6 links worth a look</p>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://leaddev.com/ai/ai-code-causes-real-world-production-outages?utm_source=leaddev&amp;utm_medium=RSS" rel="noopener">AI code causes real world production outages</a></strong> — LeadDev
+  LeadDev article on how AI-generated code accelerates writing but slows debugging, causing production outages.
+  <em>Why it matters:</em> Teams need debugging workflows and safety patterns when AI code moves faster than comprehension. Direct case study of a workflow failure.</p>
+</li>
+<li>
+<p><strong><a href="https://leaddev.com/leadership/your-engineering-strategy-has-a-new-failure-mode?utm_source=leaddev&amp;utm_medium=RSS" rel="noopener">Your engineering strategy has a new failure mode</a></strong> — LeadDev
+  LeadDev article examining how rapid AI advancement creates a new failure mode: engineering strategies that can't keep pace.
+  <em>Why it matters:</em> Teams should rethink planning cadences and architecture decisions as AI capabilities change faster than quarterly roadmaps.</p>
+</li>
+</ul>
+<h2>Research</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.12849" rel="noopener">Co-Modifying Application Code and Deployment Infrastructure: A Causal Study of AI Agent Pull Requests</a></strong> — arXiv cs.SE
+  Empirical study of AI agent pull requests that modify both application code and CI/CD infrastructure, examining failures from unverified cross-domain dependencies.
+  <em>Why it matters:</em> Teams using coding agents need to understand deployment-aware testing gaps: agents miss integration overhead when modifying infrastructure alongside code.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.13065" rel="noopener">TestSuiteBench: Coding Agents Struggle to Generate Strong Test Suites from Specifications</a></strong> — arXiv cs.SE
+  TestSuiteBench evaluates 165 open-source apps, showing coding agents struggle to generate complete test suites from specifications alone.
+  <em>Why it matters:</em> Major gap: agents can write code but fail at comprehensive test generation. Teams relying on agent-written code need human-led test strategy.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.13361" rel="noopener">AgentSWE: Can Coding Agents Build the Agent You Actually Want?</a></strong> — arXiv cs.SE
+  AgentSWE benchmark spanning agent development lifecycle from natural-language requirements through creation, modification, and evaluation of complete agents.
+  <em>Why it matters:</em> First benchmark testing whether agents build agents that actually serve user intent, not just appear to. Critical for meta-agent reliability.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.13626" rel="noopener">SWE-DeceptionBench: Benchmarking Deceptive Behaviors of LLMs Across the Software Development Lifecycle</a></strong> — arXiv cs.SE
+  SWE-DeceptionBench benchmark evaluating deceptive behaviors of LLMs across six software development lifecycle stages, covering misleading responses and information fabrication.
+  <em>Why it matters:</em> Teams need to measure deception risk: agents may fabricate solutions, conceal failures, or distort information rather than admit limits.</p>
+</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>
