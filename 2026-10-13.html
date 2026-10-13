@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Tue 13 Oct 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-10-12.html">← 2026-10-12</a></nav>
+<h1>AI Engineering Radar · Tue 13 Oct 2026</h1>
+<p class="muted">11 links worth a look</p>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://github.com/onehumanbeing/esp32-iphone-agent" rel="noopener">onehumanbeing/esp32-iphone-agent</a></strong> — GitHub new repos · ★ 1,175
+  esp32-iphone-agent lets AI models control a real iPhone using a $7 ESP32 for AirPlay and USB HID, compatible with any OpenAI-style vision model.
+  <em>Why it matters:</em> Practical low-cost computer-use setup for testing vision agents against real mobile interfaces without expensive infrastructure.</p>
+</li>
+<li>
+<p><strong><a href="https://simonwillison.net/2026/Oct/12/web-edit/" rel="noopener">web-edit 0.1a0</a></strong> — Simon Willison
+  Simon Willison released web-edit 0.1a0, a Python web app for editing files via a web UI over Tailscale, built by Claude and GPT-6 Astra Extra High to avoid round-tripping credentials through LLMs.
+  <em>Why it matters:</em> Demonstrates a practical pattern for agents to edit files securely without exposing sensitive data; useful for building workflows where credential handling matters.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/cline/cline/releases/tag/sdk%2Fsdk%2Fv0.0.93" rel="noopener">SDK v0.0.93</a></strong> — Cline releases
+  Cline SDK v0.0.93: plugins now load in-process with a per-process registry instead of subprocess, removing runtime dependencies and adding plugin state tracking.
+  <em>Why it matters:</em> Infrastructure improvement for reliability; teams using Cline can test simpler plugin deployment and better error visibility for failing tools.</p>
+</li>
+</ul>
+<h2>Agentic coding &amp; workflows</h2>
+<ul>
+<li>
+<p><strong><a href="https://www.latent.space/p/claude-dynamic-workflows" rel="noopener">How Anthropic’s Dynamic Workflows Coordinate Claude Agents</a></strong> — Latent Space
+  Latent Space: Anthropic presented Dynamic Workflows for coordinating Claude agents at AI Engineer New York, drawing lessons from Unix and Linux.
+  <em>Why it matters:</em> Foundational patterns for multi-agent orchestration; teams building agent systems should understand how Anthropic approaches coordination and complexity.</p>
+</li>
+<li>
+<p><strong><a href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/" rel="noopener">GitHub Copilot app for Beginners: How to teach Copilot about your codebase</a></strong> — GitHub Blog
+  GitHub published a guide on teaching Copilot about your codebase via custom instructions, skills, and MCP servers like Playwright.
+  <em>Why it matters:</em> Concrete workflow for context engineering; teams can test custom instructions and MCP integration to improve agent code understanding.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/coding-agents-platform-teams/" rel="noopener">Coding agents made building easy. Platform teams that build from scratch are 3.5x more likely to lack a strategy.</a></strong> — The New Stack
+  The New Stack reports that platform teams building coding agents from scratch are 3.5x more likely to lack a strategy, framing it as a build-or-buy trade-off for engineering organizations.
+  <em>Why it matters:</em> Relevant data point when deciding whether to build custom coding agents in-house versus adopting existing solutions.</p>
+</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/" rel="noopener">AI coding agents generate more code, but not more software</a></strong> — Hacker News · 341 points · 286 comments · <a href="https://news.ycombinator.com/item?id=50059523" rel="noopener">discussion</a>
+  Hacker News discussion: AI coding agents generate more code, but not more software.
+  <em>Why it matters:</em> Critical perspective on agent productivity; teams should examine what agents actually deliver versus lines written to avoid false productivity signals.</p>
+</li>
+<li>
+<p><strong><a href="https://ghuntley.com/agency/" rel="noopener">nobody should type code by hand anymore. here's what's left.</a></strong> — Geoffrey Huntley
+  Geoffrey Huntley and Josh Wulf discussed loop engineering in four episodes, concluding models are no longer the constraint; what remains is vision, verification, and agency.
+  <em>Why it matters:</em> Working engineers share hard-won insights on the actual bottlenecks in agent-assisted workflows; teams should revisit what parts of the loop have shifted from model capability to system design.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/podcasts/what-really-mean-program-ai/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Podcast: What Does It Really Mean To Program With AI: A Conversation with Joy Ebertz</a></strong> — InfoQ AI
+  InfoQ podcast where Joy Ebertz discusses how AI is changing the way architects and developers work, emphasizing long-term business success as a neglected consideration.
+  <em>Why it matters:</em> Explores practical shifts in development practices and the strategic role architects must play as AI transforms software development workflows.</p>
+</li>
+<li>
+<p><strong><a href="https://stackoverflow.blog/2026/10/13/keep-calm-and-call-clone-with-rust/" rel="noopener">Keep calm and call clone with Rust</a></strong> — Stack Overflow blog
+  Stack Overflow podcast: Josh Triplett from the Rust Leadership Team discusses the borrow checker's memory safety model and why strict compiler constraints make Rust ideal for AI coding agents.
+  <em>Why it matters:</em> Rust's type system appears to be a good fit for agent code generation; teams working with code agents targeting safety-critical systems should evaluate Rust as a target language.</p>
+</li>
+<li>
+<p><strong><a href="https://leaddev.com/technical-direction/your-tests-cant-catch-a-poisoned-model?utm_source=leaddev&amp;utm_medium=RSS" rel="noopener">Your tests can’t catch a poisoned model</a></strong> — LeadDev
+  LeadDev article about model poisoning as an AI security threat that tests cannot catch, addressing a gap in engineering team security awareness.
+  <em>Why it matters:</em> Teams need to understand supply-chain risks in AI models used for coding and consider validation strategies beyond traditional testing.</p>
+</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>

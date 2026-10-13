@@ -2,7 +2,70 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Mon 12 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-12.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-12.html</guid><pubDate>Mon, 12 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Tue 13 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-13.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-13.html</guid><pubDate>Tue, 13 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/onehumanbeing/esp32-iphone-agent" rel="noopener"&gt;onehumanbeing/esp32-iphone-agent&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 1,175
+  esp32-iphone-agent lets AI models control a real iPhone using a $7 ESP32 for AirPlay and USB HID, compatible with any OpenAI-style vision model.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Practical low-cost computer-use setup for testing vision agents against real mobile interfaces without expensive infrastructure.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Oct/12/web-edit/" rel="noopener"&gt;web-edit 0.1a0&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Simon Willison released web-edit 0.1a0, a Python web app for editing files via a web UI over Tailscale, built by Claude and GPT-6 Astra Extra High to avoid round-tripping credentials through LLMs.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Demonstrates a practical pattern for agents to edit files securely without exposing sensitive data; useful for building workflows where credential handling matters.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/cline/cline/releases/tag/sdk%2Fsdk%2Fv0.0.93" rel="noopener"&gt;SDK v0.0.93&lt;/a&gt;&lt;/strong&gt; — Cline releases
+  Cline SDK v0.0.93: plugins now load in-process with a per-process registry instead of subprocess, removing runtime dependencies and adding plugin state tracking.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Infrastructure improvement for reliability; teams using Cline can test simpler plugin deployment and better error visibility for failing tools.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.latent.space/p/claude-dynamic-workflows" rel="noopener"&gt;How Anthropic’s Dynamic Workflows Coordinate Claude Agents&lt;/a&gt;&lt;/strong&gt; — Latent Space
+  Latent Space: Anthropic presented Dynamic Workflows for coordinating Claude agents at AI Engineer New York, drawing lessons from Unix and Linux.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Foundational patterns for multi-agent orchestration; teams building agent systems should understand how Anthropic approaches coordination and complexity.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/" rel="noopener"&gt;GitHub Copilot app for Beginners: How to teach Copilot about your codebase&lt;/a&gt;&lt;/strong&gt; — GitHub Blog
+  GitHub published a guide on teaching Copilot about your codebase via custom instructions, skills, and MCP servers like Playwright.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete workflow for context engineering; teams can test custom instructions and MCP integration to improve agent code understanding.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/coding-agents-platform-teams/" rel="noopener"&gt;Coding agents made building easy. Platform teams that build from scratch are 3.5x more likely to lack a strategy.&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  The New Stack reports that platform teams building coding agents from scratch are 3.5x more likely to lack a strategy, framing it as a build-or-buy trade-off for engineering organizations.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Relevant data point when deciding whether to build custom coding agents in-house versus adopting existing solutions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/" rel="noopener"&gt;AI coding agents generate more code, but not more software&lt;/a&gt;&lt;/strong&gt; — Hacker News · 341 points · 286 comments · &lt;a href="https://news.ycombinator.com/item?id=50059523" rel="noopener"&gt;discussion&lt;/a&gt;
+  Hacker News discussion: AI coding agents generate more code, but not more software.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Critical perspective on agent productivity; teams should examine what agents actually deliver versus lines written to avoid false productivity signals.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://ghuntley.com/agency/" rel="noopener"&gt;nobody should type code by hand anymore. here's what's left.&lt;/a&gt;&lt;/strong&gt; — Geoffrey Huntley
+  Geoffrey Huntley and Josh Wulf discussed loop engineering in four episodes, concluding models are no longer the constraint; what remains is vision, verification, and agency.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Working engineers share hard-won insights on the actual bottlenecks in agent-assisted workflows; teams should revisit what parts of the loop have shifted from model capability to system design.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/podcasts/what-really-mean-program-ai/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Podcast: What Does It Really Mean To Program With AI: A Conversation with Joy Ebertz&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  InfoQ podcast where Joy Ebertz discusses how AI is changing the way architects and developers work, emphasizing long-term business success as a neglected consideration.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Explores practical shifts in development practices and the strategic role architects must play as AI transforms software development workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://stackoverflow.blog/2026/10/13/keep-calm-and-call-clone-with-rust/" rel="noopener"&gt;Keep calm and call clone with Rust&lt;/a&gt;&lt;/strong&gt; — Stack Overflow blog
+  Stack Overflow podcast: Josh Triplett from the Rust Leadership Team discusses the borrow checker's memory safety model and why strict compiler constraints make Rust ideal for AI coding agents.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Rust's type system appears to be a good fit for agent code generation; teams working with code agents targeting safety-critical systems should evaluate Rust as a target language.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://leaddev.com/technical-direction/your-tests-cant-catch-a-poisoned-model?utm_source=leaddev&amp;amp;utm_medium=RSS" rel="noopener"&gt;Your tests can’t catch a poisoned model&lt;/a&gt;&lt;/strong&gt; — LeadDev
+  LeadDev article about model poisoning as an AI security threat that tests cannot catch, addressing a gap in engineering team security awareness.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams need to understand supply-chain risks in AI models used for coding and consider validation strategies beyond traditional testing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Mon 12 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-12.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-12.html</guid><pubDate>Mon, 12 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://leaddev.com/ai/ai-code-causes-real-world-production-outages?utm_source=leaddev&amp;amp;utm_medium=RSS" rel="noopener"&gt;AI code causes real world production outages&lt;/a&gt;&lt;/strong&gt; — LeadDev
