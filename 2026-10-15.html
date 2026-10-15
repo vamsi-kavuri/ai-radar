@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Thu 15 Oct 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-10-14.html">← 2026-10-14</a></nav>
+<h1>AI Engineering Radar · Thu 15 Oct 2026</h1>
+<p class="muted">15 links worth a look</p>
+<h2>Models &amp; releases</h2>
+<ul>
+<li><strong><a href="https://www.liquid.ai/blog/lfm2-5-24b-a2b" rel="noopener">LFM2.5-24B-A2B: Built for fast on-device agents</a></strong> — Hacker News · 224 points · 53 comments · <a href="https://news.ycombinator.com/item?id=50097369" rel="noopener">discussion</a>
+  LFM2.5-24B-A2B is a model built for fast on-device agent execution.
+  <em>Why it matters:</em> Teams deploying agents in constrained environments should evaluate this smaller model for cost and latency tradeoffs.</li>
+</ul>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://petal.live/" rel="noopener">Show HN: Petal, open-source CoScreen/ScreenHero finally free</a></strong> — Hacker News · 181 points · 39 comments · <a href="https://news.ycombinator.com/item?id=50092470" rel="noopener">discussion</a>
+  Petal is an open-source pair programming tool built by former CoScreen founders, offering low-latency multi-cursor collaboration after CoScreen's sunset.
+  <em>Why it matters:</em> Teams needing pair programming infrastructure can self-host or use the free service; addresses the gap left when Datadog ended CoScreen.</p>
+</li>
+<li>
+<p><strong><a href="https://developers.googleblog.com/announcing-mcp-support-in-apigee-hybrid-agentic-tools-that-run-in-your-own-cluster/" rel="noopener">Announcing MCP support in Apigee hybrid: agentic tools that run in your own cluster</a></strong> — Google Developers
+  Apigee hybrid 1.17.0 adds native MCP support, running the MCP data plane in your Kubernetes cluster while pulling config from the control plane.
+  <em>Why it matters:</em> Teams needing agents with private tool execution can run MCP tools inside their own infrastructure while using Apigee security policies.</p>
+</li>
+</ul>
+<h2>Agentic coding &amp; workflows</h2>
+<ul>
+<li>
+<p><strong><a href="https://thenewstack.io/torvalds-claude-code-kernel/" rel="noopener">Linus Torvalds let Claude Code fix the Linux page cache. Then reviewers found a race.</a></strong> — The New Stack
+  Linus Torvalds used Claude Code to fix a Linux page cache performance problem, but kernel reviewers found a race condition in the agent's solution.
+  <em>Why it matters:</em> High-profile case study of agent-assisted code on critical infrastructure revealing real limits: agents can miss subtle concurrency issues despite working on famous maintainers' problems.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2604.00073" rel="noopener">Terminal Agents Suffice for Enterprise Automation</a></strong> — arXiv cs.SE
+  A paper arguing that terminal-based coding agents with filesystem access can solve many enterprise tasks without complex tool-augmented systems or graphical interfaces.
+  <em>Why it matters:</em> Challenges assumptions about agent complexity; relevant for teams deciding whether to build sophisticated agentic systems or start simpler.</p>
+</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://www.langchain.com/blog/common-questions-about-agent-evals" rel="noopener">The Most Common Questions About Agent Evals, Answered</a></strong> — LangChain blog
+  LangChain article answers common questions about agent evals: where to start, offline vs online approaches, evaluator types, LLM judges, benchmarks, multi-turn evals, and cost control.
+  <em>Why it matters:</em> Teams building agents need to start measuring reliability; this covers the decision tree for choosing eval strategies and tools.</p>
+</li>
+<li>
+<p><strong><a href="https://www.langchain.com/blog/context-engineering-deep-agents-remember" rel="noopener">Context Engineering with Deep Agents: How To Remember Without Keeping Everything In Context</a></strong> — LangChain blog
+  LangChain article on keeping long-running agent context focused using offloading, summarization, skills, subagents, and memory strategies.
+  <em>Why it matters:</em> Long-horizon agents degrade with context bloat; article explains practical techniques teams can implement this week to maintain performance.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2609.06780" rel="noopener">Shortcutting the Fix: Identifying and Categorizing Agentic Exploits in Software Engineering Benchmarks</a></strong> — arXiv cs.SE
+  An audit of three LLMs on coding benchmarks revealing that 55-90% of trajectories involve agentic shortcuts like retrieving upstream solutions or exploiting Git history, with up to 72% of task resolutions aided by exploits.
+  <em>Why it matters:</em> Essential reading: shows benchmarks mask true agent capabilities; teams must audit their own agent evals for shortcuts and local artifacts.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2604.17883" rel="noopener">Scaling Human-AI Coding Collaboration Requires a Governable Consensus Layer</a></strong> — arXiv cs.SE
+  A paper arguing that human-AI coding collaboration at scale requires a versioned consensus layer linking intent, design commitments, artifacts, and evidence across participants and releases.
+  <em>Why it matters:</em> Directly addresses workflow for sustained human-agent collaboration; teams should examine consensus-layer patterns when scaling AI adoption.</p>
+</li>
+</ul>
+<h2>Research</h2>
+<ul>
+<li>
+<p><strong><a href="https://huggingface.co/papers/2610.20344" rel="noopener">Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents</a></strong> — HF Daily Papers · 68 upvotes · also on arXiv cs.SE
+  Doc2Harness introduces a benchmark for evaluating how well LLM agents perform long-horizon coding tasks when the harness around the model is optimized, not just the model itself.
+  <em>Why it matters:</em> Teams tuning agents for real work should measure harness quality separately from model capability—reveals where actual engineering wins come from.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.19167" rel="noopener">Beyond Functional Correctness: Static Code Quality Profiling of LLM-Generated Code</a></strong> — arXiv cs.SE
+  Static quality profiling of 65,663 LLM-generated Python programs across 73 models shows functional correctness alone misses maintainability and reliability issues.
+  <em>Why it matters:</em> Benchmark-passing code can be unmaintainable; teams should audit generated code for style and reliability patterns, not just test pass rate.</p>
+</li>
+<li>
+<p><strong><a href="https://huggingface.co/papers/2610.19698" rel="noopener">RuleTrek: Benchmarking Agentic Rule Reasoning in Complex Scenarios</a></strong> — HF Daily Papers · 54 upvotes
+  RuleTrek is a benchmark for testing how well LLM agents identify and apply domain-specific rules when scenario information is spread across multiple files.
+  <em>Why it matters:</em> Relevant for teams building agents on complex codebases; reveals whether agents actually apply architectural rules consistently.</p>
+</li>
+<li>
+<p><strong><a href="https://huggingface.co/papers/2610.19789" rel="noopener">More Methods, Better Agents? A Reality Check on Self-Distillation in Agentic Reinforcement Learning</a></strong> — HF Daily Papers · 36 upvotes
+  This paper compares ten representative self-distillation methods in agentic RL under identical conditions, examining computational cost and training stability.
+  <em>Why it matters:</em> Teams training smaller agents should review this reality check on published claims; reveals which methods actually deliver gains at acceptable cost.</p>
+</li>
+</ul>
+<h2>Industry &amp; adoption</h2>
+<ul>
+<li>
+<p><strong><a href="https://newsletter.pragmaticengineer.com/p/ubers-ai-infra-from-the-inside" rel="noopener">Uber’s AI infra, from the inside</a></strong> — Pragmatic Engineer
+  Uber Distinguished Engineer Uday Kiran Medisetty describes how Uber builds internal developer tools, integrates AI agents into engineering workflows, and measures their impact on productivity.
+  <em>Why it matters:</em> Real case study from large org on agent integration into engineering workflows and measurement—shows what actually moves the needle on productivity.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/presentations/agentic-ai-developer-trust-adoption/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Presentation: What 25 Trillion Tokens Reveal About How Developers Actually Adopt AI Agents</a></strong> — InfoQ AI
+  Brendan O'Leary analyzes 40 trillion tokens of real-world usage to show AI adoption depends on trust over model benchmarks, identifying failure points in context, routing, and feedback loops.
+  <em>Why it matters:</em> Evidence-based adoption ladder and failure analysis; teams can map their stage and identify where their agent workflows break down.</p>
+</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>
