@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Fri 16 Oct 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-10-15.html">← 2026-10-15</a></nav>
+<h1>AI Engineering Radar · Fri 16 Oct 2026</h1>
+<p class="muted">15 links worth a look</p>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://github.com/feder-cr/open_scion" rel="noopener">feder-cr/open_scion</a></strong> — GitHub new repos · ★ 1,027
+  Open-source version control system built specifically for coding agents, written in Go. Appears to be a version of Scion optimized for agent workflows.
+  <em>Why it matters:</em> Addresses a concrete gap in agent infrastructure—version control designed for multi-agent interaction patterns rather than traditional human workflows. Worth evaluating for agent-heavy codebases.</p>
+</li>
+<li>
+<p><strong><a href="https://huggingface.co/papers/2610.22200" rel="noopener">OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use</a></strong> — HF Daily Papers · 66 upvotes
+  OpenGCUA project aims to build an open stack for generalist computer-use agents that combine visual and programmatic interfaces. Positions itself as alternative to closed implementations.
+  <em>Why it matters:</em> Open-source computer-use agent framework gives teams a platform to experiment with and extend agent capabilities beyond GUI-only or code-only interaction.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/cline/cline/releases/tag/v4.1.25" rel="noopener">v4.1.25</a></strong> — Cline releases
+  Cline v4.1.25 adds cloud sessions for running tasks in hosted sandbox on chosen GitHub repo/branch with status notifications. Adds Gemini 4 Argon as default model.
+  <em>Why it matters:</em> Cloud execution removes local sandbox setup friction. Teams can trial agents on repos without managing compute, and tasks persist after editor close—practical for CI/CD integration.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/Zfinix/eleven" rel="noopener">Zfinix/eleven</a></strong> — GitHub new repos · ★ 559
+  Eleven project: agent-first reverse engineering tool for macOS, Windows, Linux allowing agents to read, rename, patch binaries, Android apps, and GPU kernels.
+  <em>Why it matters:</em> Demonstrates agent capability on specialized, constrained task—decompilation and patching. Relevant for teams working in security, binary analysis, or platform internals.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/i12bp8/decomp.wtf" rel="noopener">i12bp8/decomp.wtf</a></strong> — GitHub new repos · ★ 419
+  What The Function: AI agent decompiles owned games into C that compiles to exact same bytes. Runs locally using Claude Code.
+  <em>Why it matters:</em> Concrete example of agent capability in specialized domain (matching decompilation). Shows how Claude Code scales to complex, constraint-heavy reverse engineering tasks.</p>
+</li>
+</ul>
+<h2>Agentic coding &amp; workflows</h2>
+<ul>
+<li>
+<p><strong><a href="https://huggingface.co/papers/2610.22350" rel="noopener">FDE-Gym: The Last Mile of AI Delivery</a></strong> — HF Daily Papers · 50 upvotes · also on arXiv cs.SE
+  FDE-Gym benchmark evaluates agents on 95 real delivery tasks across 20 customer scenarios with ambiguous requirements, live systems, and unstated constraints. Differs from task-spec benchmarks by simulating actual forward-deployed engineer work.
+  <em>Why it matters:</em> Reveals what agent evals miss: requirement ambiguity and live-system constraints. Helps teams understand where agents fail in real customer delivery versus structured tasks.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.21421" rel="noopener">The Role of Agentic Instruction Categories for Code Generation: A Study of Five Python Libraries</a></strong> — arXiv cs.SE
+  Study evaluating which categories of agent instructions in AGENTS.md files (Repository Overview, Function Description, Testing, etc.) improve code generation accuracy across Gemma 4 and GPT-5.4.
+  <em>Why it matters:</em> Direct guidance on how to structure repository context for coding agents; teams can experiment with instruction categories to optimize agent performance this week.</p>
+</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.20618" rel="noopener">Developer Experiences with Cursor AI-native IDE</a></strong> — arXiv cs.SE
+  Empirical study of how developers use Cursor AI-native IDE for real work. Examines adoption frictions, which aspects matter in everyday use beyond controlled tasks.
+  <em>Why it matters:</em> Field data on what engineers actually struggle with in AI-native IDEs. Reveals adoption friction and workflow mismatch beyond lab conditions—essential for team rollout planning.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.21073" rel="noopener">Skip the Compressor: Coding Agents Fix More Issues When They Pick Whole Files</a></strong> — arXiv cs.SE
+  Research shows coding agents fix more issues when given full files at equal token budget instead of using compressors or similarity-based retrievers, because agents need exact source code to reproduce edits.
+  <em>Why it matters:</em> Concrete finding: for coding agents, full-file context beats clever retrieval/compression. Teams should reconsider prompt optimization strategies that truncate source.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.21144" rel="noopener">Plausible Is Not Enough: Trust and Evidence in AI-Authored Pull Request Review</a></strong> — arXiv cs.SE
+  Survey of 239 practitioners comparing trust in human-authored versus AI-authored pull requests. 64.9% report lower initial trust in AIRs; reviewers shift criteria from author track record to prompter expertise and evidence.
+  <em>Why it matters:</em> Reviewers apply different standards to agent PRs. Teams need to establish evidence and prompter accountability practices for agent code review acceptance.</p>
+</li>
+<li>
+<p><strong><a href="https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check/" rel="noopener">Evaluating AI agents: moving past the vibe check</a></strong> — Google Developers
+  Google Developers published a practical engineering guide for establishing continuous evaluation pipelines for multi-turn AI agents using Gemini Enterprise Agent Platform, Google ADK, and OpenInference standards.
+  <em>Why it matters:</em> Teams can adopt a reference architecture for measuring agent quality in production instead of relying on vibe checks, using open standards for portability.</p>
+</li>
+<li>
+<p><strong><a href="https://stackoverflow.blog/2026/10/15/your-team-shouldnt-build-an-ai-context-layer/" rel="noopener">Why your platform team shouldn't build an AI context layer (even though they probably could)</a></strong> — Stack Overflow blog
+  Stack Overflow blog argues that most engineering teams should not build internal AI context layers, as the maintenance burden becomes a platform team's full-time job costing more money and effort than anticipated.
+  <em>Why it matters:</em> Teams considering custom AI knowledge systems need this cautionary data on total cost of ownership before committing engineering resources to an internal solution.</p>
+</li>
+<li>
+<p><strong><a href="https://stackoverflow.blog/2026/10/16/formal-methods-say-you-re-wrong/" rel="noopener">AI says you’re right, formal methods say you’re wrong</a></strong> — Stack Overflow blog
+  Stack Overflow blog interviews Gabriela Moreira from Quint about using TLA+ and formal specification languages to catch system design flaws before coding, and how trace validation and model-based testing verify AI-generated code against production data.
+  <em>Why it matters:</em> Formal methods with trace validation against real data offers teams a concrete way to catch bugs in AI-generated code beyond reviews and testing.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/agentic-ai-retrieval-problem/" rel="noopener">Agentic AI doesn’t have a model problem. It has a retrieval problem.</a></strong> — The New Stack
+  The New Stack reports that agent performance is bottlenecked by retrieval quality, not model capability; GPT-4.1 scored 93.49% on BrowseComp-Plus with direct documents but lower with agent retrieval.
+  <em>Why it matters:</em> Teams should prioritize improving RAG pipelines and retrieval quality over upgrading to larger models when optimizing agent accuracy in production.</p>
+</li>
+</ul>
+<h2>Industry &amp; adoption</h2>
+<ul>
+<li><strong><a href="https://seangoedecke.com/ai-is-driving-a-boom-in-modestly-successful-software/" rel="noopener">AI is driving a boom in modestly successful software projects</a></strong> — Sean Goedecke
+  Sean Goedecke observes that coding agents are driving growth in modestly successful projects (roughly 2x growth) rather than massively successful ones, spreading impact across many smaller projects.
+  <em>Why it matters:</em> Reframes agent impact: not magic bullet for blockbuster products but measurable productivity gain across many teams building real, profitable small-to-mid-scale software.</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>

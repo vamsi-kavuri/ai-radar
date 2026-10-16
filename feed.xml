@@ -2,7 +2,91 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Thu 15 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-15.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-15.html</guid><pubDate>Thu, 15 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Fri 16 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-16.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-16.html</guid><pubDate>Fri, 16 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/feder-cr/open_scion" rel="noopener"&gt;feder-cr/open_scion&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 1,027
+  Open-source version control system built specifically for coding agents, written in Go. Appears to be a version of Scion optimized for agent workflows.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Addresses a concrete gap in agent infrastructure—version control designed for multi-agent interaction patterns rather than traditional human workflows. Worth evaluating for agent-heavy codebases.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2610.22200" rel="noopener"&gt;OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 66 upvotes
+  OpenGCUA project aims to build an open stack for generalist computer-use agents that combine visual and programmatic interfaces. Positions itself as alternative to closed implementations.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Open-source computer-use agent framework gives teams a platform to experiment with and extend agent capabilities beyond GUI-only or code-only interaction.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/cline/cline/releases/tag/v4.1.25" rel="noopener"&gt;v4.1.25&lt;/a&gt;&lt;/strong&gt; — Cline releases
+  Cline v4.1.25 adds cloud sessions for running tasks in hosted sandbox on chosen GitHub repo/branch with status notifications. Adds Gemini 4 Argon as default model.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Cloud execution removes local sandbox setup friction. Teams can trial agents on repos without managing compute, and tasks persist after editor close—practical for CI/CD integration.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/Zfinix/eleven" rel="noopener"&gt;Zfinix/eleven&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 559
+  Eleven project: agent-first reverse engineering tool for macOS, Windows, Linux allowing agents to read, rename, patch binaries, Android apps, and GPU kernels.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Demonstrates agent capability on specialized, constrained task—decompilation and patching. Relevant for teams working in security, binary analysis, or platform internals.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/i12bp8/decomp.wtf" rel="noopener"&gt;i12bp8/decomp.wtf&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 419
+  What The Function: AI agent decompiles owned games into C that compiles to exact same bytes. Runs locally using Claude Code.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete example of agent capability in specialized domain (matching decompilation). Shows how Claude Code scales to complex, constraint-heavy reverse engineering tasks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2610.22350" rel="noopener"&gt;FDE-Gym: The Last Mile of AI Delivery&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 50 upvotes · also on arXiv cs.SE
+  FDE-Gym benchmark evaluates agents on 95 real delivery tasks across 20 customer scenarios with ambiguous requirements, live systems, and unstated constraints. Differs from task-spec benchmarks by simulating actual forward-deployed engineer work.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Reveals what agent evals miss: requirement ambiguity and live-system constraints. Helps teams understand where agents fail in real customer delivery versus structured tasks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.21421" rel="noopener"&gt;The Role of Agentic Instruction Categories for Code Generation: A Study of Five Python Libraries&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Study evaluating which categories of agent instructions in AGENTS.md files (Repository Overview, Function Description, Testing, etc.) improve code generation accuracy across Gemma 4 and GPT-5.4.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Direct guidance on how to structure repository context for coding agents; teams can experiment with instruction categories to optimize agent performance this week.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.20618" rel="noopener"&gt;Developer Experiences with Cursor AI-native IDE&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Empirical study of how developers use Cursor AI-native IDE for real work. Examines adoption frictions, which aspects matter in everyday use beyond controlled tasks.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Field data on what engineers actually struggle with in AI-native IDEs. Reveals adoption friction and workflow mismatch beyond lab conditions—essential for team rollout planning.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.21073" rel="noopener"&gt;Skip the Compressor: Coding Agents Fix More Issues When They Pick Whole Files&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Research shows coding agents fix more issues when given full files at equal token budget instead of using compressors or similarity-based retrievers, because agents need exact source code to reproduce edits.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete finding: for coding agents, full-file context beats clever retrieval/compression. Teams should reconsider prompt optimization strategies that truncate source.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.21144" rel="noopener"&gt;Plausible Is Not Enough: Trust and Evidence in AI-Authored Pull Request Review&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Survey of 239 practitioners comparing trust in human-authored versus AI-authored pull requests. 64.9% report lower initial trust in AIRs; reviewers shift criteria from author track record to prompter expertise and evidence.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Reviewers apply different standards to agent PRs. Teams need to establish evidence and prompter accountability practices for agent code review acceptance.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check/" rel="noopener"&gt;Evaluating AI agents: moving past the vibe check&lt;/a&gt;&lt;/strong&gt; — Google Developers
+  Google Developers published a practical engineering guide for establishing continuous evaluation pipelines for multi-turn AI agents using Gemini Enterprise Agent Platform, Google ADK, and OpenInference standards.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams can adopt a reference architecture for measuring agent quality in production instead of relying on vibe checks, using open standards for portability.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://stackoverflow.blog/2026/10/15/your-team-shouldnt-build-an-ai-context-layer/" rel="noopener"&gt;Why your platform team shouldn't build an AI context layer (even though they probably could)&lt;/a&gt;&lt;/strong&gt; — Stack Overflow blog
+  Stack Overflow blog argues that most engineering teams should not build internal AI context layers, as the maintenance burden becomes a platform team's full-time job costing more money and effort than anticipated.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams considering custom AI knowledge systems need this cautionary data on total cost of ownership before committing engineering resources to an internal solution.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://stackoverflow.blog/2026/10/16/formal-methods-say-you-re-wrong/" rel="noopener"&gt;AI says you’re right, formal methods say you’re wrong&lt;/a&gt;&lt;/strong&gt; — Stack Overflow blog
+  Stack Overflow blog interviews Gabriela Moreira from Quint about using TLA+ and formal specification languages to catch system design flaws before coding, and how trace validation and model-based testing verify AI-generated code against production data.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Formal methods with trace validation against real data offers teams a concrete way to catch bugs in AI-generated code beyond reviews and testing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/agentic-ai-retrieval-problem/" rel="noopener"&gt;Agentic AI doesn’t have a model problem. It has a retrieval problem.&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  The New Stack reports that agent performance is bottlenecked by retrieval quality, not model capability; GPT-4.1 scored 93.49% on BrowseComp-Plus with direct documents but lower with agent retrieval.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams should prioritize improving RAG pipelines and retrieval quality over upgrading to larger models when optimizing agent accuracy in production.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Industry &amp;amp; adoption&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://seangoedecke.com/ai-is-driving-a-boom-in-modestly-successful-software/" rel="noopener"&gt;AI is driving a boom in modestly successful software projects&lt;/a&gt;&lt;/strong&gt; — Sean Goedecke
+  Sean Goedecke observes that coding agents are driving growth in modestly successful projects (roughly 2x growth) rather than massively successful ones, spreading impact across many smaller projects.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Reframes agent impact: not magic bullet for blockbuster products but measurable productivity gain across many teams building real, profitable small-to-mid-scale software.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Thu 15 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-15.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-15.html</guid><pubDate>Thu, 15 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://www.liquid.ai/blog/lfm2-5-24b-a2b" rel="noopener"&gt;LFM2.5-24B-A2B: Built for fast on-device agents&lt;/a&gt;&lt;/strong&gt; — Hacker News · 224 points · 53 comments · &lt;a href="https://news.ycombinator.com/item?id=50097369" rel="noopener"&gt;discussion&lt;/a&gt;
   LFM2.5-24B-A2B is a model built for fast on-device agent execution.
