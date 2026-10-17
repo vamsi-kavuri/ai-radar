@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Sat 17 Oct 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-10-16.html">← 2026-10-16</a></nav>
+<h1>AI Engineering Radar · Sat 17 Oct 2026</h1>
+<p class="muted">15 links worth a look</p>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://github.com/feder-cr/git-ai" rel="noopener">feder-cr/git-ai</a></strong> — GitHub new repos · ★ 1,099
+  Git-ai: Git reimplemented in Go for AI agents, with topics including ai-agents, coding-agents, and version-control.
+  <em>Why it matters:</em> Tool for teams experimenting with agent-native workflows; addresses version control interface mismatch between human Git and autonomous agents.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/10/reverse-engineer-anything/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Reverse Engineer Anything Project Brings AI Agents to Binary Analysis</a></strong> — InfoQ AI
+  Reverse Engineer Anything: open-source project connecting coding agents like Claude Code to reverse-engineering tools (Ghidra, Hopper, IDA) for binary analysis.
+  <em>Why it matters:</em> Practical tool extension; shows how agents can inspect compiled binaries and trace function calls, expanding coding agent capabilities beyond source code.</p>
+</li>
+<li>
+<p><strong><a href="https://cursor.com/changelog/cloud-agent-canvases-and-environments" rel="noopener">Cloud Agent Canvases and Environment Improvements</a></strong> — Cursor changelog
+  Cursor added cloud agent canvases for building and sharing interactive outputs. Environments API supports 300 repos with 5x faster loading.
+  <em>Why it matters:</em> Faster environment loading and shared canvases improve team workflow with agents. Worth testing if your team uses Cursor for agentic work.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/Leonxlnx/earshot" rel="noopener">Leonxlnx/earshot</a></strong> — GitHub new repos · ★ 492
+  Earshot: open-source CPU-only Python tool enabling coding agents like Claude Code to hear, review, and generate audio.
+  <em>Why it matters:</em> Practical extension for agents working with audio; MCP-integrated tool a team could experiment with this week for multimodal coding workflows.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/cline/cline/releases/tag/sdk%2Fsdk%2Fv0.0.95" rel="noopener">SDK v0.0.95</a></strong> — Cline releases
+  Cline SDK v0.0.95 adds GPT-6 model compatibility for max_completion_tokens, hub launcher client tracking via OTel attributes.
+  <em>Why it matters:</em> Teams using Cline with newer OpenAI models need this compatibility fix. Hub launcher tracking helps debug remote agent setups.</p>
+</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://claude.dev/blog/solving-code-review-at-anthropic/" rel="noopener">How the Claude Code team does code review</a></strong> — Hacker News · 362 points · 333 comments · <a href="https://news.ycombinator.com/item?id=50122951" rel="noopener">discussion</a>
+  Hacker News discussion of Claude Code team's code review approach.
+  <em>Why it matters:</em> Points to the same workflow pattern as item 3bc592cc5b68; links to working developer case study on review practices.</p>
+</li>
+<li>
+<p><strong><a href="https://simonwillison.net/2026/Oct/16/code-review/" rel="noopener">Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang</a></strong> — Simon Willison
+  Addy Osmani and team describe how Claude continuously reviews code during development, catching routine mistakes before human review, shifting review from a gate at the end to continuous spellcheck-like feedback.
+  <em>Why it matters:</em> Concrete workflow change: move code review gates to continuous AI feedback during development, reducing human review friction and catching errors earlier in the cycle.</p>
+</li>
+<li>
+<p><strong><a href="https://ghuntley.com/toronto/" rel="noopener">state of agentic coding #11: the curiosity test, lisp, and labs that can't fail</a></strong> — Geoffrey Huntley
+  Geoffrey Huntley podcast with Armin Ronacher and Ben Vinegar on agentic coding state: curiosity test, durable agents, Lisp programmed via conversation, lab constraints.
+  <em>Why it matters:</em> Hands-on discussion of agentic coding workflows and practitioner thinking; addresses what fails and lab capacity constraints affecting adoption.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/10/grafana-slo-ai-agent/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Grafana Applies SLOs and Error Budgets to AI Agent Behaviour</a></strong> — InfoQ AI
+  Grafana Labs proposes applying SLOs and error budgets from reliability engineering to measure AI agent behavior.
+  <em>Why it matters:</em> SLOs and error budgets are proven frameworks teams already understand. Adapting them to agents provides concrete ways to measure and govern agentic systems.</p>
+</li>
+<li>
+<p><strong><a href="https://newsletter.getdx.com/p/the-cafes-framework-improving-ai" rel="noopener">The CAFE(S) framework: Improving AI agent effectiveness</a></strong> — DX newsletter
+  CAFE(S) framework by Brian Houck: method for improving AI agent effectiveness by enhancing context quality and reducing costly failures.
+  <em>Why it matters:</em> Framework engineering teams can apply now; directly addresses context engineering and reliability for deployed agents.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/10/ai-systems-production/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">AI in Production: Panellists Highlight Silent Failures, Harness Engineering, and Agent Governance</a></strong> — InfoQ AI
+  InfoQ webinar on operational challenges deploying agentic systems covered semantic and embedding drift, automated code review needs, continuous model evaluation, and privacy measures.
+  <em>Why it matters:</em> Semantic drift and silent failures are concrete production risks teams building agents should monitor. Automated evaluation practices are actionable.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/minibooks/evolutionary-architecture/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Mini book: Evolutionary Architecture in Practice</a></strong> — InfoQ AI
+  InfoQ mini book on evolutionary architecture covers agentic fitness functions for semantic drift, human comprehension as design metric, and cross-cloud guardrails.
+  <em>Why it matters:</em> Fitness functions for semantic drift and guardrails are practical approaches teams can apply to keep agentic systems aligned and safe as they evolve.</p>
+</li>
+</ul>
+<h2>Research</h2>
+<ul>
+<li><strong><a href="https://huggingface.co/papers/2610.21656" rel="noopener">Data World: Scaling Data Environments from Scratch</a></strong> — HF Daily Papers · 27 upvotes
+  Data World: multi-agent engine that synthesizes training environments, tasks, and rubrics by specifying the world before generating files, addressing data agent training scaling challenges.
+  <em>Why it matters:</em> Relevant to teams building eval and training pipelines for coding agents; addresses privacy and verification issues when scaling agent training.</li>
+</ul>
+<h2>Industry &amp; adoption</h2>
+<ul>
+<li>
+<p><strong><a href="https://openai.com/index/stack-overflow-chatgpt-plugin" rel="noopener">Stack Overflow for Agents triples signups with ChatGPT plugin</a></strong> — OpenAI news
+  Stack Overflow for Agents shipped by two engineers in weeks using Codex; ChatGPT plugin drove up to 10× growth in agent creation.
+  <em>Why it matters:</em> Case study of rapid agent tooling adoption; demonstrates velocity gain when agents assist both development and product discovery.</p>
+</li>
+<li>
+<p><strong><a href="https://openai.com/index/benefit-street-partners" rel="noopener">Benefit Street Partners answers questions faster with Codex</a></strong> — OpenAI news
+  Benefit Street Partners uses Codex for code review and faster follow-ups on loan valuation comparison and credit agreement analysis tools.
+  <em>Why it matters:</em> Real team case study using agent-assisted review in financial domain; shows concrete productivity gain in code review workflows.</p>
+</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>

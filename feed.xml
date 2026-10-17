@@ -2,7 +2,91 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Fri 16 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-16.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-16.html</guid><pubDate>Fri, 16 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Sat 17 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-17.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-17.html</guid><pubDate>Sat, 17 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/feder-cr/git-ai" rel="noopener"&gt;feder-cr/git-ai&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 1,099
+  Git-ai: Git reimplemented in Go for AI agents, with topics including ai-agents, coding-agents, and version-control.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Tool for teams experimenting with agent-native workflows; addresses version control interface mismatch between human Git and autonomous agents.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/reverse-engineer-anything/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Reverse Engineer Anything Project Brings AI Agents to Binary Analysis&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Reverse Engineer Anything: open-source project connecting coding agents like Claude Code to reverse-engineering tools (Ghidra, Hopper, IDA) for binary analysis.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Practical tool extension; shows how agents can inspect compiled binaries and trace function calls, expanding coding agent capabilities beyond source code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://cursor.com/changelog/cloud-agent-canvases-and-environments" rel="noopener"&gt;Cloud Agent Canvases and Environment Improvements&lt;/a&gt;&lt;/strong&gt; — Cursor changelog
+  Cursor added cloud agent canvases for building and sharing interactive outputs. Environments API supports 300 repos with 5x faster loading.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Faster environment loading and shared canvases improve team workflow with agents. Worth testing if your team uses Cursor for agentic work.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/Leonxlnx/earshot" rel="noopener"&gt;Leonxlnx/earshot&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 492
+  Earshot: open-source CPU-only Python tool enabling coding agents like Claude Code to hear, review, and generate audio.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Practical extension for agents working with audio; MCP-integrated tool a team could experiment with this week for multimodal coding workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/cline/cline/releases/tag/sdk%2Fsdk%2Fv0.0.95" rel="noopener"&gt;SDK v0.0.95&lt;/a&gt;&lt;/strong&gt; — Cline releases
+  Cline SDK v0.0.95 adds GPT-6 model compatibility for max_completion_tokens, hub launcher client tracking via OTel attributes.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams using Cline with newer OpenAI models need this compatibility fix. Hub launcher tracking helps debug remote agent setups.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://claude.dev/blog/solving-code-review-at-anthropic/" rel="noopener"&gt;How the Claude Code team does code review&lt;/a&gt;&lt;/strong&gt; — Hacker News · 362 points · 333 comments · &lt;a href="https://news.ycombinator.com/item?id=50122951" rel="noopener"&gt;discussion&lt;/a&gt;
+  Hacker News discussion of Claude Code team's code review approach.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Points to the same workflow pattern as item 3bc592cc5b68; links to working developer case study on review practices.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Oct/16/code-review/" rel="noopener"&gt;Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Addy Osmani and team describe how Claude continuously reviews code during development, catching routine mistakes before human review, shifting review from a gate at the end to continuous spellcheck-like feedback.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete workflow change: move code review gates to continuous AI feedback during development, reducing human review friction and catching errors earlier in the cycle.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://ghuntley.com/toronto/" rel="noopener"&gt;state of agentic coding #11: the curiosity test, lisp, and labs that can't fail&lt;/a&gt;&lt;/strong&gt; — Geoffrey Huntley
+  Geoffrey Huntley podcast with Armin Ronacher and Ben Vinegar on agentic coding state: curiosity test, durable agents, Lisp programmed via conversation, lab constraints.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Hands-on discussion of agentic coding workflows and practitioner thinking; addresses what fails and lab capacity constraints affecting adoption.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/grafana-slo-ai-agent/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Grafana Applies SLOs and Error Budgets to AI Agent Behaviour&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Grafana Labs proposes applying SLOs and error budgets from reliability engineering to measure AI agent behavior.
+  &lt;em&gt;Why it matters:&lt;/em&gt; SLOs and error budgets are proven frameworks teams already understand. Adapting them to agents provides concrete ways to measure and govern agentic systems.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://newsletter.getdx.com/p/the-cafes-framework-improving-ai" rel="noopener"&gt;The CAFE(S) framework: Improving AI agent effectiveness&lt;/a&gt;&lt;/strong&gt; — DX newsletter
+  CAFE(S) framework by Brian Houck: method for improving AI agent effectiveness by enhancing context quality and reducing costly failures.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Framework engineering teams can apply now; directly addresses context engineering and reliability for deployed agents.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/ai-systems-production/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;AI in Production: Panellists Highlight Silent Failures, Harness Engineering, and Agent Governance&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  InfoQ webinar on operational challenges deploying agentic systems covered semantic and embedding drift, automated code review needs, continuous model evaluation, and privacy measures.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Semantic drift and silent failures are concrete production risks teams building agents should monitor. Automated evaluation practices are actionable.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/minibooks/evolutionary-architecture/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Mini book: Evolutionary Architecture in Practice&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  InfoQ mini book on evolutionary architecture covers agentic fitness functions for semantic drift, human comprehension as design metric, and cross-cloud guardrails.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Fitness functions for semantic drift and guardrails are practical approaches teams can apply to keep agentic systems aligned and safe as they evolve.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Research&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2610.21656" rel="noopener"&gt;Data World: Scaling Data Environments from Scratch&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 27 upvotes
+  Data World: multi-agent engine that synthesizes training environments, tasks, and rubrics by specifying the world before generating files, addressing data agent training scaling challenges.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Relevant to teams building eval and training pipelines for coding agents; addresses privacy and verification issues when scaling agent training.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Industry &amp;amp; adoption&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://openai.com/index/stack-overflow-chatgpt-plugin" rel="noopener"&gt;Stack Overflow for Agents triples signups with ChatGPT plugin&lt;/a&gt;&lt;/strong&gt; — OpenAI news
+  Stack Overflow for Agents shipped by two engineers in weeks using Codex; ChatGPT plugin drove up to 10× growth in agent creation.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Case study of rapid agent tooling adoption; demonstrates velocity gain when agents assist both development and product discovery.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://openai.com/index/benefit-street-partners" rel="noopener"&gt;Benefit Street Partners answers questions faster with Codex&lt;/a&gt;&lt;/strong&gt; — OpenAI news
+  Benefit Street Partners uses Codex for code review and faster follow-ups on loan valuation comparison and credit agreement analysis tools.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Real team case study using agent-assisted review in financial domain; shows concrete productivity gain in code review workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Fri 16 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-16.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-16.html</guid><pubDate>Fri, 16 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/feder-cr/open_scion" rel="noopener"&gt;feder-cr/open_scion&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 1,027
