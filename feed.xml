@@ -2,7 +2,54 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Sun 18 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-18.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-18.html</guid><pubDate>Sun, 18 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Mon 19 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-19.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-19.html</guid><pubDate>Mon, 19 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/alchaincyf/huashu-motion" rel="noopener"&gt;alchaincyf/huashu-motion&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 748
+  Huashu-motion is a GitHub repo that lets agents generate commercial-grade product launch videos with music and frame-level editing using JavaScript, GSAP, and Claude Code.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Demonstrates agent skills for creative automation beyond code; teams experimenting with agentic workflows could evaluate this for video generation tasks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.23186" rel="noopener"&gt;Code Skill Server: A Large-Scale Search Engine for Code Generation Skills&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Code Skill Server is a large-scale search engine for discovering and retrieving reusable agent skills across heterogeneous sources for software engineering, science, and math tasks.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Addresses skill discovery bottleneck for agents; teams building multi-agent systems can use this to locate and reuse specialized agent skills systematically.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/podcasts/future-web-apps/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Podcast: The Future of Web Apps: Will AI Agents Generate UIs on the Fly?&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Rachel Lee Nabors discusses local-first applications and small language models running on-device as privacy-focused alternatives to cloud-hosted LLMs.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams exploring on-device SLMs can learn architectural tradeoffs around latency, cost, and privacy for agentic workflows without cloud dependency.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/articles/distributed-systems-microservices-agentic-ai/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Article: From Microservices to Agents: The Next Evolution of Distributed Systems&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Mallika Rao examines the shift from microservices to agentic AI architecture, focusing on decision decomposition and new challenges in observability and reliability.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams building agentic systems need updated architectural patterns; the article addresses observability and reliability problems that differ from microservices.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Research&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.23506" rel="noopener"&gt;MLOps-Bench: Benchmarking AI Agents on Production ML Engineering in Real Repositories&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  MLOps-Bench is a repository-grounded benchmark for evaluating AI agents on real production ML engineering tasks including data pipelines, feature engineering, model training, serving, monitoring, CI/CD, and governance.
+  &lt;em&gt;Why it matters:&lt;/em&gt; First benchmark for ML engineering agents on production tasks; essential for teams evaluating agent capabilities on realistic ML workflows beyond generic repo tasks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.22412" rel="noopener"&gt;EnterpriseSynth: Zero-Execution SFT and Evaluation Data from OpenAPI Specs&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  EnterpriseSynth is a zero-execution framework that generates supervised fine-tuning and evaluation data for tool-using agents from OpenAPI specs without invoking actual APIs.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Enables safe, cost-effective training data generation for enterprise API agents without production risk; directly applicable to teams building internal tool-using agents.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.23782" rel="noopener"&gt;Enforcing Code Reasoning in Agentic Scaffold for More Effective Issue Resolution&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Study of 7,955 issue-resolution trajectories shows code reasoning is present in 66.95% of agent trajectories and correlates with success, but remains largely unguided across six agent scaffolds.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams can improve issue-resolution agents by explicitly enforcing code reasoning; paper identifies 12 reasoning forms that increase resolution rates on SWE-bench.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.18861" rel="noopener"&gt;Hybrid Reasoning Agents: LLM agents that think in latent space, act through text&lt;/a&gt;&lt;/strong&gt; — Hacker News · 424 points · 208 comments · &lt;a href="https://news.ycombinator.com/item?id=50145337" rel="noopener"&gt;discussion&lt;/a&gt;
+  Hybrid Reasoning Agents research from Together Computer explores LLM agents that think in latent space and act through text, with evaluations available on arXiv.
+  &lt;em&gt;Why it matters:&lt;/em&gt; New agent reasoning architecture that may improve reliability and cost efficiency of coding agents; worth reviewing the evals to understand practical implications.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Sun 18 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-18.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-18.html</guid><pubDate>Sun, 18 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/LiCinCan/blender-ai-mcp-addon" rel="noopener"&gt;LiCinCan/blender-ai-mcp-addon&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 719
   Blender AI MCP addon that integrates multi-agent chat and scene automation, supporting OpenAI, Claude, Gemini, Ollama, and other models through MCP protocol.
