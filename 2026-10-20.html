@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Tue 20 Oct 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-10-19.html">← 2026-10-19</a></nav>
+<h1>AI Engineering Radar · Tue 20 Oct 2026</h1>
+<p class="muted">15 links worth a look</p>
+<h2>Models &amp; releases</h2>
+<ul>
+<li><strong><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.304" rel="noopener">v2.1.304</a></strong> — Claude Code releases
+  Claude Code v2.1.304 added transcript hooks for plugins, person-only decider for tool approval, read-only event detection, and /auto-mode-setup for guided environment configuration.
+  <em>Why it matters:</em> Teams using Claude Code should evaluate new permission controls (person decider) and auto-mode setup for streamlining agent initialization.</li>
+</ul>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://github.com/Graphicle-AI/graphicle" rel="noopener">Graphicle-AI/graphicle</a></strong> — GitHub new repos · ★ 327
+  Graphicle is a Rust tool providing code graph and memory for coding agents supporting Claude Code, Codex, Cursor, and MCP clients.
+  <em>Why it matters:</em> Teams using Claude Code or other agents can explore this tool to add persistent code context and graph-based memory for multi-turn sessions.</p>
+</li>
+<li>
+<p><strong><a href="https://developers.googleblog.com/step-by-step-guide-build-a-voice-agent-that-never-goes-silent-using-adk/" rel="noopener">Step by Step guide: Build a Voice Agent That Never Goes Silent using ADK</a></strong> — Google Developers
+  Google's Agent Development Kit and gemini-3.8-live enable voice agents using non-blocking streaming tools in Python, with response scheduling control via WHEN_IDLE, INTERRUPT, or SILENT patterns.
+  <em>Why it matters:</em> Practical patterns for keeping agent interactions responsive during long-running tasks; useful for teams building agentic workflows.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/kitlangton/scrawl" rel="noopener">kitlangton/scrawl</a></strong> — GitHub new repos · ★ 525
+  Scrawl is a Rust tool for macOS that lets users show agents a problem with markup and send it, built with GPUI.
+  <em>Why it matters:</em> Teams exploring human-agent interaction patterns should examine this lightweight markup-to-agent workflow tool.</p>
+</li>
+<li>
+<p><strong><a href="https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/" rel="noopener">How to continue a GitHub Copilot app session in VS Code</a></strong> — GitHub Blog
+  GitHub Copilot blog post on continuing agent sessions from the GitHub Copilot app into VS Code without losing conversation or context.
+  <em>Why it matters:</em> Teams using GitHub Copilot agents should learn this workflow for seamless session continuity across interfaces.</p>
+</li>
+</ul>
+<h2>Agentic coding &amp; workflows</h2>
+<ul>
+<li>
+<p><strong><a href="https://www.infoq.com/presentations/scale-llm-agents-production-ray/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Presentation: Beyond the Prototype: Scaling Framework Agnostic AI Agent Infrastructure with Ray</a></strong> — InfoQ AI
+  InfoQ presentation by Deepak Mohanakumar and Bhumik Thakkar on scaling AI agents from local prototypes to production with Ray, covering RayCluster topology, stateful memory, auto-scaling, and LLM-as-a-judge evals.
+  <em>Why it matters:</em> Teams moving agents to production should learn Ray infrastructure patterns, multi-region setup, and LLM judge evaluation pipelines from this ops-focused talk.</p>
+</li>
+<li>
+<p><strong><a href="https://crystl.dev/guides/tmux-for-ai-agents/" rel="noopener">Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling</a></strong> — Hacker News · 156 points · 119 comments · <a href="https://news.ycombinator.com/item?id=50148855" rel="noopener">discussion</a>
+  Hacker News discussion on integrating Tmux with Claude Code for terminal sessions and its limitations.
+  <em>Why it matters:</em> Title suggests practical patterns for agent-terminal workflows; full content not provided but relevant to agent tooling integration.</p>
+</li>
+<li>
+<p><strong><a href="https://huggingface.co/papers/2610.24960" rel="noopener">CoworkEnv: Synthesizing Training Environments for Long-Horizon Cowork Agents</a></strong> — HF Daily Papers · 30 upvotes
+  CoworkEnv presents a framework for synthesizing training environments for AI coworkers that coordinate tools, communicate across turns, and respect workflow constraints.
+  <em>Why it matters:</em> Teams building multi-turn agent systems should study how CoworkEnv uses capability-guided task construction and programmatic validation with feedback repair.</p>
+</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.24206" rel="noopener">SWE-Bench Pro V2: A Cleaner, Harder-to-Game Coding Benchmark</a></strong> — arXiv cs.SE
+  SWE-Bench Pro V2 revises the coding benchmark to prevent gaming as agents improve, repairing or retiring 480 of 731 tasks through agentic audits, expert adjudication, and blind re-implementation by 23 contractors spending 404 hours.
+  <em>Why it matters:</em> Teams evaluating coding agents must use SWE-Bench Pro V2 instead of V1; it demonstrates how benchmarks degrade and how to maintain them as agent capabilities advance.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.24545" rel="noopener">When Code Becomes an LLM Call: An Empirical Study of Call-Site Contracts in Agentic Systems</a></strong> — arXiv cs.SE
+  Research on call-site contracts for agentic systems shows that when code replaces logic with LLM calls, the guarantee must come from the call's specification rather than fixed code, varying across runs and steerable by input.
+  <em>Why it matters:</em> Teams integrating LLM calls into systems must rethink specifications and contracts; the behavior is not deterministic, so input context and output validation become critical guarantees.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.23996" rel="noopener">Agentic Interpretation: Harness-Governed Evidence Construction for Software Agents</a></strong> — arXiv cs.SE
+  Agentic Interpretation (AgInt) proposes a framework where agents propose typed evidence records, a deterministic harness validates them, and results persist for reuse and connection to answers.
+  <em>Why it matters:</em> Engineering teams building reliable agents should adopt this pattern of harness-governed evidence to replace free-form trajectories, enabling auditability and reuse.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/IsuruMaduranga/harness-engineering-101" rel="noopener">Harness Engineering 101: The LLM is the brain, the harness is the body</a></strong> — Hacker News · 130 points · 64 comments · <a href="https://news.ycombinator.com/item?id=50151390" rel="noopener">discussion</a>
+  Hacker News discussion titled 'Harness Engineering 101: The LLM is the brain, the harness is the body' on designing agent harnesses.
+  <em>Why it matters:</em> Title suggests practical framing for how to architect agent systems; full content not provided but premise aligns with engineering patterns.</p>
+</li>
+<li>
+<p><strong><a href="https://hamel.dev/blog/posts/decision-model-evals/" rel="noopener">How To Use Decision Models for Evals</a></strong> — Hamel Husain
+  Hamel Husain covers decision models as a low-cost alternative to LLM judges for evals, cautioning teams to validate thresholds rather than using defaults.
+  <em>Why it matters:</em> Teams building eval pipelines should consider decision models like TypeSafe's Jev or Perplexity's Decider, but need to tune threshold per task rather than assume 0.50.</p>
+</li>
+<li>
+<p><strong><a href="https://www.langchain.com/blog/how-numan-built-an-eval-first-ai-health-coach-with-langgraph-and-langsmith" rel="noopener">How Numan Built an Eval-First AI Health Coach with LangGraph and LangSmith</a></strong> — LangChain blog
+  Numan built an AI health coach on LangGraph and LangSmith using per-category evals, simulated conversations, and safety gates on regulatory boundaries.
+  <em>Why it matters:</em> Case study shows eval-driven development and safety testing patterns applicable to teams building agentic systems with guardrails.</p>
+</li>
+</ul>
+<h2>Research</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2610.24093" rel="noopener">Does AI-Assisted Development Homogenize Software? An Empirical Study of Code Similarity, Quality, and Evolution</a></strong> — arXiv cs.SE
+  Empirical study of 50 open-source Java and Python projects examining code similarity, quality, and evolution across pre-LLM, potentially LLM-assisted, and detected agentic development eras using semantic embeddings.
+  <em>Why it matters:</em> Teams adopting agents should read this to understand actual impacts on code homogeneity, quality, and evolution patterns as development shifts from human to agentic.</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>
