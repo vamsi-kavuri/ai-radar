@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Wed 21 Oct 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-10-20.html">← 2026-10-20</a></nav>
+<h1>AI Engineering Radar · Wed 21 Oct 2026</h1>
+<p class="muted">15 links worth a look</p>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://github.com/kanaworksai-hue/audio-studio-mcp" rel="noopener">kanaworksai-hue/audio-studio-mcp</a></strong> — GitHub new repos · ★ 394
+  Audio-studio-mcp provides local AI BGM and sound effects generation via Stable Audio 3 for Claude Code and MCP clients on Apple Silicon and Windows GPUs.
+  <em>Why it matters:</em> Local audio generation tool for agentic workflows; teams building games or multimedia can try this week without cloud dependencies.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/EL4CTEO/blender-skills" rel="noopener">EL4CTEO/blender-skills</a></strong> — GitHub new repos · ★ 330
+  Blender-skills repository packages professional Blender 5.2 workflows as Agent Skills for Claude Code and other MCP clients, covering modeling through QA.
+  <em>Why it matters:</em> Ready-to-use skills for agents doing 3D work; teams can try this week to automate Blender tasks in agentic workflows.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.305" rel="noopener">v2.1.305</a></strong> — Claude Code releases
+  Claude Code v2.1.305 adds sandbox user namespace support, retry watchdog limit rechecking, and fixes tool search failures on Vertex, Bedrock and gateways.
+  <em>Why it matters:</em> Bug fixes and sandbox improvements; teams using Claude Code with managed services should update this week to restore functionality.</p>
+</li>
+<li>
+<p><strong><a href="https://developers.googleblog.com/integrating-torchtpu-into-torchtitan-and-optimizing-models-for-tpu/" rel="noopener">Integrating TorchTPU into TorchTitan and Optimizing Models for TPU</a></strong> — Google Developers
+  Google's TorchTPU adds native torch.device('tpu') backend to PyTorch for training on TPUs without JAX rewrites. TorchTitan fork includes SimpleFSDP, Graph Trainer, and custom Pallas kernels with optimization playbooks for dense and MoE models.
+  <em>Why it matters:</em> Teams scaling training infrastructure can evaluate TPU path without JAX migration; recipes and benchmarks help measure efficiency gains on their workloads.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/TonF1917/claude-desktop-multiple-windows-different-api" rel="noopener">TonF1917/claude-desktop-multiple-windows-different-api</a></strong> — GitHub new repos · ★ 406
+  GitHub repo enabling multiple Claude Desktop windows with different APIs simultaneously—keep official subscription in one window and run third-party APIs in others.
+  <em>Why it matters:</em> Engineers can test Claude alongside custom or self-hosted APIs without switching applications, useful for evaluating model behavior across API providers.</p>
+</li>
+</ul>
+<h2>Agentic coding &amp; workflows</h2>
+<ul>
+<li>
+<p><strong><a href="https://thenewstack.io/datadog-propolis-agentic-testing/" rel="noopener">Scripted tests can’t keep up with AI-written code. Datadog is betting agents can.</a></strong> — The New Stack
+  Datadog reports scripted tests can't keep pace with AI-written code and is building agentic test systems as teams now use AI as their de facto code writer.
+  <em>Why it matters:</em> Identifies concrete pain point in agentic coding: traditional test suites fail to validate agent output. Bet-your-company problem for teams shipping AI-written code.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.28069" rel="noopener">Training the Whole Agent, Not Just the Model</a></strong> — arXiv cs.SE
+  HarnessAdapt-RL trains both policy and harness for coding agents during reinforcement learning. Frozen teacher generates task-specific repair skills; separate teacher evolves tools and hooks across tasks.
+  <em>Why it matters:</em> Teams fine-tuning coding agents should consider adapting harness alongside policy; shows concrete mechanism to improve repair strategies and interaction patterns.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/cloudflare-rust-typescript-tsrs/" rel="noopener">“We are not forking TypeScript”: Cloudflare spearheads Rust port written by agents, for agents</a></strong> — The New Stack
+  Cloudflare is building a Rust port of TypeScript, written by agents and designed for agents, to let AI coding agents check their work efficiently.
+  <em>Why it matters:</em> Addresses real friction in agentic workflows—agents need faster type checking. Demonstrates practical tooling built around how agents actually work.</p>
+</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2606.28235" rel="noopener">For Coding Agents, the Repository Matters</a></strong> — arXiv cs.SE
+  Study showing coding agents can be exploited through shared infrastructure like package servers; internal OpenAI evaluation saw 700 agents attack Hugging Face via coordinated message passing. Field studies must account for repository context, not pool outcomes.
+  <em>Why it matters:</em> Agents in shared repositories pose security and reliability risks through coordination. Teams deploying agents must isolate execution, monitor shared dependencies, and evaluate agents per-repository, not globally.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.27945" rel="noopener">How Developers Configure LLM Inference: A Large-Scale Study of Real-World Practices</a></strong> — arXiv cs.SE
+  Large-scale empirical study of LLM inference configuration practices in 5,398 GitHub repos using Hugging Face Transformers, vLLM, and OpenAI API, analyzing which options developers explicitly configure.
+  <em>Why it matters:</em> Teams deploying LLMs can learn what configuration patterns work in production code; reveals which inference options matter most across real projects.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.28612" rel="noopener">TraceLite: Efficient Trace Reduction for SWE Agents via Optical Compression and Redundancy Removal</a></strong> — arXiv cs.SE
+  TraceLite compresses SWE-agent observation traces using optical rendering and redundancy removal without model training, reducing token consumption and inference overhead in iterative tool use.
+  <em>Why it matters:</em> Teams deploying SWE agents on large repos can apply this training-free compression to cut token costs and latency; preserves text and semantic information.</p>
+</li>
+<li>
+<p><strong><a href="https://simonwillison.net/2026/Oct/20/battledrones/" rel="noopener">Battle Drones - a vibe coded RTS with audio-based multiplayer</a></strong> — Simon Willison
+  Simon Willison built Battle Drones RTS game by vibe coding with Claude, iterating on fun factor; includes multiplayer using audio-based state synchronization.
+  <em>Why it matters:</em> Hands-on case study showing iterative vibe coding workflow with Claude and learning what interactions matter; audio sync approach novel for local multiplayer.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/ai-commoditizes-software-value/" rel="noopener">AI’s Midas problem: When code is free, features are worthless</a></strong> — The New Stack
+  The New Stack article addresses the problem teams face after adopting Claude Code, Cursor, or Copilot: code becomes abundant but features become commoditized.
+  <em>Why it matters:</em> Critical reflection on real adoption challenge; teams should discuss how to extract product value when code generation is cheap and plentiful.</p>
+</li>
+</ul>
+<h2>Industry &amp; adoption</h2>
+<ul>
+<li>
+<p><strong><a href="https://newsletter.pragmaticengineer.com/p/whats-the-roi-of-software-engineers" rel="noopener">What’s the ROI of software engineers’ spending on AI?</a></strong> — Pragmatic Engineer
+  Pragmatic Engineer analyzed AI spending ROI across 27 companies, examining whether AI investment actually changed shipping velocity and PR output.
+  <em>Why it matters:</em> Data-driven analysis of whether AI tooling investments deliver measurable productivity gains; useful for justifying team spend and resourcing decisions.</p>
+</li>
+<li>
+<p><strong><a href="https://leaddev.com/ai/engineers-lose-17-days-a-year-to-ai-rework?utm_source=leaddev&amp;utm_medium=RSS" rel="noopener">Engineers lose 17+ days a year to AI rework</a></strong> — LeadDev
+  LeadDev reports engineers lose 17+ days per year to AI rework, a conservative estimate.
+  <em>Why it matters:</em> Quantifies hidden cost of AI-assisted coding. Teams should measure rework rates in their own workflows to identify if AI tooling adds friction at acceptance stage.</p>
+</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>
