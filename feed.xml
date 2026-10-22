@@ -2,7 +2,93 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Wed 21 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-21.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-21.html</guid><pubDate>Wed, 21 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Thu 22 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-22.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-22.html</guid><pubDate>Thu, 22 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.307" rel="noopener"&gt;v2.1.307&lt;/a&gt;&lt;/strong&gt; — Claude Code releases
+  Claude Code v2.1.307 adds /claude-api version command, OpenTelemetry safety events, model-alias fixes, and MCP auth improvements.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams can now instrument safety events via OpenTelemetry for auditing agent actions; MCP auth improvements reduce friction when integrating external tools.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/omnara-ai/omnara" rel="noopener"&gt;Show HN: Omnara – Open-source alternative to Claude Managed Agents&lt;/a&gt;&lt;/strong&gt; — Hacker News · 85 points · 25 comments · &lt;a href="https://news.ycombinator.com/item?id=50183892" rel="noopener"&gt;discussion&lt;/a&gt;
+  Omnara is an open-source API for running durable agents with sandboxes, persistent state in Postgres, and permissions management.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams can self-host agent infrastructure with state persistence, cost control for idle agents, and RBAC—useful for evaluating agentic workflows without cloud vendor lock-in.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/vercel-zig-fx-agent/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Vercel Labs Open-Sources fx: A Zig Coding Agent Designed to Be Embedded&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Vercel Labs released fx, an open-source coding agent written in Zig that runs as CLI, script component, or embedded library including WebAssembly; project is pre-1.0 and evolving.
+  &lt;em&gt;Why it matters:&lt;/em&gt; An embeddable coding agent your team could experiment with this week; Zig implementation and WASM support offer different deployment options than typical Python-based tools.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/christos-antono/NPCTalk" rel="noopener"&gt;christos-antono/NPCTalk&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 191
+  NPCTalk uses Fish Audio and agent skills to add dialogue to game NPCs with a self-hosted voice server and GTA V example.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Demonstrates practical agent skill composition: integrating voice, game automation, and tool calls—useful pattern to study for building multi-modal agent workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://claude.com/product/claude-duet" rel="noopener"&gt;Claude Duet&lt;/a&gt;&lt;/strong&gt; — Hacker News · 412 points · 373 comments · &lt;a href="https://news.ycombinator.com/item?id=50186037" rel="noopener"&gt;discussion&lt;/a&gt;
+  Claude Duet is announced (title only; no detail provided).
+  &lt;em&gt;Why it matters:&lt;/em&gt; Likely a new feature for AI-assisted pair programming or agent collaboration; exact details unavailable but warrants investigation given high community signal.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2610.28577" rel="noopener"&gt;Cache Engineering for Agents&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 76 upvotes
+  Research on reducing LLM agent KV-cache cost and storage by engineering cache strategies while maintaining task accuracy.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams running long-trajectory agents can apply cache engineering techniques to cut inference cost and fit longer contexts—directly relevant to scaling agent deployments.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/presentations/actors-for-production-ai-agents/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Presentation: Actors for Agents: Patterns for Production AI&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Manju Rajashekhar explains how the actor model addresses runtime challenges in production AI agents: state ownership, message passing, write-through state, and supervision boundaries for managing failures and mutable execution graphs.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Actor model patterns move agentic workflows from fragile demos to resilient production architecture—directly applicable to teams building coding agents.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/alextnetto/res" rel="noopener"&gt;alextnetto/res&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 178
+  An agent skill that reverse-engineers a SaaS product through browser automation to generate a knowledge base without touching production data.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Shows concrete pattern for agents to extract and codify domain knowledge via UI automation—useful for onboarding teams to new systems or building domain-specific tools.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://developers.googleblog.com/powering-the-agent-development-lifecycle-with-any-framework-from-adk-to-langchain-and-beyond/" rel="noopener"&gt;Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond&lt;/a&gt;&lt;/strong&gt; — Google Developers
+  Google's Agents CLI Extension System lets teams deploy agents via LangChain, LangGraph, or custom frameworks while enforcing platform policies like SBOM scans.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Enables framework choice without losing deployment and eval consistency; useful pattern for platform teams wanting to standardize agent governance across heterogeneous tech stacks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/articles/ai-changes-data-interface/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Article: AI Changes the Data Interface, Not the Query Engine&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Article describes disaster-recovery analytics workflow where AI agents generate constrained SQL or Python, DuckDB computes reproducible facts from Parquet, and agents interpret results; discusses determinism split and replayability.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete pattern for pairing agents with deterministic engines; shows how to structure reproducible analysis pipelines for code and data work.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.28667" rel="noopener"&gt;Who Verifies the Builder? Toward Independent Assurance for Agent-Produced Software&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Research paper arguing that when agents produce both software and test evidence, the tests are no longer independent assurance and may share spec misunderstandings.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Critical for teams deploying agents: highlights why agent-generated tests cannot serve as sole verification. Requires structurally independent assurance—essential reading before trusting agents for production code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.28675" rel="noopener"&gt;Compilation Is Not Correctness: Scan-by-Scan Evaluation of LLM-Generated PLC Programs&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  CycleBench is a benchmark for evaluating LLM-generated PLC programs on scan-by-scan behavior, not just compilation, with 301 tasks.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Demonstrates that LLM code compilation alone masks behavioral bugs. Teams should adopt scan-by-scan or cycle-level testing for safety-critical code—pattern applicable beyond PLCs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/ai-coding-verification-loops/" rel="noopener"&gt;AI sped up coding. Sonar instills confidence with verification.&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  The New Stack reports that AI coding tools initially boost productivity, but a Carnegie study suggests initial gains may not sustain; Sonar addresses this by adding verification to instill confidence.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Addresses real concern that AI coding productivity gains plateau; verification and confidence-building practices become critical for sustained adoption.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Research&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.28834" rel="noopener"&gt;Where Should a Stuck Agent Spend Its Next Tokens? Causal Attribution of Inference-Time Resources&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  arXiv paper introducing Banzhaf Resource Attribution, a framework measuring whether failed coding agents need more computation, information, or feedback to succeed, evaluated on MBPP+, HumanEval+, and SWE-bench.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Provides actionable framework to diagnose agent failures and allocate intervention resources efficiently, directly improving agent steering and debugging practices.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Industry &amp;amp; adoption&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.28683" rel="noopener"&gt;Who Approved This? Coding Agents, Human Accounts, and Merge-Gate Evidence at a Fintech Startup&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  A fintech startup's case study of 12 weeks of agent-driven development at Bashi AI reports 786 merged pull requests, 657 associated with agents, and documents the merge-gate challenge where agents submit approvals under human accounts.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Hands-on case study of coding agents in production; reveals governance gap where agent-authored approvals register as human reviews, highlighting audit and oversight risks teams should address.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Wed 21 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-21.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-21.html</guid><pubDate>Wed, 21 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/kanaworksai-hue/audio-studio-mcp" rel="noopener"&gt;kanaworksai-hue/audio-studio-mcp&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 394
