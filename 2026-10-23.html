@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Fri 23 Oct 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-10-22.html">← 2026-10-22</a></nav>
+<h1>AI Engineering Radar · Fri 23 Oct 2026</h1>
+<p class="muted">15 links worth a look</p>
+<h2>Models &amp; releases</h2>
+<ul>
+<li><strong><a href="https://huggingface.co/papers/2610.30949" rel="noopener">IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems</a></strong> — HF Daily Papers · 44 upvotes
+  IQuest-Q1 is a 320B parameter MoE agentic foundation model optimized for coding with stable pre-training, progressive context extension, and multi-scaffold post-training.
+  <em>Why it matters:</em> A coding-focused MoE model designed explicitly for agentic CLI systems; engineering teams can evaluate it against current agents for task completion and cost.</li>
+</ul>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://github.com/lovisdotio/motion2code" rel="noopener">lovisdotio/motion2code</a></strong> — GitHub new repos · ★ 176
+  lovisdotio/motion2code provides agent skills to rebuild motion design videos as looping SVG+GSAP code, verified frame-by-frame against source.
+  <em>Why it matters:</em> Concrete example of spec-driven agent skills a team could build or reuse; shows how to verify agent output against visual specifications.</p>
+</li>
+<li>
+<p><strong><a href="https://www.langchain.com/blog/langsmith-llm-gateway-runtime-controls-for-production-agents" rel="noopener">LangSmith LLM Gateway: Runtime Controls for Agents</a></strong> — LangChain blog
+  LangSmith LLM Gateway entered public beta with runtime controls for agents: spend caps, rate limits, model fallbacks, and PII redaction without vendor lock-in.
+  <em>Why it matters:</em> Production agent controls let teams manage costs and safety; try this week for monitoring and governance in live deployments.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/10/anthropic-oss-security-scanner/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Anthropic Adds Opt-In Security Scanning for Critical Open-Source Projects</a></strong> — InfoQ AI
+  Anthropic launched OSS Scanner, a free opt-in service for open-source maintainers to receive periodic security vulnerability reports from Claude Mythos without human review.
+  <em>Why it matters:</em> Free tool to scan dependencies and identify vulnerabilities; useful for security baseline in engineering workflows.</p>
+</li>
+</ul>
+<h2>Agentic coding &amp; workflows</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.31351" rel="noopener">Automating Feature Flag Cleanup at Scale with Multi-Agent LLM Systems: An Industrial Experience at DoorDash</a></strong> — arXiv cs.SE
+  DoorDash engineers describe multi-agent LLM system for automated feature flag cleanup at scale, handling 56,000 flags across 623 repositories where manual cleanup took one to two hours per flag.
+  <em>Why it matters:</em> Honest case study from production: agents solved technical debt problem rule-based tools could not handle. Concrete example of multi-agent system workflow that teams could adapt for codebase maintenance.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/production-ai-agent-ownership/" rel="noopener">Who on-calls an AI? This is the unresolved crisis of agent ownership</a></strong> — The New Stack
+  The New Stack article explores the unresolved operational crisis of agent ownership when agents fail at 2 a.m. and requests timeout.
+  <em>Why it matters:</em> Identifies critical gap in agent lifecycle management; teams need clear ownership, alerting, and runbooks for agent failures.</p>
+</li>
+<li>
+<p><strong><a href="https://simonwillison.net/2026/Oct/22/donating-agent-skills/" rel="noopener">Donating Agent Skills to the Agentic AI Foundation</a></strong> — Simon Willison
+  Anthropic is donating the Agent Skills standard to the Agentic AI Foundation under the Linux Foundation, alongside earlier donation of Model Context Protocol (MCP).
+  <em>Why it matters:</em> Agent Skills becoming vendor-neutral infrastructure lets teams standardize on agent capabilities and interoperate across models without lock-in.</p>
+</li>
+<li>
+<p><strong><a href="https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform/" rel="noopener">Architecting Governed, Self-Evolving AI Agents on Google Cloud</a></strong> — Google Developers
+  Google Cloud Project Chrysalis combines Gemini Enterprise Agent Platform, Agent Development Kit, BigQuery, and security controls to build governed self-evolving agents that remediate production outages in 1.8 seconds.
+  <em>Why it matters:</em> Concrete example of agent automation in production ops; useful reference for designing reliable on-call agents and governance patterns.</p>
+</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.30571" rel="noopener">Stale Instruction Files Override the Code in Coding Agents: A One-Sentence Fix</a></strong> — arXiv cs.SE
+  Study shows coding agents follow stale instruction files over existing code, but one sentence added to the instruction file redirects agents to follow code instead.
+  <em>Why it matters:</em> Simple, immediately actionable fix for a common agent error; teams can add one line to project instructions to improve adherence to actual conventions.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.30916" rel="noopener">When Code Gets Cheap, Evaluation Gets Scarce: An Experience Report on AI-Assisted Agile Software Engineering</a></strong> — arXiv cs.SE
+  A developer built a compliance-critical, human-in-the-loop exam-grading system entirely with AI assistance in three working days, revealing that AI changes engineering not primarily by making programming faster but by shifting what requires evaluation.
+  <em>Why it matters:</em> Direct case study of workflow change with AI: when code production accelerates, evaluation becomes the bottleneck. Teams should rethink testing and validation practices, not just coding speed.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.30188" rel="noopener">Agentic Verified Optimization of Real-World Software</a></strong> — arXiv cs.SE
+  Researchers propose agentic verified optimization: agents produce faster implementations alongside machine-checked equivalence proofs to prevent test-passing without semantic preservation.
+  <em>Why it matters:</em> Teams can adopt verified optimization to ensure agent-generated performance improvements preserve behavior, addressing the test-gaming problem.</p>
+</li>
+<li>
+<p><strong><a href="https://www.anthropic.com/research/formal-verification" rel="noopener">LLMs are making formal software verification feasible at a much larger scale</a></strong> — Hacker News · 358 points · 212 comments · <a href="https://news.ycombinator.com/item?id=50202217" rel="noopener">discussion</a>
+  LLMs are making formal software verification feasible at scale (Hacker News title only; no detail provided).
+  <em>Why it matters:</em> Formal verification with LLMs is a practice engineering teams can adopt to raise confidence in agent-generated code beyond testing.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/ai-agent-security-lifecycle/" rel="noopener">AI agent security is a lifecycle — not a gatekeeper</a></strong> — The New Stack
+  The New Stack argues that AI agent security is a lifecycle concern, not a one-time gate.
+  <em>Why it matters:</em> Shifts security mindset from pre-deployment to continuous monitoring; practical for designing governance and audit patterns.</p>
+</li>
+</ul>
+<h2>Research</h2>
+<ul>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/10/jellyfish-ai-productivity/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Study Finds AI-generated Code Fails to Boost Productivity Due to Downstream Bottlenecks</a></strong> — InfoQ AI
+  A Harvard study of 718 firms using Jellyfish analytics found AI coding assistants increase code volume but not completed work, because AI-generated code increases code review workload.
+  <em>Why it matters:</em> Concrete data showing where AI-assisted coding stalls; critical for planning team workflows and evals around review bottlenecks.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/letta-frontiermemory-agent-harness-benchmark/" rel="noopener">Five AI agent harnesses took the same memory test. The results weren’t even close.</a></strong> — The New Stack
+  The New Stack reports that five AI agent harnesses performed differently on a memory test, with uneven results.
+  <em>Why it matters:</em> Comparative data on agent framework capabilities; helps teams select frameworks and design evals for persistence and state management.</p>
+</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>
