@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Sun 25 Oct 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-10-23.html">← 2026-10-23</a></nav>
+<h1>AI Engineering Radar · Sun 25 Oct 2026</h1>
+<p class="muted">9 links worth a look</p>
+<h2>Models &amp; releases</h2>
+<ul>
+<li><strong><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.310" rel="noopener">v2.1.310</a></strong> — Claude Code releases
+  Claude Code v2.1.310 adds Monitor tool support on Bedrock, Vertex, and Foundry; fixes gateway compatibility and background cleanup issues.
+  <em>Why it matters:</em> Teams on Bedrock or Vertex should update; improves stability with enterprise gateways and reduces accidental file deletion.</li>
+</ul>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://github.com/morganlinton/BeautifulRust" rel="noopener">morganlinton/BeautifulRust</a></strong> — GitHub new repos · ★ 386
+  BeautifulRust is a Claude Code plugin that teaches Claude to write idiomatic, robust Rust code.
+  <em>Why it matters:</em> Teams adopting Claude Code for Rust work can improve code quality by loading this plugin; directly applicable this week.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/C4rohan/Lampline" rel="noopener">C4rohan/Lampline</a></strong> — GitHub new repos · ★ 254
+  Lampline is an open-source Python tool for building and testing AI phone agents locally using an AI caller, with support for Dialogflow CX imports and low per-call costs.
+  <em>Why it matters:</em> Teams can prototype and iterate on conversational agents cheaply locally before deploying, testing agent behavior with synthetic calls rather than live users.</p>
+</li>
+<li>
+<p><strong><a href="https://corgi.computer/" rel="noopener">Show HN: Corgi, a helpful {agent, terminal} multiplexer</a></strong> — Hacker News · 132 points · 43 comments · <a href="https://news.ycombinator.com/item?id=50214373" rel="noopener">discussion</a>
+  Corgi is an agent multiplexer with unified launcher for Codex and Claude Code, activity feed, session tracking, and ergonomic shortcuts.
+  <em>Why it matters:</em> Teams managing multiple agent accounts can try this as a drop-in workflow tool; reduces friction when switching between agents.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/10/data-agent-kit-ga/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Google’s Data Agent Kit Hits GA, Splitting Agent Guardrails Between Skills and IAM</a></strong> — InfoQ AI
+  Google's Data Agent Kit is now generally available with 37 open-source skills connecting agents to 15+ Google Cloud data services; includes two kinds of guardrails—skill-level and IAM-level.
+  <em>Why it matters:</em> Teams using Claude Code with Google Cloud data can integrate these skills; important to distinguish skill guardrails from IAM policies.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/Charonyuu/whatsmyagentdoing" rel="noopener">Charonyuu/whatsmyagentdoing</a></strong> — GitHub new repos · ★ 203
+  whatsmyagentdoing is a dashboard that shows live activity from Claude Code and Codex agents running on your machine.
+  <em>Why it matters:</em> Useful for teams running multiple agents to monitor what agents are doing and spot bottlenecks or hangs in real time.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/aws-says-its-ai-security-agent-fixes-89-of-bugs-but-theres-a-catch/" rel="noopener">AWS says its AI security agent fixes 89% of bugs — but there’s a catch</a></strong> — The New Stack
+  AWS made Continuum generally available, an AI security agent that finds and validates code vulnerabilities in repositories, claiming 89% bug fix rate.
+  <em>Why it matters:</em> Engineering teams can evaluate whether Continuum's vulnerability detection and validation workflow integrates into existing security practices and CI/CD pipelines.</p>
+</li>
+</ul>
+<h2>Agentic coding &amp; workflows</h2>
+<ul>
+<li><strong><a href="https://www.infoq.com/news/2026/10/google-argon-optimizes-adk/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Google Optimizes Agent Development Kit's 200K-line Python Codebase Overnight with Gemini 4 Argon</a></strong> — InfoQ AI
+  Google ran Gemini 4 Argon unattended overnight to optimize Google Agent Development Kit's 200K-line Python codebase, reducing session-preparation overhead by 40% and cold import time by 21%.
+  <em>Why it matters:</em> Shows a workflow pattern: use reasoning models overnight for codebase optimization; teams can apply this to performance-critical paths.</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li><strong><a href="https://www.langchain.com/blog/context-engineering-starts-with-retrieval" rel="noopener">Context Engineering (Agent Memory) for AI Agents Starts with Retrieval</a></strong> — LangChain blog
+  LangChain Deep Agents use specific retrieval techniques to give agents the right context efficiently, addressing wasted time from clumsy searches and stale data.
+  <em>Why it matters:</em> Teams can adopt better retrieval patterns to reduce agent token waste and latency; directly applicable to memory and context engineering.</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>

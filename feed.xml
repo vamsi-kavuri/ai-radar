@@ -2,7 +2,57 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Fri 23 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-23.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-23.html</guid><pubDate>Fri, 23 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Sun 25 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-25.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-25.html</guid><pubDate>Sun, 25 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.310" rel="noopener"&gt;v2.1.310&lt;/a&gt;&lt;/strong&gt; — Claude Code releases
+  Claude Code v2.1.310 adds Monitor tool support on Bedrock, Vertex, and Foundry; fixes gateway compatibility and background cleanup issues.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams on Bedrock or Vertex should update; improves stability with enterprise gateways and reduces accidental file deletion.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/morganlinton/BeautifulRust" rel="noopener"&gt;morganlinton/BeautifulRust&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 386
+  BeautifulRust is a Claude Code plugin that teaches Claude to write idiomatic, robust Rust code.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams adopting Claude Code for Rust work can improve code quality by loading this plugin; directly applicable this week.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/C4rohan/Lampline" rel="noopener"&gt;C4rohan/Lampline&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 254
+  Lampline is an open-source Python tool for building and testing AI phone agents locally using an AI caller, with support for Dialogflow CX imports and low per-call costs.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams can prototype and iterate on conversational agents cheaply locally before deploying, testing agent behavior with synthetic calls rather than live users.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://corgi.computer/" rel="noopener"&gt;Show HN: Corgi, a helpful {agent, terminal} multiplexer&lt;/a&gt;&lt;/strong&gt; — Hacker News · 132 points · 43 comments · &lt;a href="https://news.ycombinator.com/item?id=50214373" rel="noopener"&gt;discussion&lt;/a&gt;
+  Corgi is an agent multiplexer with unified launcher for Codex and Claude Code, activity feed, session tracking, and ergonomic shortcuts.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams managing multiple agent accounts can try this as a drop-in workflow tool; reduces friction when switching between agents.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/data-agent-kit-ga/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Google’s Data Agent Kit Hits GA, Splitting Agent Guardrails Between Skills and IAM&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Google's Data Agent Kit is now generally available with 37 open-source skills connecting agents to 15+ Google Cloud data services; includes two kinds of guardrails—skill-level and IAM-level.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams using Claude Code with Google Cloud data can integrate these skills; important to distinguish skill guardrails from IAM policies.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/Charonyuu/whatsmyagentdoing" rel="noopener"&gt;Charonyuu/whatsmyagentdoing&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 203
+  whatsmyagentdoing is a dashboard that shows live activity from Claude Code and Codex agents running on your machine.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Useful for teams running multiple agents to monitor what agents are doing and spot bottlenecks or hangs in real time.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/aws-says-its-ai-security-agent-fixes-89-of-bugs-but-theres-a-catch/" rel="noopener"&gt;AWS says its AI security agent fixes 89% of bugs — but there’s a catch&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  AWS made Continuum generally available, an AI security agent that finds and validates code vulnerabilities in repositories, claiming 89% bug fix rate.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Engineering teams can evaluate whether Continuum's vulnerability detection and validation workflow integrates into existing security practices and CI/CD pipelines.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/google-argon-optimizes-adk/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Google Optimizes Agent Development Kit's 200K-line Python Codebase Overnight with Gemini 4 Argon&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Google ran Gemini 4 Argon unattended overnight to optimize Google Agent Development Kit's 200K-line Python codebase, reducing session-preparation overhead by 40% and cold import time by 21%.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Shows a workflow pattern: use reasoning models overnight for codebase optimization; teams can apply this to performance-critical paths.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://www.langchain.com/blog/context-engineering-starts-with-retrieval" rel="noopener"&gt;Context Engineering (Agent Memory) for AI Agents Starts with Retrieval&lt;/a&gt;&lt;/strong&gt; — LangChain blog
+  LangChain Deep Agents use specific retrieval techniques to give agents the right context efficiently, addressing wasted time from clumsy searches and stale data.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams can adopt better retrieval patterns to reduce agent token waste and latency; directly applicable to memory and context engineering.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Fri 23 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-23.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-23.html</guid><pubDate>Fri, 23 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2610.30949" rel="noopener"&gt;IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 44 upvotes
   IQuest-Q1 is a 320B parameter MoE agentic foundation model optimized for coding with stable pre-training, progressive context extension, and multi-scaffold post-training.
