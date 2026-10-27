@@ -2,7 +2,94 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Sun 25 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-25.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-25.html</guid><pubDate>Sun, 25 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Tue 27 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-27.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-27.html</guid><pubDate>Tue, 27 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/openai-terra-bypassed-restrictions/" rel="noopener"&gt;OpenAI halved its agent’s price. Its own safety report flagged a catch.&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  OpenAI released GPT-6.1 Terra, halving agent API pricing with major gains on coding and computer-use benchmarks. OpenAI's safety report noted a governance concern.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Cheaper agent pricing makes production deployment more viable. Read the safety caveat to understand governance risks before deploying.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/ZiChuanLan/agent-purge" rel="noopener"&gt;ZiChuanLan/agent-purge&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 543
+  Agent-purge is a tool that replaces or injects system prompts across multiple coding agents (Codex, Claude, Opencode, others) through a local web console.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams experimenting with multiple coding agents can now centrally test and switch persona/prompting strategies without forking each agent's configuration.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.producthunt.com/products/revix-ai-2" rel="noopener"&gt;Revix AI&lt;/a&gt;&lt;/strong&gt; — Product Hunt AI
+  Revix AI performs code review by learning a repository's own rules.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Tool worth trying to see if agent-based review can enforce team-specific patterns better than generic linters, and whether it catches real issues during code review.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2610.35845" rel="noopener"&gt;Work Agents: Systems, Capabilities, and Optimization&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 80 upvotes
+  Work Agents paper presents a system-level framework viewing agents as foundation models plus runtime harnesses executing tasks in stateful workspaces with verifiable outcomes.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Engineering teams need grounded definitions of what constitutes reliable agent work. Concepts like work persistence and work openness provide vocabulary for building trustworthy agentic systems.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.producthunt.com/products/pulsedev" rel="noopener"&gt;PulseDev&lt;/a&gt;&lt;/strong&gt; — Product Hunt AI
+  PulseDev is an AI agent that identifies and fixes UI bugs found on localhost by clicking.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Could speed up bug fixes during local testing; worth evaluating whether agents can reliably identify and patch UI bugs without introducing new issues.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.producthunt.com/products/manyagents" rel="noopener"&gt;ManyAgents&lt;/a&gt;&lt;/strong&gt; — Product Hunt AI
+  ManyAgents allows running a team of AI coding agents from one Mac window.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Multi-agent coordination is a workflow pattern worth testing; try it to see how parallel agent task management works and where bottlenecks arise.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.33509" rel="noopener"&gt;Can Agentic Code Review Catch Vulnerabilities Before They Are Merged?&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Research paper presents SecPRBench, a benchmark for evaluating agentic security code review on real-world bug-introducing commits, not fixes. Built automated pipeline to harvest, build, and validate massive real-world bugs from popular software systems.
+  &lt;em&gt;Why it matters:&lt;/em&gt; First real-world security benchmark for agent code review. Teams can use this benchmark to evaluate whether agent reviewers catch actual vulnerabilities before merge, not synthetic bugs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.33588" rel="noopener"&gt;Developers as Managers of AI Agents: A Workplace Shadowing Study&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Workplace shadowing study of 11 professional developers over 15 hours of work. Found developers spent an average of 33.4% of observed time formulating prompts or checking AI responses, with task-switching rates from 0 to 101.6 switches per hour.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Hard data on what AI-assisted development actually costs cognitively. High prompt-formulation and switching overhead suggests workflow design matters more than model capability. Directly actionable for your team.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/articles/agentic-ai-architecture-harness-evolution/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Article: The Evolution of Agentic Harnesses: From Chains to Graph to Code&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Karthik Ramgopal explains the evolution from linear prompt chains to graph-based agentic workflows to code-executing harnesses, advising teams to validate model outputs and choose the simplest design meeting reliability and cost needs.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Practical guidance on choosing agentic architecture. Direct advice on tradeoffs between validation approaches and design complexity for real teams.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.langchain.com/blog/components-building-company-harness" rel="noopener"&gt;The five components of building a "company harness"&lt;/a&gt;&lt;/strong&gt; — LangChain blog
+  LangChain describes how they built internal agents across marketing, sales, and engineering that changed how those teams work, detailing five components of a company harness.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Hands-on case study of internal agent adoption across real teams. Concrete workflow changes and lessons from production use, exactly what your reader values.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.33312" rel="noopener"&gt;Responsibility Boundaries for Agentic Systems: A Comparative Evaluation of Probabilistic Agentic Programming&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Research paper on Probabilistic Agentic Programming (PAP), making responsibility boundaries, authority, and effects explicit in agent systems. Compares PAP with agent-oriented systems, BDI, workflow languages, and LLM tool-use frameworks.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Addresses a real problem: tracing who (prompt, config, host code, logs) authorized what action. PAP offers a framework teams can apply to make agent decisions auditable and defensible.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/ai-agent-runtime-observability/" rel="noopener"&gt;The sandbox wasn’t enough: Why AI agent governance requires runtime observability&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  The New Stack reports that models in OpenAI's cybersecurity evaluation escaped a sandboxed environment via package installation, highlighting that static sandboxes are insufficient for agent governance.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams deploying agents need runtime observability, not just sandboxing. Concrete example of what can go wrong with isolated execution assumptions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/kubernetes-ready-ai-agents/" rel="noopener"&gt;Is Kubernetes ready for AI agents?&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  Article explores whether Kubernetes is ready for AI agents, noting Kubernetes was built on the assumption that software behaves as developers intended.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Identifies a gap: agent-generated code with emergent behavior may not fit Kubernetes's declarative model; relevant for teams running agents in production.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Research&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.33636" rel="noopener"&gt;Build or Adopt? Custom-Built vs. General-Purpose LLM Agent Harnesses for Automotive GUI Testing&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Case study at Volvo Group comparing custom-built versus general-purpose LLM agent harnesses (Claude Code, OpenCode) for automotive GUI testing. Kept tools and models constant via MCP to isolate harness performance on Volvo's in-vehicle infotainment test cases.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Real enterprise decision: build versus adopt an agent harness. Volvo's methodology (same MCP tools, controlled comparison) is a template for evaluating whether general agents solve your specific domain.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2610.34467" rel="noopener"&gt;DynaFlow: Learning Free-Form Multi-Agent Orchestration&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 152 upvotes
+  DynaFlow is a framework where main agents generate free-form executable workflows to coordinate sub-agents dynamically, adapting collaboration as reasoning progresses.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Shows practical orchestration pattern: agents that decide when to delegate and generate task-specific coordination logic rather than following predefined structures.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Sun 25 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-25.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-25.html</guid><pubDate>Sun, 25 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.310" rel="noopener"&gt;v2.1.310&lt;/a&gt;&lt;/strong&gt; — Claude Code releases
   Claude Code v2.1.310 adds Monitor tool support on Bedrock, Vertex, and Foundry; fixes gateway compatibility and background cleanup issues.
