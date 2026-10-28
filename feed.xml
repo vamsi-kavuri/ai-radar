@@ -2,7 +2,61 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Tue 27 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-27.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-27.html</guid><pubDate>Tue, 27 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Wed 28 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-28.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-28.html</guid><pubDate>Wed, 28 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/0xS4N4TG/kinetograph" rel="noopener"&gt;0xS4N4TG/kinetograph&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 256
+  Kinetograph is a fast TypeScript programmatic video engine built for agents, with GPU and MCP support. GitHub repo shows 256 stars.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Tool for teams building video generation features into agents. Purpose-built performance optimization with MCP integration for agent workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.312" rel="noopener"&gt;v2.1.312&lt;/a&gt;&lt;/strong&gt; — Claude Code releases
+  Claude Code v2.1.312 adds OIDC user ID claim support, click-to-send for queued messages, and fixes for large file handling in VS Code extension.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Update addresses bugs in large file editing and VS Code integration that teams actively using Claude Code should be aware of.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.langchain.com/blog/design-agent" rel="noopener"&gt;How We Built Our Design Agent&lt;/a&gt;&lt;/strong&gt; — LangChain blog
+  LangChain describes building Content Studio, an open-source design agent for Slack that generates on-brand videos, graphics and presentations, and the harness that powers it.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Case study from working team on building a real agentic system. Hands-on details on design agent architecture and integration would help other teams build similar tools.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://developers.googleblog.com/fast-reliable-a2ui/" rel="noopener"&gt;Fast, reliable A2UI, with swappable inference formats&lt;/a&gt;&lt;/strong&gt; — Google Developers
+  Google's A2UI now supports swappable inference formats including A2UI Express, which uses up to 3x fewer tokens and compiles Python-style syntax to JSON with sub-300ms latency for controlled generation.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Practical optimization for generative UI with agents. Teams using agentic UI generation can reduce token usage and latency through syntax compilation and controlled generation patterns.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://seangoedecke.com/getting-good-at-ai-takes-time-and-practice/" rel="noopener"&gt;Getting good at AI takes time and practice&lt;/a&gt;&lt;/strong&gt; — Sean Goedecke
+  Sean Goedecke argues that proficiency with AI requires deliberate practice and skill-building, not just prompt-writing, and that dismissing this as unnecessary is misguided.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Directly challenges the assumption that AI tools need no learning curve. Teams should consider what skills and practice actually improve their use of AI.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Oct/28/terk-terkowitz/" rel="noopener"&gt;Quoting Terk Terkowitz&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Terk Terkowitz from Amazon engineering states that finding tasks where current AI tooling does not help is a valuable engineering finding, not a failure, and should be documented and shared.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Senior engineering leader guidance on building sound judgment about AI adoption. Teams should treat negative findings about AI's applicability as data to act on.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://newsletter.pragmaticengineer.com/p/ai-sre" rel="noopener"&gt;AI SRE: what is it, how could it change on-call – and does it work?&lt;/a&gt;&lt;/strong&gt; — Pragmatic Engineer
+  Pragmatic Engineer examines the "AI SRE" trend, questioning whether AI has actually taken on-call responsibilities or if it remains vendor hype.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Honest skepticism about AI adoption claims in critical operations; useful for evaluating what autonomous agents can realistically handle in your team's workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://newsletter.getdx.com/p/you-cant-find-10x-developers" rel="noopener"&gt;You can’t find 10x developers, but you can build 10x organizations&lt;/a&gt;&lt;/strong&gt; — DX newsletter
+  DX newsletter piece on the 10x developer myth, based on a study called the Coding War Games.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Examines team productivity dynamics; may offer insights into how AI changes organizational capability versus individual performance.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Research&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2610.35864" rel="noopener"&gt;VibeVideoBench: Evaluating Multimodal Agents on Code-Driven Video Generation&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 33 upvotes
+  VibeVideoBench evaluates multimodal agents on code-driven video generation across 239 tasks in 12 categories, testing agents' ability to write code for frame-by-frame rendering.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Benchmark for assessing agents that write code to control output rather than relying on diffusion models alone. Relevant for evaluating reliability of agentic coding systems.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Tue 27 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-27.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-27.html</guid><pubDate>Tue, 27 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/openai-terra-bypassed-restrictions/" rel="noopener"&gt;OpenAI halved its agent’s price. Its own safety report flagged a catch.&lt;/a&gt;&lt;/strong&gt; — The New Stack
   OpenAI released GPT-6.1 Terra, halving agent API pricing with major gains on coding and computer-use benchmarks. OpenAI's safety report noted a governance concern.
