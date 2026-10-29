@@ -2,7 +2,92 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Wed 28 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-28.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-28.html</guid><pubDate>Wed, 28 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Thu 29 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-29.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-29.html</guid><pubDate>Thu, 29 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/github-copilot-fusion/" rel="noopener"&gt;GitHub debuts Copilot Fusion, a new model selection &amp;amp; orchestration system that beats Claude Code for half the API cost&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  GitHub released Copilot Fusion, a model selection and orchestration system for coding tasks that claims to match performance of Claude Code at half the API cost.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams managing multiple AI coding tools should evaluate cost-performance tradeoffs and how model routing affects coding workflow efficiency and reliability.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/haydenschmitty/floorplan" rel="noopener"&gt;haydenschmitty/floorplan&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 323
+  Floorplan is an interactive tool that uses Claude or Codex to generate plain-English codebase maps showing how code fits together. JavaScript project with 323 stars on GitHub.
+  &lt;em&gt;Why it matters:&lt;/em&gt; A tool an engineer could try this week for codebase visualization using AI. Useful for onboarding and architecture understanding with agents.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://latent.space/p/offline-coding/" rel="noopener"&gt;Coding From the Himalayas With an Offline AI Agent&lt;/a&gt;&lt;/strong&gt; — Latent Space
+  Setup guide for running offline coding agents using OpenCode, Ollama, and Qwen. Practical walkthrough for air-gapped or low-bandwidth environments.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Your team can try this week if working in restricted networks or offline. Shows how to run agents without cloud dependency.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://latent.space/p/supabase/" rel="noopener"&gt;Why Agents Love Supabase&lt;/a&gt;&lt;/strong&gt; — Latent Space
+  Paul Copplestone and Ant Wilson discuss building backend infrastructure for AI agents using Supabase.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Tool choice for agent state management and persistence. Relevant for teams building production agent systems needing stateful backends.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://latent.space/p/how_anthropic_ships_the_1_llm_in_the_world_safely_separating_the_brain_from_the_hands/" rel="noopener"&gt;How Anthropic ships the #1 LLM in the World safely: Separating the Brain from the Hands&lt;/a&gt;&lt;/strong&gt; — Latent Space
+  Katelyn Lesse and Angela Jiang from Anthropic discuss engineering behind Claude Platform: Opus 5.5 release, separating model brain from agent hands, scaling APIs, and building reliable managed agents.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Technical insight from a shipping team on how to separate reasoning from action in production agents. Directly applicable pattern for reliable agent systems at scale.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://latent.space/p/opus55/" rel="noopener"&gt;How Anthropic ships Claude with Claude: Separating the Brain from the Hands&lt;/a&gt;&lt;/strong&gt; — Latent Space
+  Latent Space podcast with Anthropic's Katelyn Lesse and Angela Jiang on Opus 5.5, Claude Platform, and engineering AI agents.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Engineering insights from Anthropic on building production agent systems. Covers platform architecture and separation of reasoning from action.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/anthropic-code-review/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Anthropic Says Nobody Needs a Mental Model of Claude Code. Practitioners Are Testing That&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Anthropic's Claude Code team describes code review now that Claude writes 90% of code: a pull request ran 50+ review rounds overnight, reviewers focus on pre-existing code, and the team lacks complete mental models of the codebase.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Real case study of scaling AI-assisted development. Shows workflow change (async multi-round reviews) and a control gap teams should watch: maintaining codebase understanding when agents write most code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/atlassian-devex-2026/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Developers Reporting Double-Digit Weekly Time Savings from AI Fell from 68% to 26%&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Atlassian's 2026 State of Developer Experience finds that developers reporting double-digit weekly time savings from AI dropped from 68% to 26% year-over-year, while engineering leaders spend more time managing and correcting AI output than developers do writing code.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams should measure and track whether AI tools actually reduce friction, not just write time. Leaders reporting more management overhead need to re-examine tool fit, training, and code quality standards.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://seangoedecke.com/you-can-just-ask-ai-to-do-things/" rel="noopener"&gt;You can just ask AI to do things&lt;/a&gt;&lt;/strong&gt; — Sean Goedecke
+  Sean Goedecke describes asking AI agents to handle dev environment setup and fixing issues because agents work fast, have patience, and broad knowledge. Shares examples from daily workflow of agent agency in development tasks.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Working developer shows practical shift in how to approach dev tasks with agents. Concrete examples of delegating environment setup and troubleshooting can change how your team structures daily work.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://developers.googleblog.com/hill-climbing-agent-quality-with-agents-cli-evaluation/" rel="noopener"&gt;Hill-Climbing Agent Quality with Agents CLI Evaluation&lt;/a&gt;&lt;/strong&gt; — Google Developers
+  Google's post walks through Agents CLI evaluation for improving agent performance: catching prompt regressions, model backend swaps via trace comparison, automating evaluation, and nightly runs with threshold alerts.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete eval workflow your team can implement this week. Systematic approach to catching agent regressions and measuring quality over time.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.langchain.com/blog/the-art-of-loop-engineering" rel="noopener"&gt;The Art of Loop Engineering&lt;/a&gt;&lt;/strong&gt; — LangChain blog
+  LangChain post on loop engineering: reliable agent performance requires more than good models—it needs a carefully designed harness. Covers core agent loop, stacking loops, and instrumentation with LangChain primitives.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Framework for thinking about agent architecture beyond model selection. Practical patterns for building reliable harnesses that your team can apply.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://leaddev.com/ai/ais-time-savings-are-disappearing-into-code-review?utm_source=leaddev&amp;amp;utm_medium=RSS" rel="noopener"&gt;AI’s time savings are disappearing into code review&lt;/a&gt;&lt;/strong&gt; — LeadDev
+  LeadDev reports that time savings from AI development are being consumed by code review work, shifting bottleneck rather than eliminating friction.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Engineering leaders should rethink code review workflows and tooling for AI-generated code; this is where organizational friction now concentrates, not in write time.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/durable-ai-agent-operations/" rel="noopener"&gt;AI agents need to be replaceable – without losing your work&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  The New Stack discusses how to design agents so they remain replaceable without losing work or state when switching implementations.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Engineering teams using agents should design around decoupled state, audit trails, and abstracted tool calls to avoid lock-in and enable version upgrades.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/qcon-ai-newyork-2026-pc-picks/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;QCon AI New York 2026 Program Committee Picks: Agent Identity, Context Costs, and Open-Source Infere&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  QCon AI program committee highlights emerging challenges: agent identity and authorization, managing context costs, open-source inference, agent standards, and audio AI.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Identifies practical concerns engineering teams will face: who authorizes agent actions and how to manage cost/context tradeoffs as adoption scales.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Industry &amp;amp; adoption&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Oct/28/github-octoverse-2026/" rel="noopener"&gt;GitHub Octoverse 2026&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  GitHub's 2026 Octoverse report shows agentic engineering impact: merged pull requests tripled to 220M/month, commits tripled to 7.38B/month, and new repos doubled to 30.3M/month in the last year.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete data on how AI agents are changing engineering velocity at scale. Helps benchmark your team's adoption trajectory and sets realistic expectations for tooling impact.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Wed 28 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-28.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-28.html</guid><pubDate>Wed, 28 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/0xS4N4TG/kinetograph" rel="noopener"&gt;0xS4N4TG/kinetograph&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 256
