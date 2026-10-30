@@ -2,7 +2,92 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Thu 29 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-29.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-29.html</guid><pubDate>Thu, 29 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Fri 30 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-30.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-30.html</guid><pubDate>Fri, 30 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.314" rel="noopener"&gt;v2.1.314&lt;/a&gt;&lt;/strong&gt; — Claude Code releases
+  Claude Code v2.1.314 adds permission guards for writes outside working directories, optional IdP group filtering for gateway upstreams, Bedrock guardrail tracing, and idle conversation summarization.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams using Claude Code for agentic workflows should understand these new permission boundaries and summarization features that affect CI/CD reliability and resource usage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/bug0-agent-testing-cached-replay/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Bug0 Releases QA Agent to Automate Regression Testing With Cached Playwright Replays&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Bug0 released QA Agent, a Playwright library for agentic browser regression testing using natural language instructions, with cached replay remapping and multi-model consensus verification.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Practical tool for automating browser-based regression tests with agents; caching strategy and remapping to spec changes address real CI pain points your team could try this week.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/qybaihe/bla" rel="noopener"&gt;qybaihe/bla&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 1,154
+  BLA is an open-source adversarial defense tool protecting binaries, Electron apps, JavaScript bundles, Python, and WebAssembly against reverse-engineering by AI agents, using poisoning and hallucination tactics.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Relevant if your team ships binaries or closed-source assets that AI agents might target during code analysis or reverse-engineering attempts.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/" rel="noopener"&gt;Building a multiplayer game world with autonomous Fable-class models&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Jacob Sansbury describes building Spawn, a massively multiplayer game environment using agentic engineering where players prompt an in-game agent to modify the world in real time.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Working example of scaling agentic systems to handle concurrent user interactions and world-state modifications; worth examining how they manage reliability and consistency at scale.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/presentations/ai-software-engineering-pipeline/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Presentation: The Ladder Is Missing Rungs: Engineering Progression When AI Ate the Middle&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Alasdair Allan presents research from METR and Anthropic on AI coding adoption, focusing on the supervision paradox where AI tool reliance disrupts junior skill development and institutional context.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Directly addresses a critical gap between AI adoption and team long-term capability. Essential reading for engineering leaders managing this transition.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://martinfowler.com/rachels-ramblings/good-devs-wary.html" rel="noopener"&gt;Why are good developers so wary of agentic development?&lt;/a&gt;&lt;/strong&gt; — Martin Fowler
+  Martin Fowler examines why experienced developers remain cautious about agentic development, moving past stereotypes about job loss to discuss the gap between 'built' and 'working in production'.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Critical perspective from a trusted voice on production reliability concerns with coding agents; directly addresses skepticism your team may encounter when adopting agentic workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.38214" rel="noopener"&gt;Skeleton Coding: Program Structure as a Specification for Agents&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Academic paper proposing skeleton coding: agents receive program structure (modules, functions, data types) as specification, not just behavioral tests, reducing required examples.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Practical technique for guiding coding agents with structural scaffolding; addressing the question of how much specification agents actually need before producing correct code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.38800" rel="noopener"&gt;When Relevant Code Is Wrong: Runtime-Aware Context for AI Coding Agents&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Paper introduces operational context validity for AI coding agents, showing that highly relevant retrieved code may be inactive under feature flags, migrations, or deployment configs.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Agents retrieve relevant code that may not apply to current deployment. Teams need runtime-aware context, not just semantic relevance, to avoid applying incompatible patterns.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/aws-mcp-agent-observability/" rel="noopener"&gt;Why MCP servers should tell agents what to do next&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  AWS's James Ward argues MCP servers should guide agents on next actions rather than passively return data. Reshapes agent-tool interaction patterns.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Changes how teams design MCP servers for agents; shifts from reactive data delivery to active orchestration. Actionable design pattern.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://stackoverflow.blog/2026/10/28/a-json-schema-is-not-an-ai-governance-layer/" rel="noopener"&gt;A JSON schema Is not an AI governance layer&lt;/a&gt;&lt;/strong&gt; — Stack Overflow blog
+  Stack Overflow argues JSON schema governance layers do not stop agents from bad actions; the actual control happens in code.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Challenges misconception about agent safety. Teams need to understand where real guardrails sit, not rely on spec-level constraints.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/ai-agents-compiler-guardrails/" rel="noopener"&gt;AWS’s Hydro team wants the compiler to catch coding agents’ mistakes&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  AWS Hydro team developed compiler-level checks to catch coding agent mistakes in distributed systems. Pushes verification upstream in agent workflows.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete approach for teams running coding agents: use compiler and type system to catch agent-generated code errors before runtime.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/ai-agent-sandboxing-kubernetes/" rel="noopener"&gt;The 5 essential layers of AI agent sandboxing on Kubernetes&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  Outlines five essential layers for AI agent sandboxing on Kubernetes when agents run unreviewed code. Defensive strategy for autonomous execution.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Actionable framework for teams deploying coding agents; addresses real risk that agents execute code without human review.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Research&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.38521" rel="noopener"&gt;Security Impact of Coding Agent's Memory Files&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Paper studies how malicious memory files like CLAUDE.md can steer coding agents and whether agents disclose this influence, revealing an attack surface in agent guidance.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Critical security concern for teams using agents on open-source projects. PRs can inject untrusted guidance. Teams need to understand and mitigate this vector.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.38977" rel="noopener"&gt;Beyond Passing Tests: A Systematic Review and Controlled Re-evaluation of Techniques for Improving the Quality of LLM-Generated Code&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Systematic review and controlled re-evaluation of 628 studies on techniques to improve LLM code quality beyond functional correctness, covering readability, efficiency, and security at equal compute budgets.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Tests pass, but shipping production code requires readability, performance, and security. This review compares techniques fairly to guide which to adopt in your workflow.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://labs.ycombinator.com/projects/games/index.html" rel="noopener"&gt;We ran AI agent swarms in Minecraft and Mindustry&lt;/a&gt;&lt;/strong&gt; — Hacker News · 306 points · 113 comments · &lt;a href="https://news.ycombinator.com/item?id=50296486" rel="noopener"&gt;discussion&lt;/a&gt;
+  Researchers deployed AI agent swarms in Minecraft and Mindustry simulation environments to study collective behavior and coordination.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Multi-agent coordination patterns from game environments can inform how engineering teams test distributed agentic workflows before production deployment.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Thu 29 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-29.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-29.html</guid><pubDate>Thu, 29 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/github-copilot-fusion/" rel="noopener"&gt;GitHub debuts Copilot Fusion, a new model selection &amp;amp; orchestration system that beats Claude Code for half the API cost&lt;/a&gt;&lt;/strong&gt; — The New Stack
   GitHub released Copilot Fusion, a model selection and orchestration system for coding tasks that claims to match performance of Claude Code at half the API cost.
