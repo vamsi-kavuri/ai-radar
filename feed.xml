@@ -2,7 +2,76 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Fri 30 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-30.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-30.html</guid><pubDate>Fri, 30 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Sat 31 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-31.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-31.html</guid><pubDate>Sat, 31 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Oct/30/nesformer/" rel="noopener"&gt;dbreunig/nesformer&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  dbreunig/nesformer Inspired by qwenputer by Divyansh Agrawal, Drew Breunig baked a working emulator for a Nintendo Entertainment System 6502 CPU into the weights of Qwen3.5-4B. You can now play NES ROMs such as Super Mario…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2610.39302" rel="noopener"&gt;Proving and Improving the Platonic Representation Hypothesis with JEPAs&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 55 upvotes
+  Whether models trained on different modalities converge to the same representation of the world is central to AI. The Platonic Representation Hypothesis (PRH) conjectures that they do as they scale, but without a proof it…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2610.39301" rel="noopener"&gt;Youtu-Parsing-Omni: One Encoder, One Schema, All Modalities&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 136 upvotes
+  We present Youtu-Parsing-Omni, an omni-modal parser that converts documents, images, audio, and video into structured records grounded in space and time, providing a perception layer for agents that read, locate, and cite evidence across modalities.…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2610.40647" rel="noopener"&gt;Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 36 upvotes
+  Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention increasingly expensive. We observe that finer detail does not necessarily require more global communication…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/boardshogunfluctuate/Capri-AI" rel="noopener"&gt;boardshogunfluctuate/Capri-AI&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 286
+  ⚡ Tell your PC what to do. Capri is a cyberpunk AI agent that works with your files, projects and code through Claude Code, Codex or Antigravity. Windows installer, no terminal. Fan-made, not affiliated with…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/jmanico/grim-prompter" rel="noopener"&gt;jmanico/grim-prompter&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 283
+  Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT. · topics: ai-agents, appsec, claude-code, codex, linddun, llm&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/Pluviobyte/douyin-comments" rel="noopener"&gt;Pluviobyte/douyin-comments&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 284
+  抓取抖音单条视频完整评论区（一级 + 楼中楼）的 Agent Skill：在已登录的 Chrome 里照抄页面真实请求，签名交给页面 SDK · JavaScript · topics: agent-skill, claude-code, comments-scraper, douyin&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/yjid/kensaku" rel="noopener"&gt;yjid/kensaku&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 334
+  Search inside documents, code, and even screenshots - instantly and locally. A free, open-source file launcher with OCR, semantic search, and MCP agent access. · Rust · topics: ai-agents, desktop, desktop-search, file-search, full-text-search, launcher&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/" rel="noopener"&gt;Sleep framework: A new way for LLMs to retain knowledge in continual learning&lt;/a&gt;&lt;/strong&gt; — Hacker News · 231 points · 33 comments · &lt;a href="https://news.ycombinator.com/item?id=50272479" rel="noopener"&gt;discussion&lt;/a&gt;
+  https://arxiv.org/pdf/2606.03979&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://phorion.io/blog/offical-claude-code-vsx-compromise/" rel="noopener"&gt;Backdoor in Claude Code for VS Code extension on the Cursor Marketplace&lt;/a&gt;&lt;/strong&gt; — Hacker News · 908 points · 533 comments · &lt;a href="https://news.ycombinator.com/item?id=50300683" rel="noopener"&gt;discussion&lt;/a&gt;
+  https://cursor.com/blog/claude-code-extension-security-notic...&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2" rel="noopener"&gt;Claude Code VS Code extension with backdoor released on Cursor marketplace&lt;/a&gt;&lt;/strong&gt; — Hacker News · 399 points · 1 comments · &lt;a href="https://news.ycombinator.com/item?id=50301983" rel="noopener"&gt;discussion&lt;/a&gt;
+  Claude Code VS Code extension with backdoor released on Cursor marketplace&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://cyberplace.social/@GossiTheDog/117528831681803563" rel="noopener"&gt;Backdoors in official Claude Code extensions&lt;/a&gt;&lt;/strong&gt; — Hacker News · 655 points · 17 comments · &lt;a href="https://news.ycombinator.com/item?id=50302334" rel="noopener"&gt;discussion&lt;/a&gt;
+  Backdoors in official Claude Code extensions&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://newsletter.getdx.com/p/robloxs-approach-to-tripling-ai-code" rel="noopener"&gt;Roblox’s approach to tripling AI code review acceptance rates&lt;/a&gt;&lt;/strong&gt; — DX newsletter
+  Andrew Swerdlow shares how Roblox is building trust in AI agents to autonomously review, test, and deploy code and what that means for engineers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/doordash-ai-grocery-reorder/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;DoorDash Cuts Grocery Reorder Latency from 16 to 2 Seconds with AI Agents&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  DoorDash reduced grocery reorder latency from 16 to 2 seconds by precomputing recurring purchase needs using batch LLM inference and deterministic validation. Live catalog resolution keeps product selections current, while an editable shopping interface avoids…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.316" rel="noopener"&gt;v2.1.316&lt;/a&gt;&lt;/strong&gt; — Claude Code releases
+  What's changed Added CLAUDE_CODE_DISABLE_ULTRATHINK , which turns the ultrathink keyword off Added pooled group budgets to the Claude apps gateway: one monthly budget that a group's members share, on top of each member's own limit…&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Fri 30 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-30.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-30.html</guid><pubDate>Fri, 30 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.314" rel="noopener"&gt;v2.1.314&lt;/a&gt;&lt;/strong&gt; — Claude Code releases
   Claude Code v2.1.314 adds permission guards for writes outside working directories, optional IdP group filtering for gateway upstreams, Bedrock guardrail tracing, and idle conversation summarization.
