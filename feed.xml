@@ -2,7 +2,81 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Sat 31 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-31.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-31.html</guid><pubDate>Sat, 31 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Sun 01 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-01.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-01.html</guid><pubDate>Sun, 01 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Oct/31/datasette-llm/" rel="noopener"&gt;datasette-llm 0.1a9&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Release: datasette-llm 0.1a9 I have some big upgrades to Datasette Agent in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying datasette-llm plugin. It now picks up the default…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/kerlenton/bootgpt" rel="noopener"&gt;Show HN: A language model that lives in a boot sector&lt;/a&gt;&lt;/strong&gt; — Hacker News · 87 points · 5 comments · &lt;a href="https://news.ycombinator.com/item?id=50315782" rel="noopener"&gt;discussion&lt;/a&gt;
+  All the ideas came from the boot sector demo scene where people had been writing chess and BASIC games in 512 bytes, even a C compiler. I wondered what one can do using a neural…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/NiazMorshed2007/reanimate" rel="noopener"&gt;NiazMorshed2007/reanimate&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 602
+  A Claude Code skill that reverse-engineers any animation frame by frame, then proves the copy moves the same. · JavaScript · topics: agent-skills, animation, claude-code, claude-skills, frontend, motion&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/wanghao-SunSky/cs329z-chinese" rel="noopener"&gt;wanghao-SunSky/cs329z-chinese&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 316
+  斯坦福 Stanford CS329Z Engineering AI Agents 中文教程：面向 Python 开发者的 AI 智能体课程，19 讲与 4 项实践，涵盖 LLM、RAG、工具调用、记忆、多智能体、评测与安全。完整 Markdown、在线与离线 HTML。Chinese course notes. · HTML · topics: agent-memory, agentic-ai, ai-agents, chinese, chinese-tutorial, course-notes&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/N1nEmAn/sapper-v2" rel="noopener"&gt;N1nEmAn/sapper-v2&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 406
+  Autonomous pentest legion — AI commander + worker swarm + layered fact-intent graph. 3rd Tencent Intelligent Attack-Defense online champion (634 teams · 8h unattended · 1B tokens beat 4.5B). The Nüwa Test: give AIs Create/Language/History…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/jackwener/DSH-Android" rel="noopener"&gt;jackwener/DSH-Android&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 668
+  免 ROOT 免 Termux，一个 APK 在安卓手机上跑 DeepSeek Harness。引擎内嵌 App 进程 · 读屏操作 App · 改系统设置 · 定时/条件自动化 · 可选 Shizuku · Kotlin · topics: ai-agent, android, deepseek, deepseek-harness, llm, phone-agent&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://latent.space/p/arca/" rel="noopener"&gt;Agents Prompt People: Using Agents for Long-Horizon Financial Work&lt;/a&gt;&lt;/strong&gt; — Latent Space
+  Arca's head of AI discusses persistent memory, the benefits of a custom harness, and agentic workflows that span days.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits" rel="noopener"&gt;ChatGPT and Codex usage limits merging&lt;/a&gt;&lt;/strong&gt; — Hacker News · 172 points · 107 comments · &lt;a href="https://news.ycombinator.com/item?id=50320588" rel="noopener"&gt;discussion&lt;/a&gt;
+  ChatGPT and Codex usage limits merging&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://developers.googleblog.com/devfest-is-back/" rel="noopener"&gt;DevFest is back!&lt;/a&gt;&lt;/strong&gt; — Google Developers
+  DevFest 2026 runs from October 1 to December 31, bringing together nearly a million developers across more than 800 global events centered on the agentic AI era. Under the theme "Build, Secure, Scale," participants gain…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/docusign-contract-ai-agents/" rel="noopener"&gt;The context problem: How Docusign built agents that understand the business behind contracts&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  Ask a general-purpose language model to summarize a contract, and it will probably do a reasonable job. Ask it to The post The context problem: How Docusign built agents that understand the business behind contracts…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/" rel="noopener"&gt;How We Took Over ChatGPT Accounts&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  How We Took Over ChatGPT Accounts Parameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this "Canvas" but it looks like the latest revision is called…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://seangoedecke.com/how-to-get-assigned-interesting-work/" rel="noopener"&gt;Fast and slow ways to improve your reputation&lt;/a&gt;&lt;/strong&gt; — Sean Goedecke
+  To get a good reputation in tech companies, you need to work on important projects. However, you need a good reputation first in order to get assigned important projects. Doesn’t that make it impossible to…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Other&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/" rel="noopener"&gt;Malware uses LLMs to rank victims by how much they're worth&lt;/a&gt;&lt;/strong&gt; — Hacker News · 249 points · 131 comments · &lt;a href="https://news.ycombinator.com/item?id=50316531" rel="noopener"&gt;discussion&lt;/a&gt;
+  Malware uses LLMs to rank victims by how much they're worth&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf" rel="noopener"&gt;TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8&lt;/a&gt;&lt;/strong&gt; — Hacker News · 548 points · 252 comments · &lt;a href="https://news.ycombinator.com/item?id=50319143" rel="noopener"&gt;discussion&lt;/a&gt;
+  TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://registerspill.thorstenball.com/p/joy-and-curiosity-104" rel="noopener"&gt;Joy &amp;amp; Curiosity #104&lt;/a&gt;&lt;/strong&gt; — Thorsten Ball
+  Interesting &amp;amp; joyful things from the previous week&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Sat 31 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-31.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-31.html</guid><pubDate>Sat, 31 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Oct/30/nesformer/" rel="noopener"&gt;dbreunig/nesformer&lt;/a&gt;&lt;/strong&gt; — Simon Willison
