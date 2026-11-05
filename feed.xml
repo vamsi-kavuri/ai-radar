@@ -2,7 +2,78 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Wed 04 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-04.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-04.html</guid><pubDate>Wed, 04 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Thu 05 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-05.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-05.html</guid><pubDate>Thu, 05 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.05193" rel="noopener"&gt;Factorized MLLM Embeddings for Composed Image Retrieval&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 45 upvotes
+  Composed Image Retrieval (CIR) aims to retrieve a target image given a reference image and a modification text. Although recent approaches leveraging Multimodal Large Language Models (MLLMs) have shown significant progress, we argue that the…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Nov/4/datasette-llm/" rel="noopener"&gt;datasette-llm 0.1a10&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Release: datasette-llm 0.1a10 Fixes a bug that affected my agent.datasette.io demo site, where the set of available LLM models was not correctly restricted to just those in the configuration. Tags: datasette , llm&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/JuneYaooo/rea-video" rel="noopener"&gt;JuneYaooo/rea-video&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 1,698
+  Reverse-engineer any video, shot by shot: tells whether each shot was filmed, AI-generated or coded, how the captions, cuts and audio were made, and how to remake it. 逆向一切视频，逐镜拆出制作方式并给出复刻方案。 · Python · topics: agent-skills, ai-video…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/aa1143/NamiAgent" rel="noopener"&gt;aa1143/NamiAgent&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 366
+  零基础入门 AI Agent 的基础教程。不只是教程，也是一个能在本地跑起来的 Agent：读写文件、执行命令、MCP、长期记忆，自带网页端看清每一步。从 100 行最小循环开始，一课加一个能力，最后拆解 Claude Code、Codex 等主流 Agent · Python · topics: agent, ai-agent, chinese, claude-code, deepseek, from-scratch&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/artemnovitckii/claude-animation-skills" rel="noopener"&gt;artemnovitckii/claude-animation-skills&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 392
+  Six Claude Code skills that make animations for reels, no footage needed: 3D cartoon explainer, stick figure, minimal line art, 3D map route, exploded view, line graph. · JavaScript · topics: animation, claude-code, claude-skills, hyperframes…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/SAOS-3624/dsh-see-now" rel="noopener"&gt;SAOS-3624/dsh-see-now&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 369
+  让 AI 实时看见你的屏幕：按变化量筛选帧、多帧拼进一张图，静止画面几乎不花 token · JavaScript · topics: ai-agent, dsh, dsh-plugin, ffmpeg, llm, realtime&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://news.ycombinator.com/item?id=50366117" rel="noopener"&gt;Ask HN: What's your current AI agentic setup?&lt;/a&gt;&lt;/strong&gt; — Hacker News · 379 points · 424 comments
+  I'm curious how people on HN are using AI day to day, and came up with a list of questions I thought could be interesting to know. No need to answer every question of course…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://news.ycombinator.com/item?id=50368804" rel="noopener"&gt;Launch HN: Kino AI (YC S23) – AI media manager and video editor&lt;/a&gt;&lt;/strong&gt; — Hacker News · 91 points · 34 comments
+  Hi HN! I'm Luke from Kino ( https://kino.ai ). Kino lets you make great videos with your agents and your teammates. Storage of footage and assets, a rich video editor, and review links for teammates…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.06483" rel="noopener"&gt;What Does Multi-Turn Reinforcement Learning Really Improve in LLM Agents?&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 25 upvotes
+  While multi-turn agentic reinforcement learning (RL) excels on long-horizon tasks, its performance gains remain highly sensitive to interaction constraints. Evaluating across sampling breadth K and interaction depth T via Pass@(K,T), we show that trajectory-level RL…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.ricursive.com/ripple" rel="noopener"&gt;Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding&lt;/a&gt;&lt;/strong&gt; — Hacker News · 307 points · 110 comments · &lt;a href="https://news.ycombinator.com/item?id=50369925" rel="noopener"&gt;discussion&lt;/a&gt;
+  Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Nov/4/datasette-apps/" rel="noopener"&gt;datasette-apps 0.3a0&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Release: datasette-apps 0.3a0 Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette. These can be created by hand, but it's easier to create them using LLMs via Datasette Agent .…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Nov/3/datasette-agent/" rel="noopener"&gt;datasette-agent 0.5a0&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Release: datasette-agent 0.5a0 This is a significant release of Datasette Agent . The most notable new feature is called the panel - it lets the agent chat open and then sit next to pages from…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://hackertv.org" rel="noopener"&gt;Show HN: HackerTV – HN's most-recommended Youtube videos as 24/7 TV channels&lt;/a&gt;&lt;/strong&gt; — Hacker News · 470 points · 81 comments · &lt;a href="https://news.ycombinator.com/item?id=50346755" rel="noopener"&gt;discussion&lt;/a&gt;
+  I saw HackerTube ( https://news.ycombinator.com/item?id=50319510 ) a few days ago, the YouTube videos HN keeps recommending, pulled from 19 years of comments. It made me want to flip through them instead of picking, so I…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Research&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.06910" rel="noopener"&gt;FrontierPhysics: Evaluating Agents for End-to-End Physics Research&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 27 upvotes
+  AI agents are playing an increasingly important role in physics research. However, existing physics benchmarks only evaluate fixed questions, isolated sub-tasks, or paper reproduction with given solutions, and rarely check research quality alongside correctness. We…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.04418" rel="noopener"&gt;VidUEU-Agent: A Data-Curation Agent for Multimodal Understanding, Editing, and Unified Tasks&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 25 upvotes
+  The advancement of multimodal learning is heavily constrained by the scarcity and high annotation cost of high-quality instruction data. While raw videos offer an abundant and dynamic source of visual knowledge, transforming them into precise…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Wed 04 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-04.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-04.html</guid><pubDate>Wed, 04 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://uncracked.city" rel="noopener"&gt;Show HN: Uncracked City, detective game where you question LLM suspects that lie&lt;/a&gt;&lt;/strong&gt; — Hacker News · 83 points · 39 comments · &lt;a href="https://news.ycombinator.com/item?id=50358352" rel="noopener"&gt;discussion&lt;/a&gt;
@@ -2062,50 +2133,4 @@ list I keep for that.
   arXiv paper studying token consumption in agentic coding tasks across eight frontier LLMs. Analyzes where agents spend tokens, which models are most efficient, and whether agents can predict usage beforehand.
   &lt;em&gt;Why it matters:&lt;/em&gt; Teams deploying coding agents need to understand token economics to budget costs and choose efficient models. This systematic analysis helps predict and optimize agent spending before deployment.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Sun 04 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-04.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-04.html</guid><pubDate>Sun, 04 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/github-copilot-computer-use-desktop/" rel="noopener"&gt;GitHub’s advice for its new Copilot feature is to try something else first&lt;/a&gt;&lt;/strong&gt; — The New Stack
-  GitHub launched computer use in public preview for Copilot CLI and desktop, though GitHub recommends trying other approaches first.
-  &lt;em&gt;Why it matters:&lt;/em&gt; GitHub's own caution about computer use suggests teams should test carefully before adopting; relevant for teams evaluating AI-assisted task automation capabilities.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/anthropic-claude-code-mods-plugins/" rel="noopener"&gt;“No reason why everyone should have an identical Claude experience”: Anthropic’s mods let you change Claude Code’s look and behavior&lt;/a&gt;&lt;/strong&gt; — The New Stack
-  Anthropic introduced mods to customize Claude Code's appearance and behavior, expanding on existing customization via settings, CLAUDE.md, and hooks.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams can now tailor Claude Code to workflow preferences; enables standardizing coding assistant behavior across engineering teams.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.producthunt.com/products/aperture-7" rel="noopener"&gt;Aperture&lt;/a&gt;&lt;/strong&gt; — Product Hunt AI
-  Aperture is an AI code editor that automatically verifies its own output.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Self-checking capability addresses core reliability concern; teams exploring AI editors should test whether automated verification reduces defects in generated code.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/coding-agents-leaked-screenshots/" rel="noopener"&gt;AI coding agents leaked 13,000 screenshots, and nobody hacked them.&lt;/a&gt;&lt;/strong&gt; — The New Stack
-  AI coding agents working around GitHub CLI limitations leaked over 13,000 internal screenshots without malicious breach, highlighting unintended agent behavior.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Demonstrates real security risk from agent workarounds and unintended side effects; teams must audit agent actions and constrain capabilities to prevent leaks.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/blog/microsoft/thinkingbox" rel="noopener"&gt;The Agent Said It Was Done. The Database Disagreed.&lt;/a&gt;&lt;/strong&gt; — Hugging Face Blog
-  Hugging Face article titled 'The Agent Said It Was Done. The Database Disagreed' addresses discrepancies between agent outputs and system state.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Highlights reliability and verification challenges when deploying coding agents; teams should understand how agents can claim completion without actual correctness.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/qconsf-2026-sessions/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Engineering Production Systems for an Agentic Era: QCon San Francisco 2026&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
-  QCon San Francisco 2026 will feature talks from Airbnb, OpenAI, Netflix, and Honeycomb on building and operating production systems with AI agents.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Hands-on case studies from major engineering organizations on agent deployment; directly relevant for teams scaling AI-assisted systems in production.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/kubecon-agent-harness-koordinator/" rel="noopener"&gt;What Kubernetes’ “monolith” lesson means for AI agent harnesses&lt;/a&gt;&lt;/strong&gt; — The New Stack
-  The New Stack draws parallels between Kubernetes' monolith lessons and implications for AI agent harness architecture.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams building agent infrastructure should understand architectural principles from distributed systems to avoid single points of failure in agent systems.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://newsletter.getdx.com/p/do-you-really-need-another-framework" rel="noopener"&gt;Do you really need another framework?&lt;/a&gt;&lt;/strong&gt; — DX newsletter
-  DX newsletter discusses where CAFE(S) fits within existing measurement and evaluation frameworks.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams adopting AI-assisted coding need structured evaluation approaches; CAFE(S) offers a framework to integrate into existing measurement practices.&lt;/li&gt;
 &lt;/ul&gt;</description></item></channel></rss>
