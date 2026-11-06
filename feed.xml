@@ -2,7 +2,76 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Thu 05 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-05.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-05.html</guid><pubDate>Thu, 05 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Fri 06 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-06.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-06.html</guid><pubDate>Fri, 06 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.06741" rel="noopener"&gt;TailSteer: Trajectory-Tail Steering for Drift-Resistant Multi-turn Image Editing&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 33 upvotes
+  Strong single-turn editing performance does not guarantee reliable multi-turn interaction: as edited outputs are repeatedly reused, small unintended changes can accumulate into severe visual drift. This long-term drift is often mitigated through training on multi-turn…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.07392" rel="noopener"&gt;WeLM-Image: A Unified Image Generation Model towards Visual Intelligence&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 33 upvotes
+  We present WeLM-Image, a unified image foundation model that integrates multimodal understanding into text-to-image generation, instruction-guided editing, and multi-reference synthesis. Designed for single-GPU deployment in WeChat's large-scale consumer applications, the model processes text, reference images…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.06518" rel="noopener"&gt;EmoReward: Self-Evolving Reward Calibration for Emotional Video Generation RL&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 23 upvotes
+  Group Relative Policy Optimization (GRPO) has advanced generative model post-training in verifiable domains such as code and mathematics, but evaluating video quality, especially emotional expression, often depends on subjective aesthetics and has no uniquely correct…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.08373" rel="noopener"&gt;SLA: Scaling Spatial-Language-Action Model via Continual Pre-training&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 24 upvotes
+  Reliable robotic manipulation requires both semantic understanding and precise control in three-dimensional space. However, vision-language-action (VLA) foundations largely inherit visual representations from 2D vision-language pre-training, while spatial supervision is often introduced only during task-specific adaptation.…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/HerdBuilderEstimate/roblox-studio-mcp" rel="noopener"&gt;HerdBuilderEstimate/roblox-studio-mcp&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 427
+  Model Context Protocol server for Roblox Studio. Connect AI assistants (Claude, Cursor) to read object trees, edit scripts, and run playtests safely. Open-source and lightweight · Python · topics: ai-tools, automation, claude, cursor, developer-tools, game-development&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/JosssphZhou/poki" rel="noopener"&gt;JosssphZhou/poki&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 348
+  Let AI agents operate a real iPhone. Local MCP server and agent, no jailbreak, no extra hardware. · JavaScript · topics: ai-agents, automation, ios, iphone, mcp, model-context-protocol&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/mrhlaingbwardev/agentic-hacking-skills" rel="noopener"&gt;mrhlaingbwardev/agentic-hacking-skills&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 345
+  AI-Powered Web Security &amp;amp; Automation - Official bonus skills, agents &amp;amp; MCP configs for the 'Agentic Hacking' ebook (28 SKILL.md templates) · JavaScript · topics: agents, ai, automation, hacking, mcp, opencode&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/anthropics/claude-code/issues/107757" rel="noopener"&gt;Claude Code sends your email address to websites&lt;/a&gt;&lt;/strong&gt; — Hacker News · 1241 points · 395 comments · &lt;a href="https://news.ycombinator.com/item?id=50385272" rel="noopener"&gt;discussion&lt;/a&gt;
+  Claude Code sends your email address to websites&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/rivet-dev/rivet" rel="noopener"&gt;Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents on S3&lt;/a&gt;&lt;/strong&gt; — Hacker News · 103 points · 53 comments · &lt;a href="https://news.ycombinator.com/item?id=50381687" rel="noopener"&gt;discussion&lt;/a&gt;
+  Hey HN, this is Nathan and Nicholas from Rivet ( https://rivet.dev ) – a fast, high-density, and scalable orchestrator for agentic workloads using the actor model. Rather than running a heavyweight sandbox per agent, each…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://mcp-explained.com/" rel="noopener"&gt;MCP Explained&lt;/a&gt;&lt;/strong&gt; — Hacker News · 310 points · 130 comments · &lt;a href="https://news.ycombinator.com/item?id=50379249" rel="noopener"&gt;discussion&lt;/a&gt;
+  MCP Explained&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/AGGIB/Stroq" rel="noopener"&gt;Show HN: Stroq – a local audit of what your coding agent did and why&lt;/a&gt;&lt;/strong&gt; — Hacker News · 88 points · 33 comments · &lt;a href="https://news.ycombinator.com/item?id=50380704" rel="noopener"&gt;discussion&lt;/a&gt;
+  Show HN: Stroq – a local audit of what your coding agent did and why&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.thoughtworks.com/radar/techniques/summary/enterprise-harness" rel="noopener"&gt;Enterprise harness&lt;/a&gt;&lt;/strong&gt; — Thoughtworks Radar · Assess · Techniques
+  Assess (new) · Techniques · Technology Radar Vol. 35, November 2026. An enterprise harness An enterprise harness is the organization-wide layer of what coding agents consume managed collectively. It includes skills, tools, connectors to internal…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.thoughtworks.com/radar/techniques/summary/harness-quality-evaluation" rel="noopener"&gt;Harness quality evaluation&lt;/a&gt;&lt;/strong&gt; — Thoughtworks Radar · Assess · Techniques
+  Assess (new) · Techniques · Technology Radar Vol. 35, November 2026. Nowadays, organizations and teams come up with custom harnesses tailored to their projects, including agent skills, plugins, AGENTS.md and deterministic guardrails. Harness quality evaluation…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.thoughtworks.com/radar/platforms/summary/agentgateway" rel="noopener"&gt;agentgateway&lt;/a&gt;&lt;/strong&gt; — Thoughtworks Radar · Assess · Platforms
+  Assess (new) · Platforms · Technology Radar Vol. 35, November 2026. agentgateway is a high-performance gateway for LLM-related traffic, hosted by the Linux Foundation. It supports LLM inference, MCP and A2A communication through a common…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://www.thoughtworks.com/radar/techniques/summary/self-improving-harness" rel="noopener"&gt;Self-improving harness&lt;/a&gt;&lt;/strong&gt; — Thoughtworks Radar · Trial · Techniques
+  Trial (new) · Techniques · Technology Radar Vol. 35, November 2026. A self-improving harness uses agents to analyze execution traces and evaluation feedback, then propose or implement improvements to the system surrounding the model, including…&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Thu 05 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-05.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-05.html</guid><pubDate>Thu, 05 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.05193" rel="noopener"&gt;Factorized MLLM Embeddings for Composed Image Retrieval&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 45 upvotes
@@ -2064,73 +2133,5 @@ list I keep for that.
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.04779" rel="noopener"&gt;Asymmetric Repository Lineage Modeling and Verifier-Guided Coordination in Concurrent AI Coding Agents&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
   MERGEGYM benchmark studies coordination between concurrent AI coding agents through verification-guided conflict resolution, finding 47.3% conflicts occur in disjoint file sets.
   &lt;em&gt;Why it matters:&lt;/em&gt; Reveals hidden coordination failures when multiple agents edit independently; teams running parallel agents need to handle non-obvious merge conflicts.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Mon 05 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-05.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-05.html</guid><pubDate>Mon, 05 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://pipod.dev/" rel="noopener"&gt;Show HN: Pi pod – Run your pi coding agent in sandboxes on your own server&lt;/a&gt;&lt;/strong&gt; — Hacker News · 116 points · 47 comments · &lt;a href="https://news.ycombinator.com/item?id=49937304" rel="noopener"&gt;discussion&lt;/a&gt;
-  Pi pod runs a coding agent in isolated sandboxes on your own server with composable environments, avoiding per-token pricing and single-provider lock-in.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams can run agentic workflows with full infrastructure control and customization instead of relying on hosted services. Useful for cost modeling and compliance constraints.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/Jakeschincariol/replica-skill" rel="noopener"&gt;Jakeschincariol/replica-skill&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 430
-  Replica-skill provides eleven free Claude skills that reverse-engineer, rebuild, and test apps, then fix identified bugs.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Demonstrates reusable skill patterns for systematic app analysis with agents. Teams can adapt patterns for internal code review and refactoring workflows.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/Chengjun023/agent-smith" rel="noopener"&gt;Chengjun023/agent-smith&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 101
-  Agent-smith provides adaptive model routing, cost monitoring, and reproducible benchmarks for agent workflows.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams can track token spend, route requests across models, and run reproducible cost benchmarks. Directly addresses cost visibility in agentic systems.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.producthunt.com/products/devpit" rel="noopener"&gt;devpit&lt;/a&gt;&lt;/strong&gt; — Product Hunt AI
-  DevPit is a control room for managing Claude Code agents in a single interface.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams running multiple Claude Code agents need visibility and control. This tool may help monitor and coordinate agent behavior in production workflows.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.producthunt.com/products/reviu" rel="noopener"&gt;Reviu&lt;/a&gt;&lt;/strong&gt; — Product Hunt AI
-  Reviu is a code review tool designed specifically for reviewing code written by agents.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Code from agents has different failure modes than human code. A dedicated review tool could help teams establish trust and catch agent-specific issues reliably.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.02503" rel="noopener"&gt;Compound AI System Reliability: A Failure Taxonomy and Resilience Pattern Catalog from 150 Production Incidents&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  Taxonomy of 23 failure modes in compound AI systems from 150 production incidents organized into five categories. Covers cascading errors across component boundaries, silent quality degradation, and coordination failures from individually correct parts.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams deploying multi-component AI systems should study this taxonomy before production. Addresses failure modes that don't appear in single-model evaluation and emerge at system integration boundaries.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.02952" rel="noopener"&gt;GTDD: Generative Test-Driven Development for AI Coding Agents with Adversarial Testing&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  Generative Test-Driven Development uses a testing agent to generate adversarial test cases after each implementation, preventing agents from overfitting to predetermined tests.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete pattern to improve agent-written code quality. Agents can overfit to fixed test suites; dynamically generated adversarial tests catch unimplemented behavior.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/" rel="noopener"&gt;We're going to need default hard budget caps on pretty much everything&lt;/a&gt;&lt;/strong&gt; — Simon Willison
-  Simon Willison argues that coding agents and agentic systems need hard budget caps on API spending—not soft warnings. As agents reduce friction for spinning up code that calls paid services, runaway costs become a real risk.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams deploying coding agents need to implement billing safeguards before agents start calling external APIs. This is a practical operational practice to protect infrastructure budgets.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://harper.blog/2026/09/22/break-away/" rel="noopener"&gt;Why Don't My Agents Break Containment?&lt;/a&gt;&lt;/strong&gt; — Harper Reed
-  Harper Reed discusses why agents don't break containment, identifying architecture, evals, harness measures, and unlimited tokens as mitigating factors.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Practical safety reasoning for agentic systems. Identifies token scarcity as an overlooked design constraint for containment and argues big labs build differently.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/ci-bottleneck-agent-verification/" rel="noopener"&gt;Agents have made CI the bottleneck. Faster pipelines are the wrong fix.&lt;/a&gt;&lt;/strong&gt; — The New Stack
-  The New Stack reports that agents have made CI a bottleneck, and that faster pipelines are the wrong fix. References Anthropic's engineering team findings from September.
-  &lt;em&gt;Why it matters:&lt;/em&gt; When agents accelerate code generation, CI becomes the constraint. Teams need to rethink CI strategy—batching, parallelization, or async feedback—not just raw speed.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Research&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.03010" rel="noopener"&gt;Engineering Sustainable Agents: A Systematic Comparison of Agentic LLMs for Developer Workflows&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  Empirical study comparing non-agentic baselines to multi-agent workflows on five engineering tasks, measuring computational and environmental costs across configurations.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Direct comparison of when agentic workflows justify their cost. Teams can measure tradeoffs on code generation, debt identification, vulnerability detection, and log analysis.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2604.22750" rel="noopener"&gt;How Do AI Agents Spend Your Money? Analyzing and Predicting Token Consumption in Agentic Coding Tasks&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  arXiv paper studying token consumption in agentic coding tasks across eight frontier LLMs. Analyzes where agents spend tokens, which models are most efficient, and whether agents can predict usage beforehand.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams deploying coding agents need to understand token economics to budget costs and choose efficient models. This systematic analysis helps predict and optimize agent spending before deployment.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</description></item></channel></rss>
