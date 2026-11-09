@@ -2,7 +2,78 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Sun 08 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-08.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-08.html</guid><pubDate>Sun, 08 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Mon 09 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-09.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-09.html</guid><pubDate>Mon, 09 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Nov/9/hn-50421091/" rel="noopener"&gt;The Web Is More Than Enough, by Paul Ford&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  My comment on The Web Is More Than Enough, by Paul Ford — Hacker News. OK, this comment convinced me to give that a shot. Here's a thing I made in Three.js this morning -…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/" rel="noopener"&gt;parse_number() as a SQLite extension: C vs Rust&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Research: parse_number() as a SQLite extension: C vs Rust I was out walking the dog when I got curious about how easy/difficult it would be to write a SQLite C extension that adds a parse_number()…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/11/pinterest-journey/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Pinterest Replaces Journey Clustering with 4B Qwen3 LLM, Reports Improved Engagement&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Pinterest has moved its user-journey inference system from a multi-stage clustering pipeline to a fine-tuned 4-billion-parameter language model, reporting a 1.1% improvement in email click-through and 1.3% higher push opens. By Matt Foster&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.09065" rel="noopener"&gt;MongoBench: Do LLMs Know What a MongoDB Query Will Do?&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  arXiv:2611.09065v1 Announce Type: new Abstract: LLM agents increasingly operate databases on their own: they generate queries and run them against live data. Two checks are commonly used to judge such an agent - whether it…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/Nanoutrolley/roblox-studio-mcp" rel="noopener"&gt;Nanoutrolley/roblox-studio-mcp&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 279
+  Model Context Protocol (MCP) server for Roblox Studio. Connect AI assistants (Claude, Cursor, Cline) to read object trees, automate Lua scripting, and run playtests safely. Open-source AI bridge. · Python · topics: ai-tools, automation, claude…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/dabingfy-dot/solo-to-team-skills" rel="noopener"&gt;dabingfy-dot/solo-to-team-skills&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 383
+  Skills for human-led AI teams: delegate tasks, verify evidence, explain steps clearly, and learn from real cases. 一个人统筹 AI 团队：派活、核证、清楚说明、经验复用。 · topics: agent-skills, ai-agents, collaboration, human-in-the-loop, workflow&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/kubai087/kubai-icons" rel="noopener"&gt;kubai087/kubai-icons&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 479
+  An agent skill that draws animated icons in one consistent style, for Claude Code, Codex and other coding agents. Comes with 2,600+ open-source icons for React, Vue and SVG, and a website to browse them.…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/gogoymh/auto-ontology-mcp" rel="noopener"&gt;gogoymh/auto-ontology-mcp&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 241
+  NVIDIA Auto Ontology's semantic layer and a personal knowledge base as an MCP server for Claude, ChatGPT and other MCP clients. No LLM API key needed. · Python · topics: chatgpt, claude, mcp, mcp-server, model-context-protocol…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Nov/9/details-summary/" rel="noopener"&gt;Hide your slop PR descriptions behind&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers" rel="noopener"&gt;Goldman Sachs is pulling Claude Code from its bankers and traders&lt;/a&gt;&lt;/strong&gt; — Hacker News · 798 points · 424 comments · &lt;a href="https://news.ycombinator.com/item?id=50415628" rel="noopener"&gt;discussion&lt;/a&gt;
+  Goldman Sachs is pulling Claude Code from its bankers and traders&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://lobste.rs/s/umsitb/what_can_i_realistically_do_with_local_ai" rel="noopener"&gt;What can I realistically do with local AI on a Mac mini M5 Pro (48GB)?&lt;/a&gt;&lt;/strong&gt; — Lobsters
+  I just got a Mac mini with an M5 Pro (base CPU config) and 48GB of unified memory. I want to run as much AI locally as makes sense, but it's hard to separate what…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.08933" rel="noopener"&gt;DRAFT-Bench: Evaluating Frontier Agents Across the Professional Design Lifecycle&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  arXiv:2611.08933v1 Announce Type: new Abstract: Can frontier general-purpose agents understand client intent, explore creative directions, execute revisions, and prepare production deliverables? We introduce DRAFT-Bench (Design Reliability Across Feedback and Tasks), a lifecycle-oriented evaluation of requirement…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://latent.space/p/one_million_ai_engineer_special_how_stanford_teaches_ai-native_engineering_mihail_eric_monaco/" rel="noopener"&gt;[One Million AI Engineer Special] How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco&lt;/a&gt;&lt;/strong&gt; — Latent Space
+  What do you assign when a coding agent can finish last year’s homework in one prompt? In the second run of Stanford’s CS146S, Mihail Eric brought open-source maintainers into the course. Students have to learn…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Research&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.08931" rel="noopener"&gt;LLM-Augmented Flow for Project Conformation and Task Complexity Evaluation Based on the TLM Framework&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  arXiv:2611.08931v1 Announce Type: new Abstract: The software development process, from inception to a working product or solution, can be divided into two major phases: discovery (Discovery) and delivery (Delivery). The Discovery is further subdivided into…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Other&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://www.polso.info/why-i-will-not-be-using-llms-coding" rel="noopener"&gt;Why I will not be using LLMs in my coding&lt;/a&gt;&lt;/strong&gt; — Hacker News · 116 points · 232 comments · &lt;a href="https://news.ycombinator.com/item?id=50412591" rel="noopener"&gt;discussion&lt;/a&gt;
+  Why I will not be using LLMs in my coding&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Sun 08 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-08.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-08.html</guid><pubDate>Sun, 08 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://caleb.software/posts/claude-to-pi.html" rel="noopener"&gt;Goodbye Claude, Hello Pi&lt;/a&gt;&lt;/strong&gt; — Hacker News · 377 points · 239 comments · &lt;a href="https://news.ycombinator.com/item?id=50410107" rel="noopener"&gt;discussion&lt;/a&gt;
   Goodbye Claude, Hello Pi&lt;/li&gt;
@@ -2031,89 +2102,4 @@ list I keep for that.
   Most AI SRE incident tools help troubleshoot but leave final decisions to humans; article questions whether agents can be trusted to decide autonomously.
   &lt;em&gt;Why it matters:&lt;/em&gt; Highlights the automation boundary: teams must define which decisions agents make independently versus escalate to humans; critical for safe production operations.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Thu 08 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-08.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-08.html</guid><pubDate>Thu, 08 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/" rel="noopener"&gt;Claude Haiku 5.5&lt;/a&gt;&lt;/strong&gt; — Simon Willison
-  Anthropic released Claude Haiku 5.5, matching OpenAI's GPT-6 Luna pricing at $0.10/$0.50 per million tokens up to 100k, then $0.50/$2.50 beyond. Haiku 4.5 was priced 10x higher and a year old.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Significant cost reduction makes fast inference practical for high-volume coding tasks like real-time linting, test generation, or iterative refinement at scale.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.293" rel="noopener"&gt;v2.1.293&lt;/a&gt;&lt;/strong&gt; — Claude Code releases
-  Claude Code v2.1.293 added Haiku 5.5 as the default model, expanded subagent type tracking via agentStatusLine, and fixed a memory leak in MCP connections.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Default model change makes cost-efficient inference available immediately in IDE; subagent type tracking improves ability to debug multi-agent workflows.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/clef-decision-models/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Cloudflare Open Sources Decision Models for AI Agents&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
-  Cloudflare open-sourced Clef, a set of decision-making models (9B and 27B parameters) designed to choose between predefined options rather than generate text, along with a platform for task adaptation.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Classification models reduce hallucination in structured tasks. Your team could evaluate Clef for replacing text-generation agents where decisions between known options suffice, improving reliability.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/strands-agents/box" rel="noopener"&gt;strands-agents/box&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 167
-  Box is a Rust-based sandbox for running AI agents with OS isolation, default-deny policies, and credential injection that keeps secrets outside the agent sandbox.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Containment tool for deploying agents safely; reduces blast radius if agent is compromised. Available for macOS, Linux support planned.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://developers.googleblog.com/supercharge-your-development-with-the-google-developer-knowledge-api-ecosystem/" rel="noopener"&gt;Supercharge your development with the Google Developer Knowledge API ecosystem&lt;/a&gt;&lt;/strong&gt; — Google Developers
-  Google launched the Developer Knowledge API and MCP Server in public preview, offering machine-readable documentation for Firebase, Google Cloud, and Android for AI assistants to reference.
-  &lt;em&gt;Why it matters:&lt;/em&gt; MCP server integrates authoritative API docs directly into agent context; teams working on Google Cloud infrastructure can now ground code generation in live official documentation.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/openqodex/openqodex" rel="noopener"&gt;openqodex/openqodex&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 361
-  OpenQodex is an open-source AI code review tool for Claude Code and Codex that runs SAST, secrets, dependencies, and lint scanners on changed lines before push, then runs a separate reviewer process.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Practical pre-commit gate using AI without external API keys; lets teams see how to integrate multi-stage code review workflows into their development loop.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.10263" rel="noopener"&gt;When Sub-Agents Work in Parallel: The Promises and Pitfalls of Dynamic Concurrency in Long-Horizon Coding Tasks&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  Research on dynamic concurrency in multi-agent coding systems, showing that for long-horizon development tasks, orchestration matters more than individual agent capability.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Clarifies how to scale coding agent teams; teams should focus on coordination strategy rather than only upgrading models for complex projects.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.10226" rel="noopener"&gt;Why Software Engineering Is Indispensable in the Age of Coding Agents&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  Argues that structural properties of LLMs—probabilistic generation, agnosticism, semantic statelessness—create a structural vacuum that makes software engineering discipline and practices essential, not obsolete, when deploying coding agents.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Clarifies why engineering rigor remains critical with AI agents; teams should use this framing to justify investment in verification, testing, and specification discipline alongside agent adoption.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/presentations/spotify-multi-agent-ai-architecture/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Presentation: Multi-Agent Patterns from Spotify’s AI Powered Advertising Platform&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
-  Pratik Rasam presents Spotify's production multi-agent system architecture using Google ADK Java, covering domain ownership, deterministic guardrails, schema optimization, and tracing-based evaluation.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Real-world case study of large-scale production agents at Spotify; covers hard-learned lessons on agent boundaries, tool design, and cost management that teams can adapt for their own systems.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://stackoverflow.blog/2026/10/07/part-1-make-your-ai-agents-boring-the-determinism-layer/" rel="noopener"&gt;Part 1: Make your AI agents boring: the determinism layer&lt;/a&gt;&lt;/strong&gt; — Stack Overflow blog
-  Stack Overflow published Part 1 of a series on building reliable agents: a determinism layer to make agent behavior predictable.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Foundational reliability pattern for production agents. Determinism is critical for code generation and review workflows; this is essential reading for your team.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.09995" rel="noopener"&gt;Designing Collaborative AI-Driven Workflows for Scientific Software Engineering&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  ArXiv paper proposing collaborative AI-driven workflows for scientific software engineering where agents assist domain experts in code generation and data analysis rather than operating autonomously.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Argues for collaborative workflows over full automation; directly relevant to how engineering teams should structure agent integration with humans.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.09633" rel="noopener"&gt;Coding-Agent Benchmarks Should Match Their Users' Task Flows&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  Analysis of 4,782 production JetBrains IDE sessions shows that real agent use spans far broader task types—questions, planning, review, refactoring, execution—than standard benchmarks assume.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Benchmarks mismatch real workflows; teams should evaluate agents on mixed task types including review and planning, not just issue resolution.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/infoq-ai-webinar/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;AI in Production: What Breaks, What Works, and Who Approves It? | InfoQ Webinar&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
-  InfoQ is hosting a free webinar on October 14 with five practitioners discussing AI in production, covering agent autonomy, verification of AI-generated changes, data exposure, and production RAG.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Live practitioner discussion on production concerns directly relevant to your team—approval workflows, change verification, and RAG reliability. Worth joining to hear concrete patterns teams are using.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://stackoverflow.blog/2026/10/07/part-3-knowing-when-your-agent-doesn-t-know-the-confidence-layer/" rel="noopener"&gt;Part 3: Knowing when your agent doesn’t know: the confidence layer&lt;/a&gt;&lt;/strong&gt; — Stack Overflow blog
-  Stack Overflow published Part 3 of a series on agent reliability: implementing a confidence layer to detect when agents lack knowledge.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete reliability pattern from production experience. Confidence layers reduce silent failures in agent-assisted coding; directly applicable to your testing and review workflows.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Research&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/survey-complex-codebases-agents/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Survey Finds AI-Generated Code Increases Debugging and Failure Rates and Creates a Comprehension Gap&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
-  A Coleman Parkes survey for Undo found that AI-generated code has accelerated code generation but shifted bottlenecks to debugging, comprehension, and maintenance, increasing failure rates.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Empirical data on a critical pain point your team likely faces: AI agents generating code faster than teams can debug and understand it. Quantifies the comprehension gap problem.&lt;/li&gt;
 &lt;/ul&gt;</description></item></channel></rss>
