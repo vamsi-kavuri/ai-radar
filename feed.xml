@@ -2,7 +2,78 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Tue 10 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-10.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-10.html</guid><pubDate>Tue, 10 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Wed 11 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-11.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-11.html</guid><pubDate>Wed, 11 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.14210" rel="noopener"&gt;Tree-Ising: Repairing Language Models with Bit-Level Ising Edits&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 37 upvotes
+  Weight-space programming, introduced in recent MIT work by Takehi et al., enables a frontier LLM agent to read a network's weights and write a repair. Their GPT-6 Astra agent corrected the reasoning loops of Qwen3.5-0.8B…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Nov/10/llm-gemini/" rel="noopener"&gt;llm-gemini 0.36&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Release: llm-gemini 0.36 Gemini 4 Carbon was announced two weeks ago for "a subset of cyber defenders", but today it's available to everyone else . This is Google's best ever Gemini, priced at $2/million input…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/alexeyw/lot-map" rel="noopener"&gt;alexeyw/lot-map&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 205
+  A live map beside the chat that shows what Claude Code is doing: tool calls, model steps, hooks, skills and subagents light up as they happen. Local only, in five languages. · TypeScript · topics…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/TIGER-AI-Lab/WebsiteBench" rel="noopener"&gt;TIGER-AI-Lab/WebsiteBench&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 214
+  Can AI agents rebuild websites through browser exploration? · Python · topics: agent-evaluation, ai, ai-agents, benchmark, benchmarking, browser-automation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/nishant-Tiwari24/cracked" rel="noopener"&gt;nishant-Tiwari24/cracked&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 224
+  Skills for getting hired. Company-wise mock interviews, OAs with hidden tests and brutal resume roasts for 470+ companies, straight from your terminal. · TypeScript · topics: agent-skills, ai-agents, ats, career, claude-code, claude-skills&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.thoughtworks.com/radar/tools/summary/openresearch-cli-orx" rel="noopener"&gt;OpenResearch CLI (orx)&lt;/a&gt;&lt;/strong&gt; — Thoughtworks Radar · Assess · Tools
+  Assess (new) · Tools · Technology Radar Vol. 35, November 2026. OpenResearch CLI (orx) is an open-source harness that turns coding agents such as Claude Code into research agents that run experiments in parallel. Each…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/GoogleChrome/modern-web-guidance" rel="noopener"&gt;Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives&lt;/a&gt;&lt;/strong&gt; — Hacker News · 387 points · 121 comments · &lt;a href="https://news.ycombinator.com/item?id=50443812" rel="noopener"&gt;discussion&lt;/a&gt;
+  Browsers natively handle a lot of what used to take 50 lines of JS (or a dependency): &lt;code&gt;CSS.highlights&lt;/code&gt; for text range highlighting without &amp;lt;span&amp;gt;s everywhere, &lt;code&gt;&amp;amp;lt;dialog&amp;amp;gt;&lt;/code&gt; and showModal() give you backdrops and ideal focus management…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://martinfowler.com/fragments/2026-11-10.html" rel="noopener"&gt;Fragments: November 10&lt;/a&gt;&lt;/strong&gt; — Martin Fowler
+  It’s that time of the year when the November Thoughtworks Technology Radar appears. Again my colleagues have taken a sweep of the technologies that our teams have used in the field, and pulled together a…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.12885" rel="noopener"&gt;World In-Context Learning for Agentic Robot Manipulation&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 46 upvotes
+  Trained action policies write manipulation skill into network weights, tying what is learned to the distribution it is learned from. In-context learning (ICL) avoids this coupling but has not matched trained policies, because a demonstration…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.14320" rel="noopener"&gt;Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 41 upvotes
+  External memory enables LLM agents to improve from experience by distilling trajectories of past tasks into concise lessons for new tasks. However, memory can also lead to memory-induced degradation, where an agent fails on tasks…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Nov/9/mysterious-beeps/" rel="noopener"&gt;Locating the source of a mysterious beep with Claude&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://latent.space/p/resend/" rel="noopener"&gt;Designing for Agents — Zeno Rocha, Resend&lt;/a&gt;&lt;/strong&gt; — Latent Space
+  Where does answer engine optimization (AEO) end and agent experience begin? Inside Resend, from the docs that help Claude Code pick an email API to the tools it uses to send.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://seangoedecke.com/glue-work-is-still-harmful-in-the-age-of-ai/" rel="noopener"&gt;Glue work is still harmful in the age of AI&lt;/a&gt;&lt;/strong&gt; — Sean Goedecke
+  I am not a believer in glue work 1 . Processes that can only be sustained by the unrewarded sacrifice of engineers ought to die. Now that LLMs are writing most of our code, does…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.12426" rel="noopener"&gt;dNaViT: Discrete Codes are General-Purpose Visual Representations&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 30 upvotes
+  Discrete autoregressive modeling, notably through next-token prediction, has become a cornerstone of modern language models. Extending this paradigm to vision allows visual and language models to converge on a unified framework, thereby fostering shared methodology…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.thoughtworks.com/radar/languages-and-frameworks/summary/promptfoo" rel="noopener"&gt;Promptfoo&lt;/a&gt;&lt;/strong&gt; — Thoughtworks Radar · Trial · Languages And Frameworks
+  Trial (moved in) · Languages And Frameworks · Technology Radar Vol. 35, November 2026. We put Promptfoo in Assess in 2023 for testing prompts. We still use it for evals, including agent tool calls and…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Tue 10 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-10.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-10.html</guid><pubDate>Tue, 10 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Nov/10/muse-ember/" rel="noopener"&gt;Introducing Our Smallest, Most Efficient Model: Muse Ember&lt;/a&gt;&lt;/strong&gt; — Simon Willison
@@ -2041,51 +2112,4 @@ list I keep for that.
   Latent Space piece on Standard Bots' AI stack for industrial robotics: pretrained models learn factory tasks from demonstrations and improve through corrections deployed in the real world.
   &lt;em&gt;Why it matters:&lt;/em&gt; Shows learning-from-feedback loop at scale in production. Relevant for engineering teams deploying agents that need continuous improvement from live deployments.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Sat 10 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-10.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-10.html</guid><pubDate>Sat, 10 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/franzenzenhofer/big-arrow-on-the-screen" rel="noopener"&gt;franzenzenhofer/big-arrow-on-the-screen&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 541
-  GitHub repo that lets AI agents paint arrows, boxes, and text on Mac screens via CLI. Works as a skill for Claude Code and Codex. Written in Swift.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Practical skill for agents that need visual feedback or UI automation. Teams building agent workflows can try this for debugging or user-facing agent output.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/uzairansaruzi/p3-stack" rel="noopener"&gt;uzairansaruzi/p3-stack&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 143
-  GitHub repo: pstack adapted for T3 Code with delegated subagents, worktree threads, PR watching, and scheduled runs. Written in Shell.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete example of structuring agent workflows for continuous integration tasks. Teams can examine how to compose subagents for multi-step development workflows.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/nachisama/ai-data-extractor" rel="noopener"&gt;nachisama/ai-data-extractor&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 150
-  Open-source Python tool that extracts chat histories from Claude Code, Cursor, Windsurf, Aider, Cline, and other AI coding assistants.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Useful for analyzing how your team actually uses AI coding tools, examining patterns in assistant interactions, and post-project reviews of what worked.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.producthunt.com/products/gitglow-2" rel="noopener"&gt;GitGlow&lt;/a&gt;&lt;/strong&gt; — Product Hunt AI
-  GitGlow enables teams to review code changes and agent modifications before deployment.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams can audit AI-generated and agent changes in code review workflows before shipping to production.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://seangoedecke.com/softwares-centaur-age-may-last-decades/" rel="noopener"&gt;Software's centaur age may last decades&lt;/a&gt;&lt;/strong&gt; — Sean Goedecke
-  Sean Goedecke argues that human-AI paired engineering (centaur age) will likely last decades, drawing parallels to chess's centaur era, and that AI supremacy claims are premature.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Grounded perspective on team dynamics: pairing engineers with AI systems remains the effective model. Helps frame realistic expectations for adoption beyond full automation hype.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Oct/9/built-using-my-voice/" rel="noopener"&gt;A new feature for my blog, built using my voice&lt;/a&gt;&lt;/strong&gt; — Simon Willison
-  Simon Willison built a blog feature using ChatGPT's Codex voice mode in a local dev environment while cooking, demonstrating hands-on AI-assisted workflow.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Real example of voice-driven development with local context. Shows how voice interface changes interaction patterns compared to text-based coding assistants.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Research&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/android-bench-2/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Android Bench 2 Adds Support for Long-Horizon Tasks, Agentic Evaluation, and Continuous Scoring&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
-  Google released Android Bench 2.0 with support for long-horizon tasks, agent-based evaluation, and continuous scoring for assessing AI on complex development tasks.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Benchmark for evaluating agent performance on realistic multi-step development work. Teams can use this to measure agent capabilities relevant to their workflows.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Industry &amp;amp; adoption&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/github-copilot-rust-migration/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Github Migrates Copilot Runtime to Rust with AI-Assisted Rewrite&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
-  GitHub migrated over 800,000 lines of Copilot runtime code from TypeScript to Rust in 14.5 weeks using AI-assisted development, with incremental migration and 128 pull requests.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Large-scale case study of AI-assisted rewrite: GitHub showed the approach works for major codebase migrations while shipping continuously. Demonstrates what incrementally-assisted refactoring looks like at scale.&lt;/li&gt;
 &lt;/ul&gt;</description></item></channel></rss>
