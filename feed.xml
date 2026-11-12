@@ -2,7 +2,76 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Wed 11 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-11.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-11.html</guid><pubDate>Wed, 11 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Thu 12 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-12.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-12.html</guid><pubDate>Thu, 12 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.14309" rel="noopener"&gt;MMDM: Measuring Massive Multitask Decision Making&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 26 upvotes
+  System-1 Decision Models directly make structured probabilistic decisions over query-specified options given a state in a single forward pass, without autoregressively generating reasoning trajectories or textual responses. Recent evaluations cover diverse tasks but often rely…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Nov/11/gemini-decisions-api/" rel="noopener"&gt;Gemini Decisions API&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Gemini Decisions API Google join Jev and OpenAI in the decision model category with "Gemini Decision 1". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Nov/11/tools-tags/" rel="noopener"&gt;Browse tools.simonwillison.net by tag&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Browse tools.simonwillison.net by tag I've been wanting a better way to browse my collection of vibe-coded tools (244 and counting) for a while. I had a few Fable 5.2 credits left over before my weekly…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Nov/11/llm/" rel="noopener"&gt;llm 0.37.2&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Release: llm 0.37.2 Fixes a security issue reported by Daniel de Araujo in GHSA-v9h7-jj4g-f862 and GHSA-r639-rr7r-x72w . LLM has a mechanism called extra-openai-models.yaml - now managed by the new-in-0.37 llm openai endpoint add command -…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/agentes-chat/agentes-chat" rel="noopener"&gt;agentes-chat/agentes-chat&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 789
+  Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/threerocks/article2media" rel="noopener"&gt;threerocks/article2media&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 281
+  把一篇文章或一条视频（抖音、B 站、YouTube，先转逐字稿）一键做成小红书图文、杂志长图、公众号排版和 AI 配音口播短视频的开源 Claude Code / Codex Skill。21 套主题，自动验收，零 npm 依赖。 · JavaScript · topics: agent-skills, bilibili, chinese, claude-code, claude-code-plugin, claude-code-skill&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/FrigadeHQ/yogurt" rel="noopener"&gt;FrigadeHQ/yogurt&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 722 · also on Hacker News · &lt;a href="https://news.ycombinator.com/item?id=50454625" rel="noopener"&gt;discussion&lt;/a&gt;
+  Private AI meeting notes. Free and open source. · TypeScript · topics: electron, linux, llama-cpp, local-ai, macos, mcp&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/Marcian15350/mt5-tradeprotocol" rel="noopener"&gt;Marcian15350/mt5-tradeprotocol&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 1,103
+  TypeScript · topics: algorithmic-trading-quantitative, crypto, foreign-exchange, forex, mcp, metatrader-5&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Nov/11/aws-emulator/" rel="noopener"&gt;aws-emulator&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  aws-emulator Finally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so. It's written in Rust by…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/aws/aws-emulator" rel="noopener"&gt;AWS emulator&lt;/a&gt;&lt;/strong&gt; — Hacker News · 879 points · 241 comments · &lt;a href="https://news.ycombinator.com/item?id=50456631" rel="noopener"&gt;discussion&lt;/a&gt;
+  https://www.aboutamazon.com/news/aws/how-autonomous-ai-agent... https://www.allthingsdistributed.com/2026/11/aws-emulator-an...&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/" rel="noopener"&gt;United Airlines bans AI agents from booking flights on behalf of travelers&lt;/a&gt;&lt;/strong&gt; — Hacker News · 572 points · 596 comments · &lt;a href="https://news.ycombinator.com/item?id=50458900" rel="noopener"&gt;discussion&lt;/a&gt;
+  United Airlines bans AI agents from booking flights on behalf of travelers&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.13410" rel="noopener"&gt;SteerDistill: Quantizing LLM Agents via Closed-Loop Teacher Steering&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 23 upvotes
+  Low-bit quantization reduces the inference cost of LLM agents but can compromise task success. Examining failed rollouts, we find that quantized agents overlook task requirements or environmental conditions, producing environment transitions that diverge from successful…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://pietromiotti.com/latest/maya-site" rel="noopener"&gt;My AI agents found an unmapped Maya site?&lt;/a&gt;&lt;/strong&gt; — Hacker News · 1003 points · 369 comments · &lt;a href="https://news.ycombinator.com/item?id=50452455" rel="noopener"&gt;discussion&lt;/a&gt;
+  My AI agents found an unmapped Maya site?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://martinfowler.com/articles/tests-as-data.html" rel="noopener"&gt;Tests as data: ensuring AI-generated code does what we want&lt;/a&gt;&lt;/strong&gt; — Martin Fowler
+  Automated testing in the age of AI coding assistants is problematic: when AI agents write both production and test code, developers risk losing the assurance that automated tests protect against functional errors. Matteo Vaccari makes…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://ghuntley.com/answer/" rel="noopener"&gt;the answer to ai is engineering&lt;/a&gt;&lt;/strong&gt; — Geoffrey Huntley
+  I gave a talk at AI DevCon New York about why security take-off is the new normal, why you don't need most open-source libraries anymore, and how a Nix overlay lets you patch the whole…&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Wed 11 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-11.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-11.html</guid><pubDate>Wed, 11 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.14210" rel="noopener"&gt;Tree-Ising: Repairing Language Models with Bit-Level Ising Edits&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 37 upvotes
@@ -2075,41 +2144,5 @@ list I keep for that.
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.13626" rel="noopener"&gt;SWE-DeceptionBench: Benchmarking Deceptive Behaviors of LLMs Across the Software Development Lifecycle&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
   SWE-DeceptionBench benchmark evaluating deceptive behaviors of LLMs across six software development lifecycle stages, covering misleading responses and information fabrication.
   &lt;em&gt;Why it matters:&lt;/em&gt; Teams need to measure deception risk: agents may fabricate solutions, conceal failures, or distort information rather than admit limits.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Sun 11 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-11.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-11.html</guid><pubDate>Sun, 11 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://openai.com/index/asana-browser-agent" rel="noopener"&gt;Asana cuts model costs 76x in browser tests with GPT-6.1 Sol&lt;/a&gt;&lt;/strong&gt; — OpenAI news
-  Asana reduced browser agent costs by 76x and improved speed by 5x using GPT-6.1 Sol in Codex, compared to prior models.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete cost and performance improvement from a recent model release for browser automation. Shows what engineering teams can achieve by swapping models in existing agent workflows.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/aindeev/agent-chrome-relay" rel="noopener"&gt;aindeev/agent-chrome-relay&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 251
-  Alexey Indeev released agent-chrome-relay, a tool that lets AI agents control your Chrome browser, signed in as you, in background tabs using Chrome DevTools Protocol.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Enables agents to interact with arbitrary web applications while authenticated. Useful pattern for testing, automation, and browser-based agent workflows teams could experiment with.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/liyupi/ai-promo-video-maker" rel="noopener"&gt;liyupi/ai-promo-video-maker&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 131
-  Liyupi built a tool that uses Claude Code or Cursor to generate product promo videos end-to-end: researches the product, creates design options, captures pages, cuts to music timing, generates voiceover, and delivers a 4K video. Based on Remotion and ElevenLabs, installable as an Agent Skill.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Shows how to compose agents with specialized tools (video, speech synthesis, browser capture) for a complex workflow. Worth studying the architecture and MCP integration pattern.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.cockroachlabs.com/blog/experiment-running-hospital-code/" rel="noopener"&gt;Five months treating bugs like patients and coding agents like a medical team&lt;/a&gt;&lt;/strong&gt; — Hacker News · 146 points · 58 comments · &lt;a href="https://news.ycombinator.com/item?id=50021899" rel="noopener"&gt;discussion&lt;/a&gt;
-  A developer describes five months of treating software bugs like patients and organizing coding agents as a medical team. Discussed on Hacker News.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Working developer perspective on organizing agents for diagnosis and repair. Read to see whether the medical team metaphor for agent orchestration produced actionable insights or workflow changes.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/ai-agent-evaluation-loop/" rel="noopener"&gt;How to turn AI production feedback into better agents&lt;/a&gt;&lt;/strong&gt; — The New Stack
-  The New Stack article on connecting production traces and curated data to improve live agents based on real-world feedback.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete approach to monitoring agent quality in production. Teams can measure what traces and data capture would improve their deployed agents.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.latent.space/p/standard-bots" rel="noopener"&gt;Building AI for Reliable Execution: Lessons From Industrial Robotics&lt;/a&gt;&lt;/strong&gt; — Latent Space
-  Latent Space piece on Standard Bots' AI stack for industrial robotics: pretrained models learn factory tasks from demonstrations and improve through corrections deployed in the real world.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Shows learning-from-feedback loop at scale in production. Relevant for engineering teams deploying agents that need continuous improvement from live deployments.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</description></item></channel></rss>
