@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Sat 14 Nov 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-11-12.html">← 2026-11-12</a></nav>
+<h1>AI Engineering Radar · Sat 14 Nov 2026</h1>
+<p class="muted">15 links worth a look</p>
+<h2>Models &amp; releases</h2>
+<ul>
+<li>
+<p><strong><a href="https://claude.com/resources/articles/projects-redesigned" rel="noopener">Anthropic upgrades Claude Code Projects to run parallel AI workers</a></strong> — Hacker News · 90 points · 85 comments · <a href="https://news.ycombinator.com/item?id=50492141" rel="noopener">discussion</a>
+  Anthropic upgraded Claude Code Projects to run parallel AI workers.
+  <em>Why it matters:</em> New capability enabling concurrent agent execution; teams can improve task parallelization and throughput in coding workflows.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/gemini-4-hydrogen-orchestrator/" rel="noopener">Google’s Gemini 4 coding agent now switches models mid-task — and finishes 19% faster</a></strong> — The New Stack
+  Google released Gemini 4 Hydrogen with a system that switches models mid-task in coding agents, achieving 19% faster completion.
+  <em>Why it matters:</em> Routing between models during task execution could improve coding agent speed. Teams using Gemini agents should test whether this changes practical task completion times.</p>
+</li>
+</ul>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://www.thoughtworks.com/insights/blog/generative-ai/specbench-tool-evaluate-ai-enabled-software-development-workflows" rel="noopener">SpecBench: A tool to evaluate AI-enabled software development workflows</a></strong> — Thoughtworks
+  Thoughtworks released SpecBench, a tool to evaluate AI-enabled software development workflows.
+  <em>Why it matters:</em> Enables teams to measure and compare their AI-assisted coding workflows quantitatively; useful for evals and choosing patterns that work for your team.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/11/google-ambient-agent-prod/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Google Open Sources Ambient Quality Agent (AQuA) to Diagnose Production AI Agent Failures</a></strong> — InfoQ AI
+  Google open-sourced AQuA, a tool that analyzes production agent sessions to verify failure patterns and investigate root causes against deployed source snapshots, with a case study showing prompt changes reduced failures.
+  <em>Why it matters:</em> Teams can use this to diagnose and fix production agent failures; the case study shows prompt iteration fixed real issues—concrete example of debugging agentic systems.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/op7418/guizang-game-skill" rel="noopener">op7418/guizang-game-skill</a></strong> — GitHub new repos · ★ 336
+  A GitHub repo shows an agent skill for Claude Code that builds playable 3D browser games with AI-generated assets using three.js, with a working demo included.
+  <em>Why it matters:</em> Demonstrates a concrete agent workflow for creative output; teams can study how it structures asset generation and integrate similar patterns for content creation tasks.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/Parcha-ai/agentrun/blob/main/README.md" rel="noopener">Show HN: AgentRun – open-source, Self-improving Managed Agents</a></strong> — Hacker News · 135 points · 39 comments · <a href="https://news.ycombinator.com/item?id=50471650" rel="noopener">discussion</a>
+  GREP.AI open-sourced AgentRun, a managed agents platform with self-improving agents, web-grounded workflows, sandboxes, tools, integrations, and analytics; works with Claude Agents and other harnesses supporting ACP.
+  <em>Why it matters:</em> Provides infrastructure for running agents with observability and self-improvement; teams can deploy and monitor agentic systems in production with detailed behavior analytics.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/klad-app/klad" rel="noopener">Show HN: Klad, a paint app your coding agent can drive (source-available)</a></strong> — Hacker News · 83 points · 34 comments · <a href="https://news.ycombinator.com/item?id=50454951" rel="noopener">discussion</a>
+  Klad is a source-available paint app that agents can drive to generate and edit game art with brushes, solving friction in AI-assisted game development workflows.
+  <em>Why it matters:</em> Addresses a real constraint teams face: agents now have a tool for iterative art creation instead of binary image-gen rolls; applicable beyond games to design workflows.</p>
+</li>
+</ul>
+<h2>Agentic coding &amp; workflows</h2>
+<ul>
+<li><strong><a href="https://sourcegraph.com/blog/what-we-learned-building-a-pr-approval-bot" rel="noopener">Keeping code moving with clearer review expectations</a></strong> — Sourcegraph blog
+  Sourcegraph built a bot to reduce code review bottlenecks by making approval expectations explicit as agents produce more code.
+  <em>Why it matters:</em> Addresses practical workflow change: as AI generates more code, review becomes the constraint. Concrete solution to test with your team.</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/" rel="noopener">Build once, run on any agent: A practical guide to agent skills</a></strong> — GitHub Blog
+  GitHub published a guide on agent skills: reusable engineering work captured in reviewable files that work across host agents, while tools and permissions remain host-specific.
+  <em>Why it matters:</em> Clarifies how to structure shareable agent capabilities for teams; teams can design skills to abstract repeatable work, version control them, and port across Claude/Codex/Cursor.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/11/jiohotstar-codingagent-retrieval/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">JioHotstar Benchmarks Knowledge Bases for AI Coding Agents</a></strong> — InfoQ AI
+  JioHotstar benchmarked six code retrieval approaches for AI coding agents, finding structural search works better on concrete tasks while semantic retrieval handles ambiguous requirements.
+  <em>Why it matters:</em> Practical guidance on retrieval strategy trade-offs; teams can test whether to use structural or semantic retrieval based on their task mix and measure impact on accuracy.</p>
+</li>
+<li>
+<p><strong><a href="https://www.langchain.com/blog/what-is-eval-driven-development" rel="noopener">What Is Eval-Driven Development? How to Improve AI Agents</a></strong> — LangChain blog
+  LangChain blog explains eval-driven development: defining good behavior, writing evals first, then comparing agent experiments against consistent metrics.
+  <em>Why it matters:</em> Concrete practice for shipping reliable agents—teams can adopt this workflow to measure what works before deployment.</p>
+</li>
+<li>
+<p><strong><a href="https://martinfowler.com/articles/durable-execution-agents.html" rel="noopener">Long-horizon agents and durable execution</a></strong> — Martin Fowler
+  Martin Fowler's post on long-horizon agents and durable execution: an emerging pattern where the runtime records step results so agents recover from failures and resume toward their goal.
+  <em>Why it matters:</em> Teams building long-running agents need this pattern to handle crashes, network failures, and unexpected behavior in production.</p>
+</li>
+<li>
+<p><strong><a href="https://stackoverflow.blog/2026/11/13/your-coding-agent-shouldn-t-grade-its-own-homework/" rel="noopener">Your coding agent shouldn't grade its own homework</a></strong> — Stack Overflow blog
+  Stack Overflow blog questions whether coding agents can be trusted to verify their own work, given they can now write design docs, frontends, and entire projects end-to-end.
+  <em>Why it matters:</em> Critical reminder that agent output needs independent validation. Teams shipping agent-written code should establish external verification practices.</p>
+</li>
+<li>
+<p><strong><a href="https://developers.googleblog.com/agent-distraction/" rel="noopener">Agent Distraction</a></strong> — Google Developers
+  Google analysis of 913,000 coding agent sessions: 13% of agents encounter inline TODO(b/...) comments, and 6% act on them unprompted, adding 70% more steps and 77% more tokens per session.
+  <em>Why it matters:</em> Engineering teams should clean up TODO comments and internal bug references in codebases before deploying agents—these cause significant agent distraction and wasted compute.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/specialized-ai-agent-workflows/" rel="noopener">Why Nitric stopped asking one AI agent to do everything</a></strong> — The New Stack
+  Nitric's five-engineer team describes why they moved away from single-agent architecture after on-call engineers were woken multiple times weekly.
+  <em>Why it matters:</em> Real case study of single-agent failure modes and the shift to multi-agent systems. Working developers sharing what actually broke in their workflow.</p>
+</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>
