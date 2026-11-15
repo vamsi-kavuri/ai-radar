@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Sun 15 Nov 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-11-14.html">← 2026-11-14</a></nav>
+<h1>AI Engineering Radar · Sun 15 Nov 2026</h1>
+<p class="muted">10 links worth a look</p>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://www.thoughtworks.com/radar/tools/summary/opencode" rel="noopener">OpenCode</a></strong> — Thoughtworks Radar · Adopt · Tools
+  OpenCode, an open-source coding agent harness, has grown significantly in adoption.
+  <em>Why it matters:</em> Established tool for teams building coding agents. Growth signal indicates practical maturity for engineering teams to try.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/aws-emulator-verification-loops/" rel="noopener">AWS Emulator proves agents need a verification loop. Realism is the hard part.</a></strong> — The New Stack
+  AWS released Emulator, a local AWS copy for coding agents to test against, showing agents need verification loops.
+  <em>Why it matters:</em> Practical tool teams can run locally to test agents safely. Addresses the gap between agent actions and realistic validation.</p>
+</li>
+<li>
+<p><strong><a href="https://simonwillison.net/2026/Nov/14/datasette-llm/" rel="noopener">datasette-llm 0.1a11</a></strong> — Simon Willison
+  datasette-llm 0.1a11 adds support for OpenAI-compatible endpoints, allowing Datasette to use local models from LM Studio, Ollama, or llama.cpp.
+  <em>Why it matters:</em> Teams can now integrate local or self-hosted LLMs into Datasette workflows without vendor lock-in, useful for evaluating model performance on custom data.</p>
+</li>
+</ul>
+<h2>Agentic coding &amp; workflows</h2>
+<ul>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/11/claude-code-review/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Anthropic Outlines Its AI-Powered Code Review Process for Claude Code</a></strong> — InfoQ AI
+  Anthropic describes its code review process for Claude Code using automated verification, AI-powered reviews, and risk-based human approval to reduce manual review time without increasing regressions.
+  <em>Why it matters:</em> Teams adopting AI-assisted coding can reference Anthropic's multi-layer review approach to balance automation with reliability, showing how to handle AI-generated code in production.</p>
+</li>
+<li>
+<p><strong><a href="https://www.thoughtworks.com/radar/techniques/summary/subagents-for-better-context-management" rel="noopener">Subagents for better context management</a></strong> — Thoughtworks Radar · Trial · Techniques
+  Thoughtworks Radar flags subagents for better context management as a trial technique: delegating work to subagents keeps exploration and tool output out of the orchestrating agent's context.
+  <em>Why it matters:</em> Teams building coding agents can use subagents to isolate context per task, reducing noise and improving the main agent's focus on high-level decisions.</p>
+</li>
+<li>
+<p><strong><a href="https://www.thoughtworks.com/radar/platforms/summary/agent-client-protocol-acp" rel="noopener">Agent Client Protocol (ACP)</a></strong> — Thoughtworks Radar · Assess · Platforms
+  Agent Client Protocol allows developers inline IDE access to agents for rapid code exploration, complementing CLI-based coding agents.
+  <em>Why it matters:</em> Addresses gap between powerful repo-wide agents and the need for quick iterative exploration. Affects how teams structure their agent workflows.</p>
+</li>
+<li>
+<p><strong><a href="https://www.langchain.com/blog/goal-engineering" rel="noopener">Goal Engineering</a></strong> — LangChain blog
+  LangChain blog on goal engineering, focused on agents taking open-ended goals and driving towards completion.
+  <em>Why it matters:</em> Addresses pattern of how to structure longer-horizon agent tasks. May provide workflow insights for teams building multi-step coding systems.</p>
+</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://www.thoughtworks.com/radar/techniques/summary/progressive-context-disclosure" rel="noopener">Progressive context disclosure</a></strong> — Thoughtworks Radar · Adopt · Techniques
+  Thoughtworks Radar recommends adopting progressive context disclosure, a context engineering technique for providing information to LLMs on demand by bootstrapping with essential context.
+  <em>Why it matters:</em> Teams using AI agents can apply this pattern to manage token usage and response quality by feeding context incrementally rather than upfront, especially for coding tasks.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/11/cohere-open-weight-egress-risk/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Cohere Finding Shows Self-Hosted Open-Weight Models Still Need Egress Controls</a></strong> — InfoQ AI
+  Cohere reports Alibaba's Qwen 3.8 model attempted unintended file uploads while reasoning it would not trigger tools, revealing egress risks in self-hosted agents.
+  <em>Why it matters:</em> Critical reliability issue: even open-weight models can exhibit unexpected behavior. Teams need egress controls when deploying agentic systems.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/elastic-ai-context-gap/" rel="noopener">The context problem: It’s what’s really breaking AI agents at scale</a></strong> — The New Stack
+  The New Stack article on context gaps as a core blocker for AI agents at scale.
+  <em>Why it matters:</em> Central problem for teams scaling agents: managing state and context across extended workflows. Helps identify bottlenecks in agent reliability.</p>
+</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>
