@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Mon 16 Nov 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-11-15.html">← 2026-11-15</a></nav>
+<h1>AI Engineering Radar · Mon 16 Nov 2026</h1>
+<p class="muted">9 links worth a look</p>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/11/aws-emulator-agents/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">AWS Open-Sources Emulator for Local Testing of 200+ Services by Coding Agents</a></strong> — InfoQ AI
+  AWS released an open-source emulator for local testing against 200+ AWS services without an account, with fidelity scores and documented limits, designed for coding agents.
+  <em>Why it matters:</em> Enables teams to test agentic code against realistic AWS APIs locally before deployment, reducing friction in agent development and testing workflows.</p>
+</li>
+<li>
+<p><strong><a href="https://simonwillison.net/2026/Nov/15/datasette-agent/" rel="noopener">datasette-agent 0.6a0</a></strong> — Simon Willison
+  Simon Willison released datasette-agent 0.6a0, adding agent prompt to Datasette homepage with table and query hash-mentions.
+  <em>Why it matters:</em> Data-driven agents can now ask questions about structured data via CLI or web interface; useful for teams exploring agent patterns.</p>
+</li>
+<li>
+<p><strong><a href="https://www.producthunt.com/products/stateweave" rel="noopener">StateWeave</a></strong> — Product Hunt AI
+  StateWeave is a tool for testing AI agents against working clones of applications they interact with.
+  <em>Why it matters:</em> Provides realistic testing environment for agent behavior without hitting production systems; teams can validate agentic workflows before deployment.</p>
+</li>
+</ul>
+<h2>Agentic coding &amp; workflows</h2>
+<ul>
+<li><strong><a href="https://simonwillison.net/2026/Nov/15/datasette-apps/" rel="noopener">datasette-apps 0.4a0</a></strong> — Simon Willison
+  Datasette Apps 0.4a0 adds URL fragment linking and scheme reporting, letting sandboxed apps query data and reference each other.
+  <em>Why it matters:</em> Demonstrates composable AI-generated applications that can link and coordinate—useful pattern for multi-step agent tasks.</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2609.11728" rel="noopener">Reproducibility in the Age of Agentic AI: Context Engineering at the Timescale of a Codebase</a></strong> — arXiv cs.SE
+  Argues that reproducible research practices constitute context engineering for AI coding agents. Claims agents reduce costs of maintaining tests, commit histories, repository structure, and decision records while enabling immediate verification.
+  <em>Why it matters:</em> Reframes reproducibility as a productivity lever for agent teams; suggests concrete artifacts (tests, commit histories, decision records) that agents can maintain at lower cost than humans.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/11/uber-secure-ai-framework/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Uber's Secure AI Framework Governs Autonomous AI Agents across Their Lifecycle</a></strong> — InfoQ AI
+  Uber Engineering describes a framework to govern autonomous AI agent actions by validating whether an agent's action aligns with user intent, purpose, permissions, and context.
+  <em>Why it matters:</em> Practical approach to controlling agent behavior in production; teams can evaluate whether their own agents have similar safeguards against unintended actions.</p>
+</li>
+</ul>
+<h2>Research</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.17440" rel="noopener">Interpreting Coding Agents Through Their Behavioral Trajectories</a></strong> — arXiv cs.SE
+  Analysis of 143,209 agent execution trajectories across 125 configurations mapping low-level traces to high-level actions—repository search, file edit, test execution.
+  <em>Why it matters:</em> Reveals what behaviors agents actually perform; useful for diagnosing why agents succeed or fail and optimizing prompts and workflows.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2503.22821" rel="noopener">Identifying and Mitigating API Misuse in Large Language Models</a></strong> — arXiv cs.SE
+  Large-scale study identifying and categorizing API misuse patterns in LLM-generated code across Python and Java using StarCoder, Qwen, and other models.
+  <em>Why it matters:</em> Reveals systematic failures in how code models use library APIs; teams can use findings to improve prompting, testing, and vetting of agent-generated code.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2610.00890" rel="noopener">Cross-Benchmark Transfer from RL on Agentic Coding Tasks</a></strong> — arXiv cs.SE
+  Studies whether reinforcement learning on expert-built agentic coding tasks improves performance on tasks where models typically fail in the last mile, testing transfer across benchmarks with Kimi K2.7 Code.
+  <em>Why it matters:</em> Demonstrates that RL can close gaps in agent reliability on incomplete features and missed requirements; teams can explore similar post-training approaches to improve agent quality.</p>
+</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>

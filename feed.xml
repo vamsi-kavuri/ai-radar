@@ -2,7 +2,61 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Sun 15 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-15.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-15.html</guid><pubDate>Sun, 15 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Mon 16 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-16.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-16.html</guid><pubDate>Mon, 16 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/11/aws-emulator-agents/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;AWS Open-Sources Emulator for Local Testing of 200+ Services by Coding Agents&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  AWS released an open-source emulator for local testing against 200+ AWS services without an account, with fidelity scores and documented limits, designed for coding agents.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Enables teams to test agentic code against realistic AWS APIs locally before deployment, reducing friction in agent development and testing workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Nov/15/datasette-agent/" rel="noopener"&gt;datasette-agent 0.6a0&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Simon Willison released datasette-agent 0.6a0, adding agent prompt to Datasette homepage with table and query hash-mentions.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Data-driven agents can now ask questions about structured data via CLI or web interface; useful for teams exploring agent patterns.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.producthunt.com/products/stateweave" rel="noopener"&gt;StateWeave&lt;/a&gt;&lt;/strong&gt; — Product Hunt AI
+  StateWeave is a tool for testing AI agents against working clones of applications they interact with.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Provides realistic testing environment for agent behavior without hitting production systems; teams can validate agentic workflows before deployment.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Nov/15/datasette-apps/" rel="noopener"&gt;datasette-apps 0.4a0&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Datasette Apps 0.4a0 adds URL fragment linking and scheme reporting, letting sandboxed apps query data and reference each other.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Demonstrates composable AI-generated applications that can link and coordinate—useful pattern for multi-step agent tasks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2609.11728" rel="noopener"&gt;Reproducibility in the Age of Agentic AI: Context Engineering at the Timescale of a Codebase&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Argues that reproducible research practices constitute context engineering for AI coding agents. Claims agents reduce costs of maintaining tests, commit histories, repository structure, and decision records while enabling immediate verification.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Reframes reproducibility as a productivity lever for agent teams; suggests concrete artifacts (tests, commit histories, decision records) that agents can maintain at lower cost than humans.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/11/uber-secure-ai-framework/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Uber's Secure AI Framework Governs Autonomous AI Agents across Their Lifecycle&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Uber Engineering describes a framework to govern autonomous AI agent actions by validating whether an agent's action aligns with user intent, purpose, permissions, and context.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Practical approach to controlling agent behavior in production; teams can evaluate whether their own agents have similar safeguards against unintended actions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Research&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.17440" rel="noopener"&gt;Interpreting Coding Agents Through Their Behavioral Trajectories&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Analysis of 143,209 agent execution trajectories across 125 configurations mapping low-level traces to high-level actions—repository search, file edit, test execution.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Reveals what behaviors agents actually perform; useful for diagnosing why agents succeed or fail and optimizing prompts and workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2503.22821" rel="noopener"&gt;Identifying and Mitigating API Misuse in Large Language Models&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Large-scale study identifying and categorizing API misuse patterns in LLM-generated code across Python and Java using StarCoder, Qwen, and other models.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Reveals systematic failures in how code models use library APIs; teams can use findings to improve prompting, testing, and vetting of agent-generated code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.00890" rel="noopener"&gt;Cross-Benchmark Transfer from RL on Agentic Coding Tasks&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Studies whether reinforcement learning on expert-built agentic coding tasks improves performance on tasks where models typically fail in the last mile, testing transfer across benchmarks with Kimi K2.7 Code.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Demonstrates that RL can close gaps in agent reliability on incomplete features and missed requirements; teams can explore similar post-training approaches to improve agent quality.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Sun 15 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-15.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-15.html</guid><pubDate>Sun, 15 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://www.thoughtworks.com/radar/tools/summary/opencode" rel="noopener"&gt;OpenCode&lt;/a&gt;&lt;/strong&gt; — Thoughtworks Radar · Adopt · Tools
@@ -2101,92 +2155,5 @@ list I keep for that.
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/presentations/agentic-ai-developer-trust-adoption/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Presentation: What 25 Trillion Tokens Reveal About How Developers Actually Adopt AI Agents&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
   Brendan O'Leary analyzes 40 trillion tokens of real-world usage to show AI adoption depends on trust over model benchmarks, identifying failure points in context, routing, and feedback loops.
   &lt;em&gt;Why it matters:&lt;/em&gt; Evidence-based adoption ladder and failure analysis; teams can map their stage and identify where their agent workflows break down.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Wed 14 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-14.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-14.html</guid><pubDate>Wed, 14 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://www.langchain.com/blog/open-models-have-crossed-a-threshold" rel="noopener"&gt;Open Models have crossed a threshold&lt;/a&gt;&lt;/strong&gt; — LangChain blog
-  LangChain's evals show open models like GLM-5 and MiniMax M2.7 now match frontier models on agent tasks—file ops, tool use, instruction following—at lower cost and latency.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Open models crossed a capability threshold for agentic coding; teams can reduce vendor lock-in and latency by switching to open alternatives.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/antigravity-sdk-local-models/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Google Antigravity SDK Adds Local Model Support for Greater Token Efficiency and Code Privacy&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
-  Google Antigravity SDK now supports local models alongside cloud models, giving developers control over data privacy, inference costs, network dependencies, and workload distribution.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Hybrid agent architecture option: run agents locally for sensitive code or cost-sensitive tasks, cloud for complex reasoning. Relevant if your team handles proprietary code.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.langchain.com/blog/mcp-in-langchain-stateless-protocol-elicitation-and-more" rel="noopener"&gt;MCP in LangChain: Stateless Protocol, Elicitation, and More!&lt;/a&gt;&lt;/strong&gt; — LangChain blog
-  LangChain added MCP support in langchain.mcp module, built on FastMCP with interrupt-based elicitation and cached tool lists.
-  &lt;em&gt;Why it matters:&lt;/em&gt; MCP integration is now available in a major agentic framework; teams using LangChain can add tool-based agent capabilities.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.producthunt.com/products/vectorize" rel="noopener"&gt;Hindsight 1.0 + Memlake&lt;/a&gt;&lt;/strong&gt; — Product Hunt AI
-  Hindsight 1.0 and Memlake are open-source memory systems allowing AI agents to learn from experience.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams exploring agent-based coding workflows can add memory systems to help agents retain and apply knowledge across tasks.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Oct/13/geoffrey-huntley/" rel="noopener"&gt;Quoting Geoffrey Huntley&lt;/a&gt;&lt;/strong&gt; — Simon Willison
-  Geoffrey Huntley describes using pre-commit hooks to enforce that coding agents use a diagnostics library, failing commits that bypass it and injecting a prompt to correct the agent.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete pattern for steering agent behavior via git hooks and commit-time enforcement. Directly applicable to maintaining standards across agent-generated code.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.14405" rel="noopener"&gt;SPROUT: Scaling Agentic Reinforcement Learning for Long-Horizon Software Engineering&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  SPROUT addresses reinforcement learning for long-horizon software engineering by branching from intermediate steps instead of restarting, preserving progress and dependencies.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Critical for teams training coding agents on complex tasks; shows how to efficiently scale RL without wasting early progress.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://martinfowler.com/articles/are-harnesses-worth-the-cost.html" rel="noopener"&gt;Are Harnesses Worth the Cost?&lt;/a&gt;&lt;/strong&gt; — Martin Fowler
-  Naresh Jain's experiment showed GPT-6 Luna (cost-optimized) failed 7 of 10 unharnesses runs building an API, but succeeded 10 of 10 with a behavioral harness, costing 33% less than unharnesses GPT-6 Sol while matching Sol's reliability.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Demonstrates behavioral harnesses reliably upgrade smaller models to frontier-class reliability at 33% cost savings. Practical pattern for cost-effective production agents.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.17418" rel="noopener"&gt;Why Agentic Workflows Fail: A Taxonomy Derived from Literature and Empirical Data&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  Paper presents a source-aware taxonomy of agentic workflow failures derived from academic literature and GitHub, categorizing failures by origin and empirical dimensions.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Essential reference for diagnosing why agents fail. Teams can use this taxonomy to identify whether failures stem from model behavior, orchestration, tools, or infrastructure.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.14216" rel="noopener"&gt;Cortex: Measurement-Gated Evolution and Pruning of Coding-Agent Skills and Rules&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  Cortex is a tool that tests harness changes (project files, skills, rules) for coding agents instead of trusting them. It saves developer corrections as replayable tasks and measures whether fixes generalize.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Tool for validating agent harness changes via measurement. Critical practice: one success proves little; Cortex systematizes the testing loop for agent guardrails.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://addyo.substack.com/p/agentic-verification" rel="noopener"&gt;Agentic Verification&lt;/a&gt;&lt;/strong&gt; — Addy Osmani
-  Addy Osmani writes that with agentic coding, the bottleneck shifted from writing code to verifying correctness.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Identifies the critical shift in engineering workflow: AI handles generation, teams must now prioritize verification and testing practices.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://newsletter.getdx.com/p/the-gap-between-code-velocity-and" rel="noopener"&gt;The gap between code velocity and trust is growing&lt;/a&gt;&lt;/strong&gt; — DX newsletter
-  DX newsletter reports code velocity up 75.5% in a year, but organizations with most AI-authored code wait 105% longer for first review.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Quantified workflow bottleneck: AI speeds writing but creates review delays; teams need to rebalance review capacity and processes.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.14460" rel="noopener"&gt;Re-executing Coding-Agent Evaluations: Unchanged Decisions and Unresolved Policy Risk&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  Pre-registered re-execution study of SWE-bench Pro found grading configuration changes don't affect patch decisions but leave 3% exposed-patch risk unresolved.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams relying on SWE-bench leaderboards should know test stability is limited; re-execution shows real policy risk in offline evaluation.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/ai-agent-credentials-identity-provider/" rel="noopener"&gt;The agent did the work. The audit log couldn’t say who asked.&lt;/a&gt;&lt;/strong&gt; — The New Stack
-  Shawn Petty's team found over 20 percent of MCP-related access policies lacked audit trails showing who requested agent actions.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Critical governance gap: agent audit logs don't capture requestor identity; teams need to address accountability and compliance now.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Industry &amp;amp; adoption&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://developers.googleblog.com/optimizing-a-200000-line-python-codebase-overnight-with-gemini-4-argon/" rel="noopener"&gt;Optimizing a 200,000-line Python codebase overnight with Gemini 4 Argon&lt;/a&gt;&lt;/strong&gt; — Google Developers
-  Google's engineering team used Gemini 4 Argon with .agents/skills and /goal mode to optimize a 200,000-line Python codebase overnight, cutting session prep overhead by 40% and cold imports by 21%.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Case study of agents used unattended on real large codebase optimization. Concrete metrics on what agents can achieve and time investment pattern.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/" rel="noopener"&gt;Redesigning source control at Anthropic&lt;/a&gt;&lt;/strong&gt; — Simon Willison
-  Simon Willison reports Anthropic built a custom source control system to handle scaling from 2,500 to 30,000 code changes merged per day in six months.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Shows concrete infrastructure challenges when agent-driven development dramatically increases merge velocity. Relevant if your team scales agentic workflows significantly.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</description></item></channel></rss>
