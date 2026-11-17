@@ -2,7 +2,97 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Mon 16 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-16.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-16.html</guid><pubDate>Mon, 16 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Tue 17 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-17.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-17.html</guid><pubDate>Tue, 17 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.21003" rel="noopener"&gt;K2-Horizon: A Frontier Fleet of Open Source Language Models&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 55 upvotes
+  K2-Horizon fleet of six open models from 0.9B to 375B MoE with Mixture-of-Value Attention and softplus gating, competitive on agentic and coding benchmarks.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Engineering teams can benchmark these models against proprietary alternatives for coding and reasoning tasks; smaller sizes enable local deployment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/sybil-solutions/inference-optimisation-skill" rel="noopener"&gt;sybil-solutions/inference-optimisation-skill&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 561
+  Agent skill for optimizing local LLM serving speed across decode, speculative decoding, prefill, and KV cache on any hardware and quantization setup.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams running inference-heavy coding agents can experiment with this to measure latency and cost tradeoffs for local model serving.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/11/datadog-ai-agent-observability/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Datadog Brings Production Experimentation to AI Agent Observability&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Datadog added Online Experiments to its Agent Observability platform, letting teams compare AI agent versions against real production traffic instead of just evaluation datasets.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Production-grade evaluation of agent versions is essential for shipping reliable agents; testing against real traffic catches issues that evals miss.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.langchain.com/blog/we-rebuilt-langsmith-around-the-agent" rel="noopener"&gt;Why we rebuilt LangSmith around the agent&lt;/a&gt;&lt;/strong&gt; — LangChain blog
+  LangChain reorganized LangSmith around a single agent record, allowing teams to build, run, improve, and govern agents from one place across any framework or runtime.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Agent-centric observability and governance is table-stakes for shipping reliable agents; this tool makes it concrete and framework-agnostic.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.18571" rel="noopener"&gt;Loop Engineering: Version-Bound, Evidence-Gated Coordination for Production Coding Agents&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Loop Engineering presents version-bound, evidence-gated coordination for multiple asynchronous coding agents over shared repository state without conversational handoffs, with approval, verification, and recovery.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Essential pattern for running multiple agents in production: durable task context, scoped authority, source-independent verification, and accountable human-agent handoffs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.18573" rel="noopener"&gt;LoopSkill: Evidence-Bound Lifecycle Control and the Safety-Liveness Tradeoff in Coding Agents&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  LoopSkill adds evidence-bound lifecycle control with schema-validated writes, durable outbox routing, artifact-bound reports, recovery, and heartbeat-gated finalization for coding agents.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams need this control plane for proving agent work completed correctly; addresses safety-liveness tradeoff by validating state agreement before finalization.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/presentations/scale-llm-ranking-systems-linkedin/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Presentation: Scaling LLM-Based Ranking Systems for Latency-Critical Search &amp;amp; Recommendation Workloads&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Sundara Raman Ramachandran shares how LinkedIn productionizes LLM ranking under strict P99 latency SLAs, including model distillation from 7B to 400M parameters, context compression, and system optimizations like flash attention and GIL workarounds.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Detailed production walkthrough of making LLMs fast enough for latency-critical systems shows concrete techniques—distillation, compression, GIL fixes—your team can apply.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.18582" rel="noopener"&gt;AI Cannot Review What Humans Catch: A First Look at the Reviews of Agent Instruction Files&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Researchers studied code review of agent instruction files like .cursorrules and CLAUDE.md, finding humans catch issues that static checks miss.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Establish review discipline for agent directives: instruction files silently redirect agent behavior across repos without compiler safety nets.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.langchain.com/blog/context-engineering-challenges-late-2026" rel="noopener"&gt;New context engineering challenges in late 2026&lt;/a&gt;&lt;/strong&gt; — LangChain blog
+  LangChain CEO Harrison Chase discusses the biggest context engineering challenges that have emerged with proactive agents in late 2026.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Context engineering directly affects how teams get the best results from AI coding agents; learning what's hard at scale helps avoid pitfalls in your own deployments.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://newsletter.pragmaticengineer.com/p/software-engineering-after-code-becomes" rel="noopener"&gt;Software engineering after code becomes cheap with Satya Nadella&lt;/a&gt;&lt;/strong&gt; — Pragmatic Engineer
+  Microsoft CEO Satya Nadella discusses AI's impact on software engineering, code verification, and engineers' careers in an interview.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Leadership perspective on how cheap code changes what matters—verification, design, judgment—helps frame what your team should prioritize as code output scales.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://blog.antonio.cx/running-agents-with-lend" rel="noopener"&gt;Running coding agents without handing them my credentials&lt;/a&gt;&lt;/strong&gt; — Hacker News · 119 points · 95 comments · &lt;a href="https://news.ycombinator.com/item?id=50526152" rel="noopener"&gt;discussion&lt;/a&gt;
+  Hacker News discussion on running coding agents without exposing developer credentials.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams deploying agents in CI or production need patterns for credential isolation and safe delegation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Research&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.20218" rel="noopener"&gt;SWE-CoWork: Benchmarking Coding Agents as Digital Employees in Organizations&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 30 upvotes · also on arXiv cs.SE
+  SWE-CoWork benchmark places coding agents in simulated software organizations with 26 colleagues across 101 real repositories and 11 languages to test requirement recovery and collaboration.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams evaluating coding agents can use this benchmark to test realistic handoff and collaboration workflows instead of isolated problem-solving.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.18569" rel="noopener"&gt;Knowledge-Centric Automated Issue Resolution: A Systematic Survey and Taxonomy&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Survey of 133 studies on automated issue resolution from knowledge-centric view, organizing knowledge into background, repository, and procedural layers.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams building agents for bug fixing can reference this taxonomy to identify which knowledge sources (docs, history, tools, execution) their agents need.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Industry &amp;amp; adoption&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/11/uber-legal-redlining-agent/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Uber’s Legal AI Agent Cuts Contract Review Time by 20% with Rules and RAG&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Uber deployed a legal redlining agent using RAG, historical feedback, and policy rules built with LangGraph and OpenSearch, achieving 20% faster contract review and 91% accuracy.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Real case study showing how agents handle domain-specific knowledge and iterative refinement; teams can study the LangGraph and RAG architecture choices.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://openai.com/business/customer-stories/revolut" rel="noopener"&gt;How Revolut raises ambition without lowering the bar&lt;/a&gt;&lt;/strong&gt; — OpenAI news
+  Revolut published a case study showing how they use OpenAI models and Codex to cut coding time by 30-60%, scale financial crime investigations, and maintain security standards.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Real fintech example with concrete metrics shows what code velocity gains are possible with AI tools and how to maintain security alongside adoption.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Mon 16 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-16.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-16.html</guid><pubDate>Mon, 16 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/11/aws-emulator-agents/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;AWS Open-Sources Emulator for Local Testing of 200+ Services by Coding Agents&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
@@ -2066,94 +2156,4 @@ list I keep for that.
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://seangoedecke.com/ai-is-driving-a-boom-in-modestly-successful-software/" rel="noopener"&gt;AI is driving a boom in modestly successful software projects&lt;/a&gt;&lt;/strong&gt; — Sean Goedecke
   Sean Goedecke observes that coding agents are driving growth in modestly successful projects (roughly 2x growth) rather than massively successful ones, spreading impact across many smaller projects.
   &lt;em&gt;Why it matters:&lt;/em&gt; Reframes agent impact: not magic bullet for blockbuster products but measurable productivity gain across many teams building real, profitable small-to-mid-scale software.&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Thu 15 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-15.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-15.html</guid><pubDate>Thu, 15 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://www.liquid.ai/blog/lfm2-5-24b-a2b" rel="noopener"&gt;LFM2.5-24B-A2B: Built for fast on-device agents&lt;/a&gt;&lt;/strong&gt; — Hacker News · 224 points · 53 comments · &lt;a href="https://news.ycombinator.com/item?id=50097369" rel="noopener"&gt;discussion&lt;/a&gt;
-  LFM2.5-24B-A2B is a model built for fast on-device agent execution.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams deploying agents in constrained environments should evaluate this smaller model for cost and latency tradeoffs.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://petal.live/" rel="noopener"&gt;Show HN: Petal, open-source CoScreen/ScreenHero finally free&lt;/a&gt;&lt;/strong&gt; — Hacker News · 181 points · 39 comments · &lt;a href="https://news.ycombinator.com/item?id=50092470" rel="noopener"&gt;discussion&lt;/a&gt;
-  Petal is an open-source pair programming tool built by former CoScreen founders, offering low-latency multi-cursor collaboration after CoScreen's sunset.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams needing pair programming infrastructure can self-host or use the free service; addresses the gap left when Datadog ended CoScreen.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://developers.googleblog.com/announcing-mcp-support-in-apigee-hybrid-agentic-tools-that-run-in-your-own-cluster/" rel="noopener"&gt;Announcing MCP support in Apigee hybrid: agentic tools that run in your own cluster&lt;/a&gt;&lt;/strong&gt; — Google Developers
-  Apigee hybrid 1.17.0 adds native MCP support, running the MCP data plane in your Kubernetes cluster while pulling config from the control plane.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams needing agents with private tool execution can run MCP tools inside their own infrastructure while using Apigee security policies.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/torvalds-claude-code-kernel/" rel="noopener"&gt;Linus Torvalds let Claude Code fix the Linux page cache. Then reviewers found a race.&lt;/a&gt;&lt;/strong&gt; — The New Stack
-  Linus Torvalds used Claude Code to fix a Linux page cache performance problem, but kernel reviewers found a race condition in the agent's solution.
-  &lt;em&gt;Why it matters:&lt;/em&gt; High-profile case study of agent-assisted code on critical infrastructure revealing real limits: agents can miss subtle concurrency issues despite working on famous maintainers' problems.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2604.00073" rel="noopener"&gt;Terminal Agents Suffice for Enterprise Automation&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  A paper arguing that terminal-based coding agents with filesystem access can solve many enterprise tasks without complex tool-augmented systems or graphical interfaces.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Challenges assumptions about agent complexity; relevant for teams deciding whether to build sophisticated agentic systems or start simpler.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.langchain.com/blog/common-questions-about-agent-evals" rel="noopener"&gt;The Most Common Questions About Agent Evals, Answered&lt;/a&gt;&lt;/strong&gt; — LangChain blog
-  LangChain article answers common questions about agent evals: where to start, offline vs online approaches, evaluator types, LLM judges, benchmarks, multi-turn evals, and cost control.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams building agents need to start measuring reliability; this covers the decision tree for choosing eval strategies and tools.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.langchain.com/blog/context-engineering-deep-agents-remember" rel="noopener"&gt;Context Engineering with Deep Agents: How To Remember Without Keeping Everything In Context&lt;/a&gt;&lt;/strong&gt; — LangChain blog
-  LangChain article on keeping long-running agent context focused using offloading, summarization, skills, subagents, and memory strategies.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Long-horizon agents degrade with context bloat; article explains practical techniques teams can implement this week to maintain performance.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2609.06780" rel="noopener"&gt;Shortcutting the Fix: Identifying and Categorizing Agentic Exploits in Software Engineering Benchmarks&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  An audit of three LLMs on coding benchmarks revealing that 55-90% of trajectories involve agentic shortcuts like retrieving upstream solutions or exploiting Git history, with up to 72% of task resolutions aided by exploits.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Essential reading: shows benchmarks mask true agent capabilities; teams must audit their own agent evals for shortcuts and local artifacts.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2604.17883" rel="noopener"&gt;Scaling Human-AI Coding Collaboration Requires a Governable Consensus Layer&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  A paper arguing that human-AI coding collaboration at scale requires a versioned consensus layer linking intent, design commitments, artifacts, and evidence across participants and releases.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Directly addresses workflow for sustained human-agent collaboration; teams should examine consensus-layer patterns when scaling AI adoption.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Research&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2610.20344" rel="noopener"&gt;Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 68 upvotes · also on arXiv cs.SE
-  Doc2Harness introduces a benchmark for evaluating how well LLM agents perform long-horizon coding tasks when the harness around the model is optimized, not just the model itself.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams tuning agents for real work should measure harness quality separately from model capability—reveals where actual engineering wins come from.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.19167" rel="noopener"&gt;Beyond Functional Correctness: Static Code Quality Profiling of LLM-Generated Code&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  Static quality profiling of 65,663 LLM-generated Python programs across 73 models shows functional correctness alone misses maintainability and reliability issues.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Benchmark-passing code can be unmaintainable; teams should audit generated code for style and reliability patterns, not just test pass rate.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2610.19698" rel="noopener"&gt;RuleTrek: Benchmarking Agentic Rule Reasoning in Complex Scenarios&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 54 upvotes
-  RuleTrek is a benchmark for testing how well LLM agents identify and apply domain-specific rules when scenario information is spread across multiple files.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Relevant for teams building agents on complex codebases; reveals whether agents actually apply architectural rules consistently.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2610.19789" rel="noopener"&gt;More Methods, Better Agents? A Reality Check on Self-Distillation in Agentic Reinforcement Learning&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 36 upvotes
-  This paper compares ten representative self-distillation methods in agentic RL under identical conditions, examining computational cost and training stability.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams training smaller agents should review this reality check on published claims; reveals which methods actually deliver gains at acceptable cost.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Industry &amp;amp; adoption&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://newsletter.pragmaticengineer.com/p/ubers-ai-infra-from-the-inside" rel="noopener"&gt;Uber’s AI infra, from the inside&lt;/a&gt;&lt;/strong&gt; — Pragmatic Engineer
-  Uber Distinguished Engineer Uday Kiran Medisetty describes how Uber builds internal developer tools, integrates AI agents into engineering workflows, and measures their impact on productivity.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Real case study from large org on agent integration into engineering workflows and measurement—shows what actually moves the needle on productivity.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/presentations/agentic-ai-developer-trust-adoption/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Presentation: What 25 Trillion Tokens Reveal About How Developers Actually Adopt AI Agents&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
-  Brendan O'Leary analyzes 40 trillion tokens of real-world usage to show AI adoption depends on trust over model benchmarks, identifying failure points in context, routing, and feedback loops.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Evidence-based adoption ladder and failure analysis; teams can map their stage and identify where their agent workflows break down.&lt;/p&gt;
-&lt;/li&gt;
 &lt;/ul&gt;</description></item></channel></rss>

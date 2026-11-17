@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Tue 17 Nov 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-11-16.html">← 2026-11-16</a></nav>
+<h1>AI Engineering Radar · Tue 17 Nov 2026</h1>
+<p class="muted">15 links worth a look</p>
+<h2>Models &amp; releases</h2>
+<ul>
+<li><strong><a href="https://huggingface.co/papers/2611.21003" rel="noopener">K2-Horizon: A Frontier Fleet of Open Source Language Models</a></strong> — HF Daily Papers · 55 upvotes
+  K2-Horizon fleet of six open models from 0.9B to 375B MoE with Mixture-of-Value Attention and softplus gating, competitive on agentic and coding benchmarks.
+  <em>Why it matters:</em> Engineering teams can benchmark these models against proprietary alternatives for coding and reasoning tasks; smaller sizes enable local deployment.</li>
+</ul>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://github.com/sybil-solutions/inference-optimisation-skill" rel="noopener">sybil-solutions/inference-optimisation-skill</a></strong> — GitHub new repos · ★ 561
+  Agent skill for optimizing local LLM serving speed across decode, speculative decoding, prefill, and KV cache on any hardware and quantization setup.
+  <em>Why it matters:</em> Teams running inference-heavy coding agents can experiment with this to measure latency and cost tradeoffs for local model serving.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/11/datadog-ai-agent-observability/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Datadog Brings Production Experimentation to AI Agent Observability</a></strong> — InfoQ AI
+  Datadog added Online Experiments to its Agent Observability platform, letting teams compare AI agent versions against real production traffic instead of just evaluation datasets.
+  <em>Why it matters:</em> Production-grade evaluation of agent versions is essential for shipping reliable agents; testing against real traffic catches issues that evals miss.</p>
+</li>
+<li>
+<p><strong><a href="https://www.langchain.com/blog/we-rebuilt-langsmith-around-the-agent" rel="noopener">Why we rebuilt LangSmith around the agent</a></strong> — LangChain blog
+  LangChain reorganized LangSmith around a single agent record, allowing teams to build, run, improve, and govern agents from one place across any framework or runtime.
+  <em>Why it matters:</em> Agent-centric observability and governance is table-stakes for shipping reliable agents; this tool makes it concrete and framework-agnostic.</p>
+</li>
+</ul>
+<h2>Agentic coding &amp; workflows</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.18571" rel="noopener">Loop Engineering: Version-Bound, Evidence-Gated Coordination for Production Coding Agents</a></strong> — arXiv cs.SE
+  Loop Engineering presents version-bound, evidence-gated coordination for multiple asynchronous coding agents over shared repository state without conversational handoffs, with approval, verification, and recovery.
+  <em>Why it matters:</em> Essential pattern for running multiple agents in production: durable task context, scoped authority, source-independent verification, and accountable human-agent handoffs.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.18573" rel="noopener">LoopSkill: Evidence-Bound Lifecycle Control and the Safety-Liveness Tradeoff in Coding Agents</a></strong> — arXiv cs.SE
+  LoopSkill adds evidence-bound lifecycle control with schema-validated writes, durable outbox routing, artifact-bound reports, recovery, and heartbeat-gated finalization for coding agents.
+  <em>Why it matters:</em> Teams need this control plane for proving agent work completed correctly; addresses safety-liveness tradeoff by validating state agreement before finalization.</p>
+</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://www.infoq.com/presentations/scale-llm-ranking-systems-linkedin/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Presentation: Scaling LLM-Based Ranking Systems for Latency-Critical Search &amp; Recommendation Workloads</a></strong> — InfoQ AI
+  Sundara Raman Ramachandran shares how LinkedIn productionizes LLM ranking under strict P99 latency SLAs, including model distillation from 7B to 400M parameters, context compression, and system optimizations like flash attention and GIL workarounds.
+  <em>Why it matters:</em> Detailed production walkthrough of making LLMs fast enough for latency-critical systems shows concrete techniques—distillation, compression, GIL fixes—your team can apply.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.18582" rel="noopener">AI Cannot Review What Humans Catch: A First Look at the Reviews of Agent Instruction Files</a></strong> — arXiv cs.SE
+  Researchers studied code review of agent instruction files like .cursorrules and CLAUDE.md, finding humans catch issues that static checks miss.
+  <em>Why it matters:</em> Establish review discipline for agent directives: instruction files silently redirect agent behavior across repos without compiler safety nets.</p>
+</li>
+<li>
+<p><strong><a href="https://www.langchain.com/blog/context-engineering-challenges-late-2026" rel="noopener">New context engineering challenges in late 2026</a></strong> — LangChain blog
+  LangChain CEO Harrison Chase discusses the biggest context engineering challenges that have emerged with proactive agents in late 2026.
+  <em>Why it matters:</em> Context engineering directly affects how teams get the best results from AI coding agents; learning what's hard at scale helps avoid pitfalls in your own deployments.</p>
+</li>
+<li>
+<p><strong><a href="https://newsletter.pragmaticengineer.com/p/software-engineering-after-code-becomes" rel="noopener">Software engineering after code becomes cheap with Satya Nadella</a></strong> — Pragmatic Engineer
+  Microsoft CEO Satya Nadella discusses AI's impact on software engineering, code verification, and engineers' careers in an interview.
+  <em>Why it matters:</em> Leadership perspective on how cheap code changes what matters—verification, design, judgment—helps frame what your team should prioritize as code output scales.</p>
+</li>
+<li>
+<p><strong><a href="https://blog.antonio.cx/running-agents-with-lend" rel="noopener">Running coding agents without handing them my credentials</a></strong> — Hacker News · 119 points · 95 comments · <a href="https://news.ycombinator.com/item?id=50526152" rel="noopener">discussion</a>
+  Hacker News discussion on running coding agents without exposing developer credentials.
+  <em>Why it matters:</em> Teams deploying agents in CI or production need patterns for credential isolation and safe delegation.</p>
+</li>
+</ul>
+<h2>Research</h2>
+<ul>
+<li>
+<p><strong><a href="https://huggingface.co/papers/2611.20218" rel="noopener">SWE-CoWork: Benchmarking Coding Agents as Digital Employees in Organizations</a></strong> — HF Daily Papers · 30 upvotes · also on arXiv cs.SE
+  SWE-CoWork benchmark places coding agents in simulated software organizations with 26 colleagues across 101 real repositories and 11 languages to test requirement recovery and collaboration.
+  <em>Why it matters:</em> Teams evaluating coding agents can use this benchmark to test realistic handoff and collaboration workflows instead of isolated problem-solving.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.18569" rel="noopener">Knowledge-Centric Automated Issue Resolution: A Systematic Survey and Taxonomy</a></strong> — arXiv cs.SE
+  Survey of 133 studies on automated issue resolution from knowledge-centric view, organizing knowledge into background, repository, and procedural layers.
+  <em>Why it matters:</em> Teams building agents for bug fixing can reference this taxonomy to identify which knowledge sources (docs, history, tools, execution) their agents need.</p>
+</li>
+</ul>
+<h2>Industry &amp; adoption</h2>
+<ul>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/11/uber-legal-redlining-agent/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Uber’s Legal AI Agent Cuts Contract Review Time by 20% with Rules and RAG</a></strong> — InfoQ AI
+  Uber deployed a legal redlining agent using RAG, historical feedback, and policy rules built with LangGraph and OpenSearch, achieving 20% faster contract review and 91% accuracy.
+  <em>Why it matters:</em> Real case study showing how agents handle domain-specific knowledge and iterative refinement; teams can study the LangGraph and RAG architecture choices.</p>
+</li>
+<li>
+<p><strong><a href="https://openai.com/business/customer-stories/revolut" rel="noopener">How Revolut raises ambition without lowering the bar</a></strong> — OpenAI news
+  Revolut published a case study showing how they use OpenAI models and Codex to cut coding time by 30-60%, scale financial crime investigations, and maintain security standards.
+  <em>Why it matters:</em> Real fintech example with concrete metrics shows what code velocity gains are possible with AI tools and how to maintain security alongside adoption.</p>
+</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>
