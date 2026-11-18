@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Wed 18 Nov 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-11-17.html">← 2026-11-17</a></nav>
+<h1>AI Engineering Radar · Wed 18 Nov 2026</h1>
+<p class="muted">15 links worth a look</p>
+<h2>Models &amp; releases</h2>
+<ul>
+<li>
+<p><strong><a href="https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/" rel="noopener">MAI Code 2 and Code 2 Flash</a></strong> — Hacker News · 377 points · 155 comments · <a href="https://news.ycombinator.com/item?id=50535885" rel="noopener">discussion</a>
+  Hacker News discussion title only; MAI Code 2 and Code 2 Flash released but content not provided.
+  <em>Why it matters:</em> Major AI coding model release; details unknown from text provided.</p>
+</li>
+<li>
+<p><strong><a href="https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/" rel="noopener">GPT‑6.2 Astra and GPT‑6.2 Sol</a></strong> — Simon Willison
+  OpenAI released GPT-6.2 Astra and GPT-6.2 Sol; Astra costs 80 percent of GPT-6 Astra and Sol is positioned for everyday work.
+  <em>Why it matters:</em> Major pricing shift affecting model selection economics for teams; Astra cache pricing dropped from $1M to $0.4M per million tokens.</p>
+</li>
+<li>
+<p><strong><a href="https://openai.com/index/introducing-gpt-6-2-astra-sol" rel="noopener">Introducing GPT-6.2 Astra and Sol</a></strong> — OpenAI news
+  OpenAI released GPT-6.2 Astra and Sol with improvements to coding, computer use, and cost efficiency across ChatGPT Work, Codex, and the API.
+  <em>Why it matters:</em> New model release affects what coding tasks become practical and cost-effective for engineering teams to automate.</p>
+</li>
+</ul>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://thenewstack.io/coding-agent-harness-costs/" rel="noopener">Your AI coding agent could cost 5x more depending on the harness, benchmark finds</a></strong> — The New Stack
+  A benchmark found that the same AI model can cost five times more to run depending on the coding agent harness used.
+  <em>Why it matters:</em> Concrete finding on how harness choice affects agent cost; teams can measure and optimize harness selection before scaling coding agents.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.21845" rel="noopener">EmbedGym: Letting Coding Agents Develop and Debug Embedded Firmware Without Physical Hardware</a></strong> — arXiv cs.SE
+  EmbedGym lets coding agents develop and debug embedded firmware without physical hardware, providing simulation for GPIO, timing, and networking bugs.
+  <em>Why it matters:</em> Opens embedded systems development to agentic coding by breaking the feedback loop problem; teams can now have agents iterate on firmware tasks.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/erkamyaman/rust-anything" rel="noopener">erkamyaman/rust-anything</a></strong> — GitHub new repos · ★ 2,437
+  rust-anything lets you rewrite applications in Rust piece by piece, testing each component against recorded behavior from the original TypeScript, Python, C, Go, Ruby or Java version.
+  <em>Why it matters:</em> Practical tool for teams doing gradual migrations to Rust with safety guarantees; directly applicable to incremental rewrites.</p>
+</li>
+</ul>
+<h2>Agentic coding &amp; workflows</h2>
+<ul>
+<li><strong><a href="https://developers.googleblog.com/agents-are-sessions-not-requests-size-gke-node-pools-for-ai-agent-sessions/" rel="noopener">Agents are sessions, not requests: size GKE node pools for AI agent sessions</a></strong> — Google Developers
+  Google shows how to run AI agent sessions on GKE by parking idle sessions in object storage, reducing node costs by up to 40% while maintaining state.
+  <em>Why it matters:</em> Practical pattern for running agent workloads in production Kubernetes; directly addresses cost and resource efficiency concerns for teams deploying agents at scale.</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/" rel="noopener">How the Claude Code team thinks about verification</a></strong> — Hacker News · 283 points · 227 comments · <a href="https://news.ycombinator.com/item?id=50529612" rel="noopener">discussion</a>
+  Hacker News discussion title only; no content to evaluate about Claude Code team's verification approach.
+  <em>Why it matters:</em> Title suggests insights on verification practices for coding agents; substance unknown from text provided.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.21623" rel="noopener">The Software Engineering Factory: Engineering Accountability and Control in the Age of Abundant Code</a></strong> — arXiv cs.SE
+  Paper argues the Software Engineering Factory model must move control into the process producing code, using deterministic protocol engines instead of relying on final code review as the primary control.
+  <em>Why it matters:</em> Fundamental shift for teams scaling agents: final review cannot scale; must enforce protocols and evidence requirements before code proceeds.</p>
+</li>
+<li>
+<p><strong><a href="https://sourcegraph.com/blog/big-code-report-2026" rel="noopener">AI writes the code. Engineers still have to understand it.</a></strong> — Sourcegraph blog
+  Sourcegraph's 2026 Big Code report surveyed 1,028 people on how teams understand, review, and change large codebases when AI writes more code.
+  <em>Why it matters:</em> Direct empirical data on code review practices and comprehension challenges when AI generates code at scale—actionable for teams building review workflows.</p>
+</li>
+<li>
+<p><strong><a href="https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/" rel="noopener">External sandboxes for coding agents</a></strong> — Simon Willison
+  Simon Willison describes the external sandbox pattern for safer coding agent execution, where the agent runs outside a dedicated sandbox containing the code it executes.
+  <em>Why it matters:</em> Practical safety pattern for local models and prompt-injection resilience; directly applicable pattern for agent deployments.</p>
+</li>
+<li>
+<p><strong><a href="https://newsletter.pragmaticengineer.com/p/inference-engineering-for-software-engineers" rel="noopener">Inference engineering for software engineers</a></strong> — Pragmatic Engineer
+  Pragmatic Engineer article covers inference engineering decisions: when to drop frontier APIs, model and provider selection, caching strategies, and GPU allocation.
+  <em>Why it matters:</em> Practical guide for model and infra decisions; directly applicable to choosing between frontiers, local models, and caching.</p>
+</li>
+</ul>
+<h2>Research</h2>
+<ul>
+<li>
+<p><strong><a href="https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/" rel="noopener">Harvard researchers find AI coding agents shifted the bottleneck to code review</a></strong> — Hacker News · 207 points · 287 comments · <a href="https://news.ycombinator.com/item?id=50538303" rel="noopener">discussion</a>
+  Harvard researchers found that AI coding agents shifted the bottleneck from code writing to code review in development workflows.
+  <em>Why it matters:</em> Major finding: teams scaling agents must invest in code review capacity and tooling; directly changes how to allocate resources.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.21614" rel="noopener">Does Your Agent Need to Know Its Budget? A Placebo-Controlled Experiment on LLM Coding Agents</a></strong> — arXiv cs.SE
+  Placebo-controlled experiment showing token budget enforcement reduced task resolution by 20 percentage points but cut tokens-per-task by 12x, and that disclosing budgets to agents affected performance.
+  <em>Why it matters:</em> Empirical evidence on budget constraints for agents; teams can measure trade-offs between cost control and task success rates.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.21797" rel="noopener">Can Coding Agents Write and Transpile Unit Tests</a></strong> — arXiv cs.SE
+  Benchmark evaluating three popular coding agents on writing unit tests reliably and translating tests between languages, using frontier models and high reasoning effort.
+  <em>Why it matters:</em> Direct comparison of agent capabilities on test generation and transpilation—critical for teams relying on agents to write and migrate tests.</p>
+</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>
