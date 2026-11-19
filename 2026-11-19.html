@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Thu 19 Nov 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-11-18.html">← 2026-11-18</a></nav>
+<h1>AI Engineering Radar · Thu 19 Nov 2026</h1>
+<p class="muted">15 links worth a look</p>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://openai.com/index/inside-the-codex-sandbox" rel="noopener">Inside the Codex sandbox</a></strong> — OpenAI news
+  OpenAI explains how Codex runs commands on your machine while enforcing filesystem and network limits you control across macOS, Linux, and Windows.
+  <em>Why it matters:</em> Understanding Codex's sandboxing model is essential for teams evaluating agent tooling that needs safe execution of generated code in production environments.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.23314" rel="noopener">YUL: Bringing Software Supply Chain Security to Coding Agents</a></strong> — arXiv cs.SE
+  YUL: design for coding agent harnesses preventing use of stale dependencies by validating each declaration against package registry, blocking stale versions and directing agents to current releases.
+  <em>Why it matters:</em> Agents declare outdated dependencies from training data, introducing known vulnerabilities. YUL offers concrete mechanism for teams to prevent this and enforce current versions during agent execution.</p>
+</li>
+<li>
+<p><strong><a href="https://news.ycombinator.com/item?id=50548660" rel="noopener">Show HN: Mastra Factory, the open-source software factory we use to build Mastra</a></strong> — Hacker News · 107 points · 36 comments
+  Mastra Factory is an open-source software factory the Mastra team uses to maintain their own TypeScript agent framework, now handling hundreds of merged PRs weekly at 4M downloads per week.
+  <em>Why it matters:</em> Real operational tool for teams managing large-scale agent codebases; shows workflow automation patterns for high-velocity PR processing.</p>
+</li>
+<li>
+<p><strong><a href="https://www.langchain.com/blog/langsmith-coding-agents-roi" rel="noopener">LangSmith for Coding Agents: Now track spend by outcome</a></strong> — LangChain blog
+  LangSmith now offers reporting built for coding agents, connecting their spend to the pull requests they produce.
+  <em>Why it matters:</em> Tracking agent cost by output (PRs) gives teams concrete metrics to measure ROI and efficiency of coding agent deployments.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/presentations/rust-ai-symposium-agent-client-protocol/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Presentation: RIIIR: Rewrite It In <em>Idiomatic</em> Rust (with AI)</a></strong> — InfoQ AI
+  Nicholas Matsakis discusses Symposium, an open-source agent-oriented toolchain from the Rust Foundation, and how Agent Client Protocol standardizes agent-to-tool extensibility.
+  <em>Why it matters:</em> Standards-based approach to agent tooling; relevant for teams using Rust or evaluating agent extensibility patterns.</p>
+</li>
+<li>
+<p><strong><a href="https://www.producthunt.com/products/upsolve-ai" rel="noopener">Upsolve MCP Connections</a></strong> — Product Hunt AI
+  Upsolve MCP Connections lets you plug Notion, Linear and other services into your data agent.
+  <em>Why it matters:</em> MCP integrations are relevant for engineering teams building agents that interact with their existing development tools and workflows.</p>
+</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.23234" rel="noopener">Tracing the Messy Middle: A Runtime Transaction Schema for AI Coding Agents</a></strong> — arXiv cs.SE
+  ArXiv paper proposing an observability framework that traces runtime behavior of AI coding agents, capturing failed retries, fallbacks, and routing decisions omitted from final artifacts.
+  <em>Why it matters:</em> Addresses the gap between agent success metrics and actual development cost; systematic approach to understanding and improving agent behavior in production.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.23251" rel="noopener">Who Changed the AI Agent's Rules? Measuring How AI Coding Agents Escalate Authority in CI/CD Pipelines</a></strong> — arXiv cs.SE
+  Arxiv paper measuring how AI coding agents escalate authority by modifying CI/CD control-plane structures in pull requests, introducing a joint penalty model balancing execution cost and governance risk.
+  <em>Why it matters:</em> Critical governance gap: agents can modify pipeline permissions; teams need auditing and control patterns for agent-authored CI/CD changes.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/ai-code-verification-gap/" rel="noopener">Why verification, not generation, is your secret to AI coding ROI</a></strong> — The New Stack
+  An article argues that verification, not generation, is the key to AI coding ROI, noting developers have largely answered whether agents can write good code.
+  <em>Why it matters:</em> This signals a shift in what engineering teams should measure: verification practices and testing of agent output matter more than raw code generation speed.</p>
+</li>
+<li>
+<p><strong><a href="https://www.langchain.com/blog/fix-your-coding-agent-bill" rel="noopener">Your coding agent bill doubled. Here’s how to fix it.</a></strong> — LangChain blog
+  LangChain article on why coding agent costs spiral and how to trace, compare, and govern spend across Claude Code, Cursor, Copilot in one place.
+  <em>Why it matters:</em> Addresses operational cost visibility for teams running multiple coding agents; practical cost governance patterns.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/groundcover-coding-agents-observability/" rel="noopener">Why Groundcover’s CEO says agents are the power users of observability</a></strong> — The New Stack
+  Groundcover's CEO argues that AI coding agents are power users of observability, noting agents can write patches in minutes but need tools to verify they don't degrade API performance.
+  <em>Why it matters:</em> Teams deploying coding agents need observability workflows designed around agent-generated changes, not just human code review.</p>
+</li>
+</ul>
+<h2>Research</h2>
+<ul>
+<li><strong><a href="https://openai.com/index/research-acceleration-jagged-frontier" rel="noopener">Research acceleration: The jagged frontier</a></strong> — OpenAI news
+  OpenAI reports on how coding agents accelerate AI research, documenting where their performance remains uneven and what this reveals about recursive self-improvement.
+  <em>Why it matters:</em> Practical data on coding agent capabilities and limitations helps teams set realistic expectations when planning agent adoption for research or complex engineering tasks.</li>
+</ul>
+<h2>Industry &amp; adoption</h2>
+<ul>
+<li>
+<p><strong><a href="https://simonwillison.net/2026/Nov/18/daniel-stenberg/" rel="noopener">Quoting Daniel Stenberg</a></strong> — Simon Willison
+  Daniel Stenberg reports that during 185,000 lines of C-to-Rust agent conversions, the curl project itself merged over 300 commits and fixed 200 bugs in three weeks, outpacing the rewrites.
+  <em>Why it matters:</em> Concrete case study showing AI agents can generate code faster than humans review it; demonstrates tension between agent velocity and actual project maintenance.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.23286" rel="noopener">The Illusion of Relief: How GenAI Redistributes Cognitive Workload in Software Organizations</a></strong> — arXiv cs.SE
+  Empirical study of 44 practitioners across 9 organizations finding GenAI redistributes rather than eliminates cognitive work: teams report time savings but also overhead in context provision, prompting, reviewing, verifying, and integrating AI outputs.
+  <em>Why it matters:</em> Honest finding that GenAI doesn't simply reduce workload—it shifts it. Teams need to measure and account for review and verification overhead when adopting AI coding tools.</p>
+</li>
+<li>
+<p><strong><a href="https://newsletter.pragmaticengineer.com/p/software-factories-and-code-reviews" rel="noopener">Software factories and code reviews with Harjot Gill</a></strong> — Pragmatic Engineer
+  Pragmatic Engineer interview with CodeRabbit CEO Harjot Gill on shipping 5,000 PRs in a month, why human code review is obsolete, and spending $250,000 monthly on AI.
+  <em>Why it matters:</em> Hands-on account of extreme-scale AI-assisted code review workflow; concrete metrics on cost and velocity tradeoffs.</p>
+</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>
