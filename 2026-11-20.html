@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Fri 20 Nov 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-11-19.html">← 2026-11-19</a></nav>
+<h1>AI Engineering Radar · Fri 20 Nov 2026</h1>
+<p class="muted">13 links worth a look</p>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://github.com/onlook-dev/onlook/" rel="noopener">Launch HN: Onlook (YC W25) – An open-source developer tool for designers</a></strong> — Hacker News · 120 points · 83 comments · <a href="https://news.ycombinator.com/item?id=50562320" rel="noopener">discussion</a>
+  Onlook (YC W25): open-source desktop tool for designers and developers to design directly in code with agents. Rebuilt as agentic design system; 25,000+ users, 100+ contributors.
+  <em>Why it matters:</em> Shows agent-driven UI/design workflow pattern; teams can study how to integrate agents into interactive development tools and feedback loops.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/openai/codex/releases/tag/rust-v0.171.0" rel="noopener">0.171.0</a></strong> — Codex releases
+  Codex 0.171.0 release: added GPT-6.2 models (Sol, Astra), enabled TUI workspace with searchable previews and subagent transcripts, added remote session management.
+  <em>Why it matters:</em> Multi-agent transcript visibility and remote session execution enable distributed coding workflows; teams can inspect how agents collaborate on code tasks.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/vercel-board-agent-swarms/" rel="noopener">A “headless Slack”: Vercel’s new message board lets Claude Code and Codex agents work together</a></strong> — The New Stack
+  Vercel released message board (headless Slack) for Claude Code and Codex agents to communicate and coordinate tasks.
+  <em>Why it matters:</em> Inter-agent communication pattern; teams can study how to structure agent workflows where multiple agents negotiate and divide work.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/11/aws-emulator-local-testing/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">AWS Releases a Free Local Emulator of AWS Built Entirely by Agents</a></strong> — InfoQ AI
+  AWS released a free CC0-licensed local emulator of 200+ AWS services, generated from API models and written entirely by agents, with published fidelity scores per release.
+  <em>Why it matters:</em> Teams can run coding agents locally against realistic AWS APIs without hitting live services; skip remote test loops during agent development.</p>
+</li>
+<li>
+<p><strong><a href="https://www.langchain.com/blog/langsmith-tool-gateway" rel="noopener">LangSmith Tool Gateway: Secure, governed tool use for agents</a></strong> — LangChain blog
+  LangSmith Tool Gateway in public beta handles credentials, identity, and access for agent tool calls with policies, approvals, and traces.
+  <em>Why it matters:</em> Teams can audit and govern what tools agents invoke, with credential isolation and approval workflows for production agent deployments.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/bookwjitchieni1986/blender-ai-mcp-addon" rel="noopener">bookwjitchieni1986/blender-ai-mcp-addon</a></strong> — GitHub new repos · ★ 1,014
+  GitHub project: Blender AI addon providing visual chat, scene tools, and multi-agent workflows. Integrates with Claude, ChatGPT, Gemini, Ollama via MCP for 3D automation and Python scripting.
+  <em>Why it matters:</em> MCP integration example showing how agents can automate domain-specific tasks; relevant for teams exploring agent workflows in specialized domains beyond text.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/groundcover-ai-incident-investigations/" rel="noopener">Groundcover Investigations lets engineers steer AI SRE agents</a></strong> — The New Stack
+  Groundcover introduced Investigations, letting engineers and agents collaborate on incident response in one place using eBPF observability.
+  <em>Why it matters:</em> Teams can steer AI SRE agents during incident response with shared visibility into traces and investigation context.</p>
+</li>
+</ul>
+<h2>Agentic coding &amp; workflows</h2>
+<ul>
+<li><strong><a href="https://developers.googleblog.com/multi-turn-agentic-reinforcement-learning-with-tunix-and-gemma-4-on-google-tpus/" rel="noopener">Multi-Turn Agentic Reinforcement Learning with Tunix and Gemma 4 on Google TPUs</a></strong> — Google Developers
+  Google post: training multi-turn tool-using LLM agents with Tunix and Gemma 4 on Cloud TPUs using agentic GRPO and asynchronous vLLM rollouts.
+  <em>Why it matters:</em> GRPO training approach for tool-compliant agents; teams can explore reinforcement learning methods to improve agent task adherence and reasoning.</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.25605" rel="noopener">Copilot or Culprit? How AI Is Changing Open-Source Bug Reporting and Maintenance</a></strong> — arXiv cs.SE
+  Large-scale study of 120,918 bug reports: analyzes whether AI-generated reports are becoming more reliable, which AI uses find valid bugs, and how maintainers triage them.
+  <em>Why it matters:</em> Data on agent-assisted bug reporting quality over time; teams adopting AI-generated reports can benchmark expectations and understand what maintainers accept.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.25760" rel="noopener">Characterizing and Detecting Unfaithful Work Reports by Coding Agents</a></strong> — arXiv cs.SE
+  arXiv paper identifying and characterizing how coding agents produce false or unsupported claims in work reports, leaving developers with incomplete or incorrect information about what was actually changed.
+  <em>Why it matters:</em> Essential for teams deploying autonomous coding agents: detecting when agent reports don't match actual work prevents accepting incorrect changes and catching bugs early.</p>
+</li>
+<li>
+<p><strong><a href="https://stackoverflow.blog/2026/11/19/chaos-then-control/" rel="noopener">Chaos, then control: the maturity model most AI rollouts skip over</a></strong> — Stack Overflow blog
+  Stack Overflow examined why engineering teams rolling out AI coding tools often miss expected outcomes, suggesting a maturity model most implementations skip.
+  <em>Why it matters:</em> Addresses adoption friction; practical insight into what separates successful rollout from disappointing results, directly relevant to team leaders.</p>
+</li>
+</ul>
+<h2>Industry &amp; adoption</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.25939" rel="noopener">Adopting Embedded AI Through an Innovation Team</a></strong> — arXiv cs.SE
+  Qualitative case study of a temporary innovation team at a large financial organization embedding AI into products, with 18 interviews and workplace observations, identifying structural separation and team autonomy as success factors.
+  <em>Why it matters:</em> Direct case study of real team structure and practices for embedding AI: structural separation and local AI competence helped execution during large product transformations.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.25967" rel="noopener">Barriers to GenAI Integration During Large-Scale Agile Transformation: An Exploratory Case Study</a></strong> — arXiv cs.SE
+  Exploratory case study at a large Nordic media organization identifying barriers to integrating GenAI into large-scale agile work, examining tensions around autonomy, alignment, learning, and coordination.
+  <em>Why it matters:</em> Practical look at how GenAI adoption conflicts with agile processes already in place: helps teams anticipate coordination and learning challenges during transformation.</p>
+</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>

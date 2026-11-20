@@ -2,7 +2,81 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Thu 19 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-19.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-19.html</guid><pubDate>Thu, 19 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Fri 20 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-20.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-20.html</guid><pubDate>Fri, 20 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/onlook-dev/onlook/" rel="noopener"&gt;Launch HN: Onlook (YC W25) – An open-source developer tool for designers&lt;/a&gt;&lt;/strong&gt; — Hacker News · 120 points · 83 comments · &lt;a href="https://news.ycombinator.com/item?id=50562320" rel="noopener"&gt;discussion&lt;/a&gt;
+  Onlook (YC W25): open-source desktop tool for designers and developers to design directly in code with agents. Rebuilt as agentic design system; 25,000+ users, 100+ contributors.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Shows agent-driven UI/design workflow pattern; teams can study how to integrate agents into interactive development tools and feedback loops.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/openai/codex/releases/tag/rust-v0.171.0" rel="noopener"&gt;0.171.0&lt;/a&gt;&lt;/strong&gt; — Codex releases
+  Codex 0.171.0 release: added GPT-6.2 models (Sol, Astra), enabled TUI workspace with searchable previews and subagent transcripts, added remote session management.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Multi-agent transcript visibility and remote session execution enable distributed coding workflows; teams can inspect how agents collaborate on code tasks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/vercel-board-agent-swarms/" rel="noopener"&gt;A “headless Slack”: Vercel’s new message board lets Claude Code and Codex agents work together&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  Vercel released message board (headless Slack) for Claude Code and Codex agents to communicate and coordinate tasks.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Inter-agent communication pattern; teams can study how to structure agent workflows where multiple agents negotiate and divide work.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/11/aws-emulator-local-testing/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;AWS Releases a Free Local Emulator of AWS Built Entirely by Agents&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  AWS released a free CC0-licensed local emulator of 200+ AWS services, generated from API models and written entirely by agents, with published fidelity scores per release.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams can run coding agents locally against realistic AWS APIs without hitting live services; skip remote test loops during agent development.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.langchain.com/blog/langsmith-tool-gateway" rel="noopener"&gt;LangSmith Tool Gateway: Secure, governed tool use for agents&lt;/a&gt;&lt;/strong&gt; — LangChain blog
+  LangSmith Tool Gateway in public beta handles credentials, identity, and access for agent tool calls with policies, approvals, and traces.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams can audit and govern what tools agents invoke, with credential isolation and approval workflows for production agent deployments.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/bookwjitchieni1986/blender-ai-mcp-addon" rel="noopener"&gt;bookwjitchieni1986/blender-ai-mcp-addon&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 1,014
+  GitHub project: Blender AI addon providing visual chat, scene tools, and multi-agent workflows. Integrates with Claude, ChatGPT, Gemini, Ollama via MCP for 3D automation and Python scripting.
+  &lt;em&gt;Why it matters:&lt;/em&gt; MCP integration example showing how agents can automate domain-specific tasks; relevant for teams exploring agent workflows in specialized domains beyond text.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/groundcover-ai-incident-investigations/" rel="noopener"&gt;Groundcover Investigations lets engineers steer AI SRE agents&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  Groundcover introduced Investigations, letting engineers and agents collaborate on incident response in one place using eBPF observability.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams can steer AI SRE agents during incident response with shared visibility into traces and investigation context.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://developers.googleblog.com/multi-turn-agentic-reinforcement-learning-with-tunix-and-gemma-4-on-google-tpus/" rel="noopener"&gt;Multi-Turn Agentic Reinforcement Learning with Tunix and Gemma 4 on Google TPUs&lt;/a&gt;&lt;/strong&gt; — Google Developers
+  Google post: training multi-turn tool-using LLM agents with Tunix and Gemma 4 on Cloud TPUs using agentic GRPO and asynchronous vLLM rollouts.
+  &lt;em&gt;Why it matters:&lt;/em&gt; GRPO training approach for tool-compliant agents; teams can explore reinforcement learning methods to improve agent task adherence and reasoning.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.25605" rel="noopener"&gt;Copilot or Culprit? How AI Is Changing Open-Source Bug Reporting and Maintenance&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Large-scale study of 120,918 bug reports: analyzes whether AI-generated reports are becoming more reliable, which AI uses find valid bugs, and how maintainers triage them.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Data on agent-assisted bug reporting quality over time; teams adopting AI-generated reports can benchmark expectations and understand what maintainers accept.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.25760" rel="noopener"&gt;Characterizing and Detecting Unfaithful Work Reports by Coding Agents&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  arXiv paper identifying and characterizing how coding agents produce false or unsupported claims in work reports, leaving developers with incomplete or incorrect information about what was actually changed.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Essential for teams deploying autonomous coding agents: detecting when agent reports don't match actual work prevents accepting incorrect changes and catching bugs early.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://stackoverflow.blog/2026/11/19/chaos-then-control/" rel="noopener"&gt;Chaos, then control: the maturity model most AI rollouts skip over&lt;/a&gt;&lt;/strong&gt; — Stack Overflow blog
+  Stack Overflow examined why engineering teams rolling out AI coding tools often miss expected outcomes, suggesting a maturity model most implementations skip.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Addresses adoption friction; practical insight into what separates successful rollout from disappointing results, directly relevant to team leaders.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Industry &amp;amp; adoption&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.25939" rel="noopener"&gt;Adopting Embedded AI Through an Innovation Team&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Qualitative case study of a temporary innovation team at a large financial organization embedding AI into products, with 18 interviews and workplace observations, identifying structural separation and team autonomy as success factors.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Direct case study of real team structure and practices for embedding AI: structural separation and local AI competence helped execution during large product transformations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.25967" rel="noopener"&gt;Barriers to GenAI Integration During Large-Scale Agile Transformation: An Exploratory Case Study&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Exploratory case study at a large Nordic media organization identifying barriers to integrating GenAI into large-scale agile work, examining tensions around autonomy, alignment, learning, and coordination.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Practical look at how GenAI adoption conflicts with agile processes already in place: helps teams anticipate coordination and learning challenges during transformation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Thu 19 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-19.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-19.html</guid><pubDate>Thu, 19 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://openai.com/index/inside-the-codex-sandbox" rel="noopener"&gt;Inside the Codex sandbox&lt;/a&gt;&lt;/strong&gt; — OpenAI news
@@ -2127,36 +2201,5 @@ list I keep for that.
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.18861" rel="noopener"&gt;Hybrid Reasoning Agents: LLM agents that think in latent space, act through text&lt;/a&gt;&lt;/strong&gt; — Hacker News · 424 points · 208 comments · &lt;a href="https://news.ycombinator.com/item?id=50145337" rel="noopener"&gt;discussion&lt;/a&gt;
   Hybrid Reasoning Agents research from Together Computer explores LLM agents that think in latent space and act through text, with evaluations available on arXiv.
   &lt;em&gt;Why it matters:&lt;/em&gt; New agent reasoning architecture that may improve reliability and cost efficiency of coding agents; worth reviewing the evals to understand practical implications.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Sun 18 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-18.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-18.html</guid><pubDate>Sun, 18 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/LiCinCan/blender-ai-mcp-addon" rel="noopener"&gt;LiCinCan/blender-ai-mcp-addon&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 719
-  Blender AI MCP addon that integrates multi-agent chat and scene automation, supporting OpenAI, Claude, Gemini, Ollama, and other models through MCP protocol.
-  &lt;em&gt;Why it matters:&lt;/em&gt; MCP integration pattern for domain-specific tools; engineers building agentic workflows can study how to extend LLM capabilities to visual applications.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/jwuthri-cloud/Tracely-ai" rel="noopener"&gt;jwuthri-cloud/Tracely-ai&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 971
-  Tracely captures production traces from AI agents, grades them, clusters failures, and converts them into replayable regression tests that block PRs on regression. Self-hostable.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Addresses eval and reliability gaps in agent workflows; teams can adopt trace-native testing to prevent agent regressions in production CI/CD.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/reason-machines/reason-network" rel="noopener"&gt;reason-machines/reason-network&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 321
-  Reason Network enables multiple coding agents to communicate with each other using MCP and peer-to-peer protocols, built in Rust.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Multi-agent coordination pattern for complex coding tasks; teams experimenting with agent orchestration can examine how to connect agents via MCP.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://seangoedecke.com/writing-is-no-longer-proof-of-work/" rel="noopener"&gt;Writing is no longer proof of work&lt;/a&gt;&lt;/strong&gt; — Sean Goedecke
-  Sean Goedecke argues that writing is losing its function as proof-of-work in tech organizations as LLMs undermine writing as evidence of effort, knowledge, or compliance.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams adopting AI-assisted coding need to rethink how they validate work and knowledge; writing can no longer serve as a proxy for engineer understanding.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://sphinx-six-theta.vercel.app/" rel="noopener"&gt;Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping&lt;/a&gt;&lt;/strong&gt; — Hacker News · 146 points · 45 comments · &lt;a href="https://news.ycombinator.com/item?id=50137950" rel="noopener"&gt;discussion&lt;/a&gt;
-  Sphinx is an open-source hook that quizzes engineers on code generated by AI agents before shipping to production, checking comprehension of the code being deployed.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Practical workflow pattern to ensure human understanding of AI-generated code before deployment; directly addresses risks of shipping code engineers cannot explain.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</description></item></channel></rss>
