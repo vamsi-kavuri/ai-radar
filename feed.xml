@@ -2,7 +2,69 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Fri 20 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-20.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-20.html</guid><pubDate>Fri, 20 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Sat 21 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-21.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-21.html</guid><pubDate>Sat, 21 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/diggerhq/opencomputer" rel="noopener"&gt;Show HN: OpenComputer – an open source alternative to Devin&lt;/a&gt;&lt;/strong&gt; — Hacker News · 107 points · 32 comments · &lt;a href="https://news.ycombinator.com/item?id=50581403" rel="noopener"&gt;discussion&lt;/a&gt;
+  OpenComputer is an open source cloud coding agent that runs in AWS, GCP, or Azure with a reported first commit time of 24 seconds versus 53-72 seconds for competitors.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams evaluating self-hosted coding agents can test this architecture and benchmark its cold-start performance against existing solutions in their own cloud accounts.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.producthunt.com/products/stitch-loop" rel="noopener"&gt;Stitch Loop&lt;/a&gt;&lt;/strong&gt; — Product Hunt AI
+  Stitch Loop is Google's AI agent that ships code fixes and monitors metrics.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Automated code-to-production workflow worth evaluating. Check whether team can safely integrate metric monitoring into agent decision-making.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://developers.googleblog.com/check-what-your-ai-agents-do-before-they-do-it-with-semantic-governance-policies/" rel="noopener"&gt;Check what your AI agents do before they do it, with Semantic governance policies&lt;/a&gt;&lt;/strong&gt; — Google Developers
+  Google's Semantic Governance Policies enable developers to evaluate every proposed agent tool call against natural-language rules before execution via Agent Gateway.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams running agentic systems can use this pattern to prevent unauthorized data sharing and prompt injection by enforcing guardrails inline before actions execute.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://martinfowler.com/fragments/2026-11-20.html" rel="noopener"&gt;Fragments: November 20&lt;/a&gt;&lt;/strong&gt; — Martin Fowler
+  Marcus Borg's experiment found agents spent 22-35% more time and tokens reviewing unhealthy code than healthy code across five agents and 465 pull requests on 246 repositories.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams can prioritize code health investments knowing healthier code reduces agent review costs; the study identifies Complex Method and Complex Conditional as highest-impact smells to refactor.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://eugeneyan.com/writing/public-evals" rel="noopener"&gt;How Public Evals Work and Fail, and What Should Change&lt;/a&gt;&lt;/strong&gt; — Eugene Yan
+  Eugene Yan provides a teardown of 12 benchmarks, explaining how to read eval scores and what questions to ask about their reliability.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams comparing model performance on coding tasks should read this before trusting benchmark claims; understand common failure modes in public evals.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/anthropic-claude-code-verification/" rel="noopener"&gt;Anthropic says Claude writes and reviews 90% of its team’s code. The catch is how it checks the work.&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  Anthropic reports that Claude writes and reviews roughly 90% of code produced by the Claude Code team, with details on how they verify the work.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Real-world case study of a shipping team using AI for end-to-end code writing and review. Understand their quality gates and verification process to inform your team's adoption strategy.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://seangoedecke.com/why-output-caching-doesnt-work/" rel="noopener"&gt;Why output caching doesn't work&lt;/a&gt;&lt;/strong&gt; — Sean Goedecke
+  Sean Goedecke explains why caching LLM outputs is ineffective despite caching inputs being essential, with examples from agent-driven PR writing.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Understanding when caching helps versus hurts helps teams optimize prompt engineering and agent workflows to reduce unnecessary token spending on redundant reasoning.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/opensearch-ai-agent-observability/" rel="noopener"&gt;“We are not querying like humans anymore”: OpenSearch’s Bianca Lewis on why AI agent mistakes look like successes&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  Bianca Lewis from OpenSearch discusses how AI agents can call the wrong API and produce results that superficially appear correct, masking underlying mistakes.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams using AI agents for infrastructure or search need to understand that agents can make plausible but incorrect decisions. Test agent outputs against expected behavior, not just result formatting.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://latent.space/p/formal-verification/" rel="noopener"&gt;The War Against Slop and an Emerging Weapon to Fight it: Formal Verification&lt;/a&gt;&lt;/strong&gt; — Latent Space
+  Latent Space describes using formal verification and Lean to automatically prove software correct, positioning it as a tool against unreliable AI-generated code.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams dealing with AI-generated code can explore formal verification as a way to catch bugs that tests miss, though specialist effort may still be needed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://developers.googleblog.com/agent-anomaly-detection-safeguarding-agents-across-other-clouds/" rel="noopener"&gt;Agent Anomaly Detection: Safeguarding agents across other clouds&lt;/a&gt;&lt;/strong&gt; — Google Developers
+  Google's Agent Anomaly Detection monitors ADK agents across AWS, Azure, and on-premises by analyzing OpenTelemetry traces and logs for behavioral drift and tool misuse.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams operating agents in multi-cloud environments can use this monitoring to detect rogue behaviors and resource exhaustion without accessing the agent runtime.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Research&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.26073" rel="noopener"&gt;AltRA-Test: An Alternative Annotator Test for LLM Judges Without Shared Annotators&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 22 upvotes
+  AltRA-Test proposes a statistical method to validate using LLMs as judges when different annotators evaluate different items, without requiring uniform annotation coverage.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams running evals with LLM judges on large-scale annotation tasks can use this method to verify their judge's reliability without full re-annotation.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Fri 20 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-20.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-20.html</guid><pubDate>Fri, 20 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/onlook-dev/onlook/" rel="noopener"&gt;Launch HN: Onlook (YC W25) – An open-source developer tool for designers&lt;/a&gt;&lt;/strong&gt; — Hacker News · 120 points · 83 comments · &lt;a href="https://news.ycombinator.com/item?id=50562320" rel="noopener"&gt;discussion&lt;/a&gt;
@@ -2155,51 +2217,4 @@ list I keep for that.
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.24093" rel="noopener"&gt;Does AI-Assisted Development Homogenize Software? An Empirical Study of Code Similarity, Quality, and Evolution&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
   Empirical study of 50 open-source Java and Python projects examining code similarity, quality, and evolution across pre-LLM, potentially LLM-assisted, and detected agentic development eras using semantic embeddings.
   &lt;em&gt;Why it matters:&lt;/em&gt; Teams adopting agents should read this to understand actual impacts on code homogeneity, quality, and evolution patterns as development shifts from human to agentic.&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Mon 19 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-19.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-19.html</guid><pubDate>Mon, 19 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/alchaincyf/huashu-motion" rel="noopener"&gt;alchaincyf/huashu-motion&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 748
-  Huashu-motion is a GitHub repo that lets agents generate commercial-grade product launch videos with music and frame-level editing using JavaScript, GSAP, and Claude Code.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Demonstrates agent skills for creative automation beyond code; teams experimenting with agentic workflows could evaluate this for video generation tasks.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.23186" rel="noopener"&gt;Code Skill Server: A Large-Scale Search Engine for Code Generation Skills&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  Code Skill Server is a large-scale search engine for discovering and retrieving reusable agent skills across heterogeneous sources for software engineering, science, and math tasks.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Addresses skill discovery bottleneck for agents; teams building multi-agent systems can use this to locate and reuse specialized agent skills systematically.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/podcasts/future-web-apps/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Podcast: The Future of Web Apps: Will AI Agents Generate UIs on the Fly?&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
-  Rachel Lee Nabors discusses local-first applications and small language models running on-device as privacy-focused alternatives to cloud-hosted LLMs.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams exploring on-device SLMs can learn architectural tradeoffs around latency, cost, and privacy for agentic workflows without cloud dependency.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/articles/distributed-systems-microservices-agentic-ai/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Article: From Microservices to Agents: The Next Evolution of Distributed Systems&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
-  Mallika Rao examines the shift from microservices to agentic AI architecture, focusing on decision decomposition and new challenges in observability and reliability.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams building agentic systems need updated architectural patterns; the article addresses observability and reliability problems that differ from microservices.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Research&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.23506" rel="noopener"&gt;MLOps-Bench: Benchmarking AI Agents on Production ML Engineering in Real Repositories&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  MLOps-Bench is a repository-grounded benchmark for evaluating AI agents on real production ML engineering tasks including data pipelines, feature engineering, model training, serving, monitoring, CI/CD, and governance.
-  &lt;em&gt;Why it matters:&lt;/em&gt; First benchmark for ML engineering agents on production tasks; essential for teams evaluating agent capabilities on realistic ML workflows beyond generic repo tasks.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.22412" rel="noopener"&gt;EnterpriseSynth: Zero-Execution SFT and Evaluation Data from OpenAPI Specs&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  EnterpriseSynth is a zero-execution framework that generates supervised fine-tuning and evaluation data for tool-using agents from OpenAPI specs without invoking actual APIs.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Enables safe, cost-effective training data generation for enterprise API agents without production risk; directly applicable to teams building internal tool-using agents.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.23782" rel="noopener"&gt;Enforcing Code Reasoning in Agentic Scaffold for More Effective Issue Resolution&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  Study of 7,955 issue-resolution trajectories shows code reasoning is present in 66.95% of agent trajectories and correlates with success, but remains largely unguided across six agent scaffolds.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams can improve issue-resolution agents by explicitly enforcing code reasoning; paper identifies 12 reasoning forms that increase resolution rates on SWE-bench.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.18861" rel="noopener"&gt;Hybrid Reasoning Agents: LLM agents that think in latent space, act through text&lt;/a&gt;&lt;/strong&gt; — Hacker News · 424 points · 208 comments · &lt;a href="https://news.ycombinator.com/item?id=50145337" rel="noopener"&gt;discussion&lt;/a&gt;
-  Hybrid Reasoning Agents research from Together Computer explores LLM agents that think in latent space and act through text, with evaluations available on arXiv.
-  &lt;em&gt;Why it matters:&lt;/em&gt; New agent reasoning architecture that may improve reliability and cost efficiency of coding agents; worth reviewing the evals to understand practical implications.&lt;/p&gt;
-&lt;/li&gt;
 &lt;/ul&gt;</description></item></channel></rss>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Sat 21 Nov 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-11-20.html">← 2026-11-20</a></nav>
+<h1>AI Engineering Radar · Sat 21 Nov 2026</h1>
+<p class="muted">11 links worth a look</p>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://github.com/diggerhq/opencomputer" rel="noopener">Show HN: OpenComputer – an open source alternative to Devin</a></strong> — Hacker News · 107 points · 32 comments · <a href="https://news.ycombinator.com/item?id=50581403" rel="noopener">discussion</a>
+  OpenComputer is an open source cloud coding agent that runs in AWS, GCP, or Azure with a reported first commit time of 24 seconds versus 53-72 seconds for competitors.
+  <em>Why it matters:</em> Teams evaluating self-hosted coding agents can test this architecture and benchmark its cold-start performance against existing solutions in their own cloud accounts.</p>
+</li>
+<li>
+<p><strong><a href="https://www.producthunt.com/products/stitch-loop" rel="noopener">Stitch Loop</a></strong> — Product Hunt AI
+  Stitch Loop is Google's AI agent that ships code fixes and monitors metrics.
+  <em>Why it matters:</em> Automated code-to-production workflow worth evaluating. Check whether team can safely integrate metric monitoring into agent decision-making.</p>
+</li>
+</ul>
+<h2>Agentic coding &amp; workflows</h2>
+<ul>
+<li><strong><a href="https://developers.googleblog.com/check-what-your-ai-agents-do-before-they-do-it-with-semantic-governance-policies/" rel="noopener">Check what your AI agents do before they do it, with Semantic governance policies</a></strong> — Google Developers
+  Google's Semantic Governance Policies enable developers to evaluate every proposed agent tool call against natural-language rules before execution via Agent Gateway.
+  <em>Why it matters:</em> Teams running agentic systems can use this pattern to prevent unauthorized data sharing and prompt injection by enforcing guardrails inline before actions execute.</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://martinfowler.com/fragments/2026-11-20.html" rel="noopener">Fragments: November 20</a></strong> — Martin Fowler
+  Marcus Borg's experiment found agents spent 22-35% more time and tokens reviewing unhealthy code than healthy code across five agents and 465 pull requests on 246 repositories.
+  <em>Why it matters:</em> Teams can prioritize code health investments knowing healthier code reduces agent review costs; the study identifies Complex Method and Complex Conditional as highest-impact smells to refactor.</p>
+</li>
+<li>
+<p><strong><a href="https://eugeneyan.com/writing/public-evals" rel="noopener">How Public Evals Work and Fail, and What Should Change</a></strong> — Eugene Yan
+  Eugene Yan provides a teardown of 12 benchmarks, explaining how to read eval scores and what questions to ask about their reliability.
+  <em>Why it matters:</em> Teams comparing model performance on coding tasks should read this before trusting benchmark claims; understand common failure modes in public evals.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/anthropic-claude-code-verification/" rel="noopener">Anthropic says Claude writes and reviews 90% of its team’s code. The catch is how it checks the work.</a></strong> — The New Stack
+  Anthropic reports that Claude writes and reviews roughly 90% of code produced by the Claude Code team, with details on how they verify the work.
+  <em>Why it matters:</em> Real-world case study of a shipping team using AI for end-to-end code writing and review. Understand their quality gates and verification process to inform your team's adoption strategy.</p>
+</li>
+<li>
+<p><strong><a href="https://seangoedecke.com/why-output-caching-doesnt-work/" rel="noopener">Why output caching doesn't work</a></strong> — Sean Goedecke
+  Sean Goedecke explains why caching LLM outputs is ineffective despite caching inputs being essential, with examples from agent-driven PR writing.
+  <em>Why it matters:</em> Understanding when caching helps versus hurts helps teams optimize prompt engineering and agent workflows to reduce unnecessary token spending on redundant reasoning.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/opensearch-ai-agent-observability/" rel="noopener">“We are not querying like humans anymore”: OpenSearch’s Bianca Lewis on why AI agent mistakes look like successes</a></strong> — The New Stack
+  Bianca Lewis from OpenSearch discusses how AI agents can call the wrong API and produce results that superficially appear correct, masking underlying mistakes.
+  <em>Why it matters:</em> Teams using AI agents for infrastructure or search need to understand that agents can make plausible but incorrect decisions. Test agent outputs against expected behavior, not just result formatting.</p>
+</li>
+<li>
+<p><strong><a href="https://latent.space/p/formal-verification/" rel="noopener">The War Against Slop and an Emerging Weapon to Fight it: Formal Verification</a></strong> — Latent Space
+  Latent Space describes using formal verification and Lean to automatically prove software correct, positioning it as a tool against unreliable AI-generated code.
+  <em>Why it matters:</em> Teams dealing with AI-generated code can explore formal verification as a way to catch bugs that tests miss, though specialist effort may still be needed.</p>
+</li>
+<li>
+<p><strong><a href="https://developers.googleblog.com/agent-anomaly-detection-safeguarding-agents-across-other-clouds/" rel="noopener">Agent Anomaly Detection: Safeguarding agents across other clouds</a></strong> — Google Developers
+  Google's Agent Anomaly Detection monitors ADK agents across AWS, Azure, and on-premises by analyzing OpenTelemetry traces and logs for behavioral drift and tool misuse.
+  <em>Why it matters:</em> Teams operating agents in multi-cloud environments can use this monitoring to detect rogue behaviors and resource exhaustion without accessing the agent runtime.</p>
+</li>
+</ul>
+<h2>Research</h2>
+<ul>
+<li><strong><a href="https://huggingface.co/papers/2611.26073" rel="noopener">AltRA-Test: An Alternative Annotator Test for LLM Judges Without Shared Annotators</a></strong> — HF Daily Papers · 22 upvotes
+  AltRA-Test proposes a statistical method to validate using LLMs as judges when different annotators evaluate different items, without requiring uniform annotation coverage.
+  <em>Why it matters:</em> Teams running evals with LLM judges on large-scale annotation tasks can use this method to verify their judge's reliability without full re-annotation.</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>
