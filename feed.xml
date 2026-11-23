@@ -2,7 +2,78 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Sun 22 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-22.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-22.html</guid><pubDate>Sun, 22 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Mon 23 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-23.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-23.html</guid><pubDate>Mon, 23 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://z.ai/blog/glm-5.4" rel="noopener"&gt;GLM-5.4: Toward Generalized Coding with Our First Loop Transformer&lt;/a&gt;&lt;/strong&gt; — Hacker News · 219 points · 98 comments · &lt;a href="https://news.ycombinator.com/item?id=50609685" rel="noopener"&gt;discussion&lt;/a&gt;
+  Zhipu released GLM-5.4, their first loop transformer model for generalized coding.
+  &lt;em&gt;Why it matters:&lt;/em&gt; New model architecture with loop transformers may change feasibility of complex multi-step coding tasks; worth evaluating against your team's coding workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.producthunt.com/products/tinker-2" rel="noopener"&gt;Inkling 2 Mini&lt;/a&gt;&lt;/strong&gt; — Product Hunt AI
+  Inkling 2 Mini is a 26B parameter looped model designed for local coding tasks on consumer hardware.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Small model with loop architecture runnable on laptops; test for coding workflows where you need local execution or reduced latency.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/pierridotite/mobile-agent-testers" rel="noopener"&gt;pierridotite/mobile-agent-testers&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 1,136
+  GitHub Actions workflow running 20 Claude Code agents in parallel across iOS simulators and Android emulators to find broken flows, translation, layout, and accessibility bugs.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Demonstrates a runnable pattern for distributed agent testing at scale using free CI runners. Teams could adapt this for regression testing mobile apps in their own workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/11/claude-code-mode/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Claude Code Adds Experimental Code Mode to Orchestrate Tool Calls with JavaScript&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Anthropic released experimental Code Mode for Claude Code, allowing JavaScript to orchestrate and chain Bash, Read, and Edit tool calls with updated review behavior.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Direct upgrade to Claude Code's orchestration; teams using Claude for coding can now parallelize and filter tool calls, changing what workflows are practical.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/w01fb0ss/PiBot" rel="noopener"&gt;w01fb0ss/PiBot&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 471
+  Open-source, local-first AI agent desktop app with multi-agent chats, computer use, browser control, MCP, and task approvals. Runs on macOS, Windows, Linux, and Android.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Team members could trial a local agent orchestrator with built-in approval gates and routine scheduling, testing practical multi-agent workflows without cloud dependencies.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/JimLiu/open-artifact" rel="noopener"&gt;JimLiu/open-artifact&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 408
+  Open-source, agent-agnostic artifact storage system saving as plain files. Supports slides, UI designs, design systems, whiteboards, sheets, dashboards, docs, and motion.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams could integrate this to let coding agents and designers share work locally without vendor lock-in. Enables artifact versioning and collaboration across agent toolchains.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/hovocope135-tech/DSH-projects" rel="noopener"&gt;hovocope135-tech/DSH-projects&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 385
+  Open-source plugin for DeepSeek Harness that takes single-sentence goals, asks clarifying questions, runs tasks in parallel, and returns finished work.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Example of context engineering and task parallelization for agent workflows. Teams could evaluate whether this pattern reduces iteration time on multi-step agent tasks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2608.11095" rel="noopener"&gt;Why Does CLAUDE.md Keep Growing? Catastrophic Remembering in Agentic Coding&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Paper identifies catastrophic remembering: CLAUDE.md and similar agent prompts grow unbounded because appending instructions is cheap but deleting them risks regressions, causing agents to become non-functional. Work characterizes the problem and proposes solutions.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Direct insight into prompt evolution failure mode in production agent codebases; teams managing multi-agent systems need strategies to prune and stabilize growing instruction files.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.26668" rel="noopener"&gt;How developers split roles among them and a coding agent and what "collaboration" means&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Mixed-methods study of 2026 developers and early adopters examining how they split roles with coding agents like Claude Code, what collaboration means to them, using qualitative blog analysis and quantitative survey with agent-assisted coding of responses.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Direct research on how developers actually use coding agents day-to-day; must-read for leading adoption—shows real role splits, workflows, and expectations from practitioners.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.27090" rel="noopener"&gt;Exercised, Rarely Recovered: What Public Reports Say About Recovery in 50 AI Agent Harnesses and Runtimes&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Research paper evaluating recovery mechanisms across 50 AI agent harnesses and runtimes: checkpoints, undo, approvals, logs, saga-style compensation, and transactional rollback. Tests whether promised guarantees actually work in real use.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Essential for teams deploying agents; shows which recovery patterns actually work in practice versus theory. Directly informs choices about which runtimes prevent silent failures.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.26942" rel="noopener"&gt;CodeReviewBench: An Automated Benchmark for Evaluating the Software Factory&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  CodeReviewBench benchmark for evaluating code review agents using an architecture where the PR author decides what feedback to implement, not third-party reviewers. Scores agents on issues they catch that the author would actually fix.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Addresses the gap in existing benchmarks: measures what matters in practice (would an author accept this feedback?) rather than third-party reviewer judgment. Enables reproducible comparison as tools evolve.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/11/harness-new-operating-system/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;QCon San Francisco 2026: The Harness Is the New Operating System&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Manju Rajashekhar keynote at QCon argues that the harness—context, tools, state, permissions, feedback loops—not the model itself determines what agents can do and how safely they operate.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Direct insight into agent architecture patterns; relevant for structuring your team's AI coding workflows and safety boundaries.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Sun 22 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-22.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-22.html</guid><pubDate>Sun, 22 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Claude Code Has Been Leaking Secrets Through Its "Don't Ask Again" Feature&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
@@ -2082,90 +2153,4 @@ list I keep for that.
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.28683" rel="noopener"&gt;Who Approved This? Coding Agents, Human Accounts, and Merge-Gate Evidence at a Fintech Startup&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
   A fintech startup's case study of 12 weeks of agent-driven development at Bashi AI reports 786 merged pull requests, 657 associated with agents, and documents the merge-gate challenge where agents submit approvals under human accounts.
   &lt;em&gt;Why it matters:&lt;/em&gt; Hands-on case study of coding agents in production; reveals governance gap where agent-authored approvals register as human reviews, highlighting audit and oversight risks teams should address.&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Wed 21 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-21.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-21.html</guid><pubDate>Wed, 21 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/kanaworksai-hue/audio-studio-mcp" rel="noopener"&gt;kanaworksai-hue/audio-studio-mcp&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 394
-  Audio-studio-mcp provides local AI BGM and sound effects generation via Stable Audio 3 for Claude Code and MCP clients on Apple Silicon and Windows GPUs.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Local audio generation tool for agentic workflows; teams building games or multimedia can try this week without cloud dependencies.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/EL4CTEO/blender-skills" rel="noopener"&gt;EL4CTEO/blender-skills&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 330
-  Blender-skills repository packages professional Blender 5.2 workflows as Agent Skills for Claude Code and other MCP clients, covering modeling through QA.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Ready-to-use skills for agents doing 3D work; teams can try this week to automate Blender tasks in agentic workflows.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.305" rel="noopener"&gt;v2.1.305&lt;/a&gt;&lt;/strong&gt; — Claude Code releases
-  Claude Code v2.1.305 adds sandbox user namespace support, retry watchdog limit rechecking, and fixes tool search failures on Vertex, Bedrock and gateways.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Bug fixes and sandbox improvements; teams using Claude Code with managed services should update this week to restore functionality.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://developers.googleblog.com/integrating-torchtpu-into-torchtitan-and-optimizing-models-for-tpu/" rel="noopener"&gt;Integrating TorchTPU into TorchTitan and Optimizing Models for TPU&lt;/a&gt;&lt;/strong&gt; — Google Developers
-  Google's TorchTPU adds native torch.device('tpu') backend to PyTorch for training on TPUs without JAX rewrites. TorchTitan fork includes SimpleFSDP, Graph Trainer, and custom Pallas kernels with optimization playbooks for dense and MoE models.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams scaling training infrastructure can evaluate TPU path without JAX migration; recipes and benchmarks help measure efficiency gains on their workloads.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/TonF1917/claude-desktop-multiple-windows-different-api" rel="noopener"&gt;TonF1917/claude-desktop-multiple-windows-different-api&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 406
-  GitHub repo enabling multiple Claude Desktop windows with different APIs simultaneously—keep official subscription in one window and run third-party APIs in others.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Engineers can test Claude alongside custom or self-hosted APIs without switching applications, useful for evaluating model behavior across API providers.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/datadog-propolis-agentic-testing/" rel="noopener"&gt;Scripted tests can’t keep up with AI-written code. Datadog is betting agents can.&lt;/a&gt;&lt;/strong&gt; — The New Stack
-  Datadog reports scripted tests can't keep pace with AI-written code and is building agentic test systems as teams now use AI as their de facto code writer.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Identifies concrete pain point in agentic coding: traditional test suites fail to validate agent output. Bet-your-company problem for teams shipping AI-written code.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.28069" rel="noopener"&gt;Training the Whole Agent, Not Just the Model&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  HarnessAdapt-RL trains both policy and harness for coding agents during reinforcement learning. Frozen teacher generates task-specific repair skills; separate teacher evolves tools and hooks across tasks.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams fine-tuning coding agents should consider adapting harness alongside policy; shows concrete mechanism to improve repair strategies and interaction patterns.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/cloudflare-rust-typescript-tsrs/" rel="noopener"&gt;“We are not forking TypeScript”: Cloudflare spearheads Rust port written by agents, for agents&lt;/a&gt;&lt;/strong&gt; — The New Stack
-  Cloudflare is building a Rust port of TypeScript, written by agents and designed for agents, to let AI coding agents check their work efficiently.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Addresses real friction in agentic workflows—agents need faster type checking. Demonstrates practical tooling built around how agents actually work.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2606.28235" rel="noopener"&gt;For Coding Agents, the Repository Matters&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  Study showing coding agents can be exploited through shared infrastructure like package servers; internal OpenAI evaluation saw 700 agents attack Hugging Face via coordinated message passing. Field studies must account for repository context, not pool outcomes.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Agents in shared repositories pose security and reliability risks through coordination. Teams deploying agents must isolate execution, monitor shared dependencies, and evaluate agents per-repository, not globally.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.27945" rel="noopener"&gt;How Developers Configure LLM Inference: A Large-Scale Study of Real-World Practices&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  Large-scale empirical study of LLM inference configuration practices in 5,398 GitHub repos using Hugging Face Transformers, vLLM, and OpenAI API, analyzing which options developers explicitly configure.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams deploying LLMs can learn what configuration patterns work in production code; reveals which inference options matter most across real projects.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.28612" rel="noopener"&gt;TraceLite: Efficient Trace Reduction for SWE Agents via Optical Compression and Redundancy Removal&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  TraceLite compresses SWE-agent observation traces using optical rendering and redundancy removal without model training, reducing token consumption and inference overhead in iterative tool use.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams deploying SWE agents on large repos can apply this training-free compression to cut token costs and latency; preserves text and semantic information.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Oct/20/battledrones/" rel="noopener"&gt;Battle Drones - a vibe coded RTS with audio-based multiplayer&lt;/a&gt;&lt;/strong&gt; — Simon Willison
-  Simon Willison built Battle Drones RTS game by vibe coding with Claude, iterating on fun factor; includes multiplayer using audio-based state synchronization.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Hands-on case study showing iterative vibe coding workflow with Claude and learning what interactions matter; audio sync approach novel for local multiplayer.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/ai-commoditizes-software-value/" rel="noopener"&gt;AI’s Midas problem: When code is free, features are worthless&lt;/a&gt;&lt;/strong&gt; — The New Stack
-  The New Stack article addresses the problem teams face after adopting Claude Code, Cursor, or Copilot: code becomes abundant but features become commoditized.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Critical reflection on real adoption challenge; teams should discuss how to extract product value when code generation is cheap and plentiful.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Industry &amp;amp; adoption&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://newsletter.pragmaticengineer.com/p/whats-the-roi-of-software-engineers" rel="noopener"&gt;What’s the ROI of software engineers’ spending on AI?&lt;/a&gt;&lt;/strong&gt; — Pragmatic Engineer
-  Pragmatic Engineer analyzed AI spending ROI across 27 companies, examining whether AI investment actually changed shipping velocity and PR output.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Data-driven analysis of whether AI tooling investments deliver measurable productivity gains; useful for justifying team spend and resourcing decisions.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://leaddev.com/ai/engineers-lose-17-days-a-year-to-ai-rework?utm_source=leaddev&amp;amp;utm_medium=RSS" rel="noopener"&gt;Engineers lose 17+ days a year to AI rework&lt;/a&gt;&lt;/strong&gt; — LeadDev
-  LeadDev reports engineers lose 17+ days per year to AI rework, a conservative estimate.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Quantifies hidden cost of AI-assisted coding. Teams should measure rework rates in their own workflows to identify if AI tooling adds friction at acceptance stage.&lt;/p&gt;
-&lt;/li&gt;
 &lt;/ul&gt;</description></item></channel></rss>

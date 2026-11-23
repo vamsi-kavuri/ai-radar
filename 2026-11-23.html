@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Mon 23 Nov 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-11-22.html">← 2026-11-22</a></nav>
+<h1>AI Engineering Radar · Mon 23 Nov 2026</h1>
+<p class="muted">12 links worth a look</p>
+<h2>Models &amp; releases</h2>
+<ul>
+<li>
+<p><strong><a href="https://z.ai/blog/glm-5.4" rel="noopener">GLM-5.4: Toward Generalized Coding with Our First Loop Transformer</a></strong> — Hacker News · 219 points · 98 comments · <a href="https://news.ycombinator.com/item?id=50609685" rel="noopener">discussion</a>
+  Zhipu released GLM-5.4, their first loop transformer model for generalized coding.
+  <em>Why it matters:</em> New model architecture with loop transformers may change feasibility of complex multi-step coding tasks; worth evaluating against your team's coding workflows.</p>
+</li>
+<li>
+<p><strong><a href="https://www.producthunt.com/products/tinker-2" rel="noopener">Inkling 2 Mini</a></strong> — Product Hunt AI
+  Inkling 2 Mini is a 26B parameter looped model designed for local coding tasks on consumer hardware.
+  <em>Why it matters:</em> Small model with loop architecture runnable on laptops; test for coding workflows where you need local execution or reduced latency.</p>
+</li>
+</ul>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://github.com/pierridotite/mobile-agent-testers" rel="noopener">pierridotite/mobile-agent-testers</a></strong> — GitHub new repos · ★ 1,136
+  GitHub Actions workflow running 20 Claude Code agents in parallel across iOS simulators and Android emulators to find broken flows, translation, layout, and accessibility bugs.
+  <em>Why it matters:</em> Demonstrates a runnable pattern for distributed agent testing at scale using free CI runners. Teams could adapt this for regression testing mobile apps in their own workflows.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/11/claude-code-mode/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Claude Code Adds Experimental Code Mode to Orchestrate Tool Calls with JavaScript</a></strong> — InfoQ AI
+  Anthropic released experimental Code Mode for Claude Code, allowing JavaScript to orchestrate and chain Bash, Read, and Edit tool calls with updated review behavior.
+  <em>Why it matters:</em> Direct upgrade to Claude Code's orchestration; teams using Claude for coding can now parallelize and filter tool calls, changing what workflows are practical.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/w01fb0ss/PiBot" rel="noopener">w01fb0ss/PiBot</a></strong> — GitHub new repos · ★ 471
+  Open-source, local-first AI agent desktop app with multi-agent chats, computer use, browser control, MCP, and task approvals. Runs on macOS, Windows, Linux, and Android.
+  <em>Why it matters:</em> Team members could trial a local agent orchestrator with built-in approval gates and routine scheduling, testing practical multi-agent workflows without cloud dependencies.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/JimLiu/open-artifact" rel="noopener">JimLiu/open-artifact</a></strong> — GitHub new repos · ★ 408
+  Open-source, agent-agnostic artifact storage system saving as plain files. Supports slides, UI designs, design systems, whiteboards, sheets, dashboards, docs, and motion.
+  <em>Why it matters:</em> Teams could integrate this to let coding agents and designers share work locally without vendor lock-in. Enables artifact versioning and collaboration across agent toolchains.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/hovocope135-tech/DSH-projects" rel="noopener">hovocope135-tech/DSH-projects</a></strong> — GitHub new repos · ★ 385
+  Open-source plugin for DeepSeek Harness that takes single-sentence goals, asks clarifying questions, runs tasks in parallel, and returns finished work.
+  <em>Why it matters:</em> Example of context engineering and task parallelization for agent workflows. Teams could evaluate whether this pattern reduces iteration time on multi-step agent tasks.</p>
+</li>
+</ul>
+<h2>Agentic coding &amp; workflows</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2608.11095" rel="noopener">Why Does CLAUDE.md Keep Growing? Catastrophic Remembering in Agentic Coding</a></strong> — arXiv cs.SE
+  Paper identifies catastrophic remembering: CLAUDE.md and similar agent prompts grow unbounded because appending instructions is cheap but deleting them risks regressions, causing agents to become non-functional. Work characterizes the problem and proposes solutions.
+  <em>Why it matters:</em> Direct insight into prompt evolution failure mode in production agent codebases; teams managing multi-agent systems need strategies to prune and stabilize growing instruction files.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.26668" rel="noopener">How developers split roles among them and a coding agent and what "collaboration" means</a></strong> — arXiv cs.SE
+  Mixed-methods study of 2026 developers and early adopters examining how they split roles with coding agents like Claude Code, what collaboration means to them, using qualitative blog analysis and quantitative survey with agent-assisted coding of responses.
+  <em>Why it matters:</em> Direct research on how developers actually use coding agents day-to-day; must-read for leading adoption—shows real role splits, workflows, and expectations from practitioners.</p>
+</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.27090" rel="noopener">Exercised, Rarely Recovered: What Public Reports Say About Recovery in 50 AI Agent Harnesses and Runtimes</a></strong> — arXiv cs.SE
+  Research paper evaluating recovery mechanisms across 50 AI agent harnesses and runtimes: checkpoints, undo, approvals, logs, saga-style compensation, and transactional rollback. Tests whether promised guarantees actually work in real use.
+  <em>Why it matters:</em> Essential for teams deploying agents; shows which recovery patterns actually work in practice versus theory. Directly informs choices about which runtimes prevent silent failures.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.26942" rel="noopener">CodeReviewBench: An Automated Benchmark for Evaluating the Software Factory</a></strong> — arXiv cs.SE
+  CodeReviewBench benchmark for evaluating code review agents using an architecture where the PR author decides what feedback to implement, not third-party reviewers. Scores agents on issues they catch that the author would actually fix.
+  <em>Why it matters:</em> Addresses the gap in existing benchmarks: measures what matters in practice (would an author accept this feedback?) rather than third-party reviewer judgment. Enables reproducible comparison as tools evolve.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/11/harness-new-operating-system/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">QCon San Francisco 2026: The Harness Is the New Operating System</a></strong> — InfoQ AI
+  Manju Rajashekhar keynote at QCon argues that the harness—context, tools, state, permissions, feedback loops—not the model itself determines what agents can do and how safely they operate.
+  <em>Why it matters:</em> Direct insight into agent architecture patterns; relevant for structuring your team's AI coding workflows and safety boundaries.</p>
+</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>
