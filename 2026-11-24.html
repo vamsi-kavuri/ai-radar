@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Tue 24 Nov 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-11-23.html">← 2026-11-23</a></nav>
+<h1>AI Engineering Radar · Tue 24 Nov 2026</h1>
+<p class="muted">15 links worth a look</p>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://thenewstack.io/anthropic-claude-ship-approvals/" rel="noopener">Anthropic’s Claude Ship lets Claude approve routine pull requests</a></strong> — The New Stack
+  Anthropic launched Claude Ship, three agents that review pull requests, fix them, and approve routine changes.
+  <em>Why it matters:</em> Teams can try this week to automate code review and approval workflows. Directly applicable to reducing friction in CI/CD pipelines.</p>
+</li>
+<li>
+<p><strong><a href="https://www.producthunt.com/products/claude-code" rel="noopener">Claude Ship</a></strong> — Product Hunt AI
+  Claude Ship agents for PR review, fixes, and approval to accelerate code shipping.
+  <em>Why it matters:</em> Teams can integrate this week to automate routine PR workflows and reduce code review bottlenecks in development.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.30517" rel="noopener">sudo L7: Can Coding Agents Act Like Staff Engineers?</a></strong> — arXiv cs.SE
+  sudo L7 is a benchmark of 60 software-engineering tasks from staff-level engineers in production codebases, each built around where frontier models failed, with hidden expert-authored rubrics of atomic checks.
+  <em>Why it matters:</em> Tests whether agents do what experienced engineers do: notice risks, question premises, reuse existing code. Teams can adopt similar rubrics to evaluate their agents on higher-level engineering judgment.</p>
+</li>
+<li>
+<p><strong><a href="https://simonwillison.net/2026/Nov/23/datasette-charts/" rel="noopener">datasette-charts 0.1a0</a></strong> — Simon Willison
+  Simon Willison built datasette-charts, a Datasette plugin for automatic chart generation against tables and SQL queries, prototyped with Claude and now available.
+  <em>Why it matters:</em> Example of shipping a useful tool quickly with AI assistance; shows practical workflow for iterating on data visualization plugins.</p>
+</li>
+<li>
+<p><strong><a href="https://simonwillison.net/2026/Nov/24/datasette-charts/" rel="noopener">datasette-charts 0.2a0</a></strong> — Simon Willison
+  datasette-charts 0.2a0 integrates with Datasette Agent, allowing chat-based chart requests that generate visualizations using underlying suggestion tools.
+  <em>Why it matters:</em> Demonstrates agentic workflow pattern: user natural language request → agent tool integration → inline visualization. Usable today.</p>
+</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://www.infoq.com/articles/llm-agent-architecture-evals-grounding/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Article: Engineering Around Non-Determinism: Evals, Grounding, and Release Gates for AI-Drafted Suspicious Reports</a></strong> — InfoQ AI
+  Ritesh Modi and Sasidhar Gudala describe engineering trustworthy agentic workflows for high-stakes production: knowledge graphs, dual-layer eval judges, CI/CD release gates, and regression testing against golden datasets.
+  <em>Why it matters:</em> Concrete architectural pattern for deploying agentic systems in regulated settings. Shows how to handle non-determinism with evals, grounding, and automated gates—directly usable by teams.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/11/netflix-sdlc-ai-coding-agents/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Netflix at QConSF 2026: Retrofitting the SDLC for AI Coding Agents</a></strong> — InfoQ AI
+  Netflix Commerce team retrofitted SDLC for agents and engineers shipping together: 45 ADRs for people and agents, review agent posting only verified blockers, per-domain GraphRAG context via single MCP tool.
+  <em>Why it matters:</em> Detailed case study of agent-human workflow integration. Shows specific decisions (ADRs, review gate patterns, MCP for context) a team can adapt immediately.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/11/qcon-sf-openai-lessons/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">QCon San Francisco 2026: Lessons from Building a $100M Product in Six Weeks at OpenAI</a></strong> — InfoQ AI
+  OpenAI's Brian Yang described building ChatGPT ads product with Codex agents and no human-written code at QCon SF 2026, covering layered testing, sandboxes, batched PR reviews, failure modes like code slop, and framing engineers as agent managers.
+  <em>Why it matters:</em> Real case study of shipping agents at scale. Covers testing strategy, failure modes, and team role changes—directly relevant to adoption challenges your team will face.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.28469" rel="noopener">Automated Safety Analysis for Agentic Workflows</a></strong> — arXiv cs.SE
+  Apsis is a static safety analysis tool for agentic workflows that validates workflow logic across frameworks before deployment to catch design-level bugs.
+  <em>Why it matters:</em> Addresses gap in tooling for agentic systems. Static validation of workflow wiring prevents logic flaws in autonomous code—directly usable in CI/CD gates.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/11/qcon-ai-agent-security/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">QCon San Francisco 2026: Securing AI Agents in Production</a></strong> — InfoQ AI
+  Google's Amanda Walker presented identity, credential, and containment patterns for running AI agents safely in production at QCon.
+  <em>Why it matters:</em> Teams deploying coding agents need concrete patterns for access control and isolation. Can apply Google's identity and containment approaches to production systems.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.29916" rel="noopener">Does the Agent's Map Match the Territory? Architectural Claims in AI Agent Context Files and Their Fit with the Code</a></strong> — arXiv cs.SE
+  A study checking 41,090 path claims and 184 dependency rules from 3,602 context files in 3,346 open-source projects to see whether architectural claims in CLAUDE.md and AGENTS.md match the actual code.
+  <em>Why it matters:</em> Reveals that context files commonly diverge from reality, misleading agents. Teams should add verification of context file accuracy to code review or testing workflows.</p>
+</li>
+<li>
+<p><strong><a href="https://developers.googleblog.com/did-the-user-ask-for-this-securing-ai-agents-against-intent-hijacking-with-semantic-governance-policies/" rel="noopener">Did the user ask for this? Securing AI agents against intent hijacking with Semantic governance policies</a></strong> — Google Developers
+  Semantic governance policies protect agents from intent hijacking by validating tool calls against user intent before execution. Gemini 2.5 Flash demo reduced attack success on AgentDojo from 48.7% to 0.9% while maintaining task utility.
+  <em>Why it matters:</em> Concrete mitigation for prompt injection in agentic workflows. Measurable reduction in attack surface; available in Gemini platform. Worth evaluating for your agents.</p>
+</li>
+<li>
+<p><strong><a href="https://huggingface.co/blog/agentic-evals" rel="noopener">How to build and maintain an agentic evaluation</a></strong> — Hugging Face Blog
+  Hugging Face blog post on building and maintaining agentic evaluations.
+  <em>Why it matters:</em> Practical guidance on evaluating AI agents during development. Teams can apply these patterns to measure agent quality in production use cases.</p>
+</li>
+<li>
+<p><strong><a href="https://stackoverflow.blog/2026/11/24/agent-swarms-need-more-than-a-message-board/" rel="noopener">Agent swarms need more than a message board</a></strong> — Stack Overflow blog
+  Stack Overflow blog post framing agent swarms as distributed systems problems.
+  <em>Why it matters:</em> Teams running multiple agents need to understand coordination patterns. Applying distributed systems thinking can improve reliability and debugging.</p>
+</li>
+</ul>
+<h2>Research</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2611.28153" rel="noopener">From Observation to Explanation: Mechanistic Interpretability of LLM-Generated Code for Principled Repair</a></strong> — arXiv cs.SE
+  Paper analyzes why LLM-generated agent code differs from human code mechanistically. Autonomous agent code is semantically indistinguishable but attracts 49.1% corrective modifications in production vs 37.9% for human baseline.
+  <em>Why it matters:</em> Data showing agent code has different failure modes in production despite equivalent test performance. Signals need for different review, testing, and monitoring strategies.</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>
