@@ -2,7 +2,92 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Tue 24 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-24.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-24.html</guid><pubDate>Tue, 24 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Wed 25 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-25.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-25.html</guid><pubDate>Wed, 25 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/EL4CTEO/shrink-anything" rel="noopener"&gt;EL4CTEO/shrink-anything&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 244
+  Shrink-anything is a Rust CLI tool that uses AI agents to delete dead code, files, dependencies, and assets while verifying tests still pass.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Practical tool an engineering team can run this week to automate code cleanup while maintaining test coverage—concrete example of agentic code improvement.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.332" rel="noopener"&gt;v2.1.332&lt;/a&gt;&lt;/strong&gt; — Claude Code releases
+  Claude Code v2.1.332 adds MCP server skills to the / menu, adds PreSkillShellCommand hook for security controls, and improves model switching feedback for long-running sessions.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Claude Code now exposes MCP skills natively; teams can test building custom skills for domain-specific coding workflows without routing through separate agent frameworks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/mcp-skills-tasks-claude/" rel="noopener"&gt;As MCP turns two, Claude gets Skills over MCP and better support for long-running tasks&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  Announcement that Anthropic marked MCP's second anniversary by releasing skills over MCP and better support for long-running tasks in Claude.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams building Claude-integrated workflows can now expose skills via MCP and run sustained agent tasks, moving beyond stateless request-response patterns.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.langchain.com/blog/the-agent-lake" rel="noopener"&gt;The Agent Lake&lt;/a&gt;&lt;/strong&gt; — LangChain blog
+  LangSmith's agent lake feature captures traces from agents in production, identifies high-signal patterns at scale, and feeds them into fixes and fine-tuned models.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Provides a concrete workflow to instrument and improve agent behavior in production, helping teams measure what agents are actually doing and iterate on results.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/11/openai-spark-fleet/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;QCon San Francisco 2026: Automating Spark Upgrades with Codex Agents at OpenAI&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Mouli Mukherjee at OpenAI spoke at QCon about how agents excel at open-ended operational work like Spark upgrades rather than fixed playbook tasks, using their Codex agents in practice.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Clarifies where coding agents deliver value—operational tasks hard to standardize—versus where they fall short, helping teams scope agent projects realistically.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Nov/24/llm-inflection-points/" rel="noopener"&gt;Three LLM inflection points in twelve months&lt;/a&gt;&lt;/strong&gt; — Simon Willison
+  Simon Willison examines three significant inflection points in LLM and coding agent capabilities over the past year, marking the one-year anniversary of Claude Opus 4.5's release and reflecting on how its capabilities changed what engineering teams can build.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Understanding capability shifts over time helps teams calibrate what to try with agents now versus what remains risky or impractical for production use.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.31316" rel="noopener"&gt;Diffs Are Cheap, Show Me the Trajectory: An Empirical Study of Trajectory-Informed Code Review&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Empirical study comparing code review from final diffs versus review using agent trajectories (intermediate steps, failed attempts, validation evidence), showing trajectories help review agents identify problems the final code hides.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams using agents for code generation and review should capture and use full trajectories in pull requests; agents doing review can catch issues the final diff alone misses.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.32676" rel="noopener"&gt;AI-Generated Code Issues: A Taxonomy from Repository Histories, AI Conversations, and Developer Interviews&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Empirical study creating a taxonomy of quality issues in AI-generated code through repository histories, AI conversations, and developer interviews.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Essential for teams deploying AI coding: identifies which quality issues are more common in LLM code, helping prioritize code review and testing practices.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.32884" rel="noopener"&gt;Lazy Agents Answer Against Their Own Beliefs: Reinforcement Learning with Verifiable Beliefs Teaches Them to Act on What They Believe&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 53 upvotes
+  Paper identifies 'laziness' in long-task agents that commit to answers before gathering enough evidence, and proposes reinforcement learning using verifiable beliefs and posterior probabilities during training to teach agents when sufficient evidence exists before committing.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams running agentic code generation or task completion should understand this failure mode and consider whether they need intermediate verification or belief confidence scoring during task execution.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.30962" rel="noopener"&gt;Self-Evolving Evaluation Environments for Computer-Use Agents&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 37 upvotes
+  Paper introduces CUA-SEE, a closed-loop evaluation environment that co-evolves computer-use agent benchmarks and verifiers from agent rollouts, addressing static evaluation ceilings and weak discriminative power in existing fixed benchmarks.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams evaluating computer-use agents need dynamic, evolving benchmarks; this approach lets you build evaluations that improve as your agent improves, avoiding early saturation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.31839" rel="noopener"&gt;Spec-Test Coverage Gap: Detecting Overspecified Tests in SWE-Bench-Style Benchmarks&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Paper defines Spec-Test Coverage Gap (STCG) to measure overspecification in SWE-bench-style benchmarks where tests enforce implementation details not stated in specs, causing correct alternative fixes to fail, and proposes automated STCG scoring with LLM judges.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Teams evaluating coding agents on benchmarks like SWE-bench should audit test overspecification; uneven test rigor inflates agent scores and masks real generalization failures.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-essay-challenge" rel="noopener"&gt;The Pragmatic Engineer Essay Challenge: Category Winners (Part 1)&lt;/a&gt;&lt;/strong&gt; — Pragmatic Engineer
+  Pragmatic Engineer published essay contest winners addressing how AI is changing software development, with excerpts from three category winners and links to 40 more essays by working engineers.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Direct voice from practitioners on workflow changes and adoption lessons; multiple perspectives on what works and what doesn't when integrating AI into teams.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Research&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.32946" rel="noopener"&gt;ShellBench: What Matters More for AI Agents, Models, or Harness for Everyday Tasks&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  ShellBench evaluates 12 models across 5 agent harnesses on 100 real everyday tasks from 10M user requests, 53,100 rollouts total, measuring correctness and safety.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Large-scale empirical comparison showing which combinations of model and harness work best for practical tasks. Helps teams choose stack components and set expectations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Industry &amp;amp; adoption&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/confluent-kafka-rust-agents/" rel="noopener"&gt;Confluent spent 3 months rewriting Kafka’s Java client in Rust with AI — and had to start over&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  Confluent spent three months using AI coding agents to translate Kafka's Java client to Rust but abandoned the effort and started over, revealing limits of agent-driven translation.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Honest case study of agent failure on a large, complex codebase; directly relevant to teams considering similar translation or rewrite projects.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://openai.com/business/customer-stories/ifood" rel="noopener"&gt;How iFood scales coding agents across 15,000 repositories&lt;/a&gt;&lt;/strong&gt; — OpenAI news
+  No text provided; title only. iFood scaled coding agents across 15,000 repositories.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Real-world case of scaling agents to a large codebase; likely details operational lessons for multi-repository agent workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Tue 24 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-24.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-24.html</guid><pubDate>Tue, 24 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/anthropic-claude-ship-approvals/" rel="noopener"&gt;Anthropic’s Claude Ship lets Claude approve routine pull requests&lt;/a&gt;&lt;/strong&gt; — The New Stack
@@ -2061,91 +2146,4 @@ list I keep for that.
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://www.langchain.com/blog/context-engineering-starts-with-retrieval" rel="noopener"&gt;Context Engineering (Agent Memory) for AI Agents Starts with Retrieval&lt;/a&gt;&lt;/strong&gt; — LangChain blog
   LangChain Deep Agents use specific retrieval techniques to give agents the right context efficiently, addressing wasted time from clumsy searches and stale data.
   &lt;em&gt;Why it matters:&lt;/em&gt; Teams can adopt better retrieval patterns to reduce agent token waste and latency; directly applicable to memory and context engineering.&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Fri 23 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-23.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-23.html</guid><pubDate>Fri, 23 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2610.30949" rel="noopener"&gt;IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 44 upvotes
-  IQuest-Q1 is a 320B parameter MoE agentic foundation model optimized for coding with stable pre-training, progressive context extension, and multi-scaffold post-training.
-  &lt;em&gt;Why it matters:&lt;/em&gt; A coding-focused MoE model designed explicitly for agentic CLI systems; engineering teams can evaluate it against current agents for task completion and cost.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/lovisdotio/motion2code" rel="noopener"&gt;lovisdotio/motion2code&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 176
-  lovisdotio/motion2code provides agent skills to rebuild motion design videos as looping SVG+GSAP code, verified frame-by-frame against source.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete example of spec-driven agent skills a team could build or reuse; shows how to verify agent output against visual specifications.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.langchain.com/blog/langsmith-llm-gateway-runtime-controls-for-production-agents" rel="noopener"&gt;LangSmith LLM Gateway: Runtime Controls for Agents&lt;/a&gt;&lt;/strong&gt; — LangChain blog
-  LangSmith LLM Gateway entered public beta with runtime controls for agents: spend caps, rate limits, model fallbacks, and PII redaction without vendor lock-in.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Production agent controls let teams manage costs and safety; try this week for monitoring and governance in live deployments.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/anthropic-oss-security-scanner/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Anthropic Adds Opt-In Security Scanning for Critical Open-Source Projects&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
-  Anthropic launched OSS Scanner, a free opt-in service for open-source maintainers to receive periodic security vulnerability reports from Claude Mythos without human review.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Free tool to scan dependencies and identify vulnerabilities; useful for security baseline in engineering workflows.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.31351" rel="noopener"&gt;Automating Feature Flag Cleanup at Scale with Multi-Agent LLM Systems: An Industrial Experience at DoorDash&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  DoorDash engineers describe multi-agent LLM system for automated feature flag cleanup at scale, handling 56,000 flags across 623 repositories where manual cleanup took one to two hours per flag.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Honest case study from production: agents solved technical debt problem rule-based tools could not handle. Concrete example of multi-agent system workflow that teams could adapt for codebase maintenance.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/production-ai-agent-ownership/" rel="noopener"&gt;Who on-calls an AI? This is the unresolved crisis of agent ownership&lt;/a&gt;&lt;/strong&gt; — The New Stack
-  The New Stack article explores the unresolved operational crisis of agent ownership when agents fail at 2 a.m. and requests timeout.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Identifies critical gap in agent lifecycle management; teams need clear ownership, alerting, and runbooks for agent failures.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://simonwillison.net/2026/Oct/22/donating-agent-skills/" rel="noopener"&gt;Donating Agent Skills to the Agentic AI Foundation&lt;/a&gt;&lt;/strong&gt; — Simon Willison
-  Anthropic is donating the Agent Skills standard to the Agentic AI Foundation under the Linux Foundation, alongside earlier donation of Model Context Protocol (MCP).
-  &lt;em&gt;Why it matters:&lt;/em&gt; Agent Skills becoming vendor-neutral infrastructure lets teams standardize on agent capabilities and interoperate across models without lock-in.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform/" rel="noopener"&gt;Architecting Governed, Self-Evolving AI Agents on Google Cloud&lt;/a&gt;&lt;/strong&gt; — Google Developers
-  Google Cloud Project Chrysalis combines Gemini Enterprise Agent Platform, Agent Development Kit, BigQuery, and security controls to build governed self-evolving agents that remediate production outages in 1.8 seconds.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete example of agent automation in production ops; useful reference for designing reliable on-call agents and governance patterns.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.30571" rel="noopener"&gt;Stale Instruction Files Override the Code in Coding Agents: A One-Sentence Fix&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  Study shows coding agents follow stale instruction files over existing code, but one sentence added to the instruction file redirects agents to follow code instead.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Simple, immediately actionable fix for a common agent error; teams can add one line to project instructions to improve adherence to actual conventions.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.30916" rel="noopener"&gt;When Code Gets Cheap, Evaluation Gets Scarce: An Experience Report on AI-Assisted Agile Software Engineering&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  A developer built a compliance-critical, human-in-the-loop exam-grading system entirely with AI assistance in three working days, revealing that AI changes engineering not primarily by making programming faster but by shifting what requires evaluation.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Direct case study of workflow change with AI: when code production accelerates, evaluation becomes the bottleneck. Teams should rethink testing and validation practices, not just coding speed.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2610.30188" rel="noopener"&gt;Agentic Verified Optimization of Real-World Software&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
-  Researchers propose agentic verified optimization: agents produce faster implementations alongside machine-checked equivalence proofs to prevent test-passing without semantic preservation.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams can adopt verified optimization to ensure agent-generated performance improvements preserve behavior, addressing the test-gaming problem.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.anthropic.com/research/formal-verification" rel="noopener"&gt;LLMs are making formal software verification feasible at a much larger scale&lt;/a&gt;&lt;/strong&gt; — Hacker News · 358 points · 212 comments · &lt;a href="https://news.ycombinator.com/item?id=50202217" rel="noopener"&gt;discussion&lt;/a&gt;
-  LLMs are making formal software verification feasible at scale (Hacker News title only; no detail provided).
-  &lt;em&gt;Why it matters:&lt;/em&gt; Formal verification with LLMs is a practice engineering teams can adopt to raise confidence in agent-generated code beyond testing.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/ai-agent-security-lifecycle/" rel="noopener"&gt;AI agent security is a lifecycle — not a gatekeeper&lt;/a&gt;&lt;/strong&gt; — The New Stack
-  The New Stack argues that AI agent security is a lifecycle concern, not a one-time gate.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Shifts security mindset from pre-deployment to continuous monitoring; practical for designing governance and audit patterns.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Research&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/jellyfish-ai-productivity/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Study Finds AI-generated Code Fails to Boost Productivity Due to Downstream Bottlenecks&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
-  A Harvard study of 718 firms using Jellyfish analytics found AI coding assistants increase code volume but not completed work, because AI-generated code increases code review workload.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete data showing where AI-assisted coding stalls; critical for planning team workflows and evals around review bottlenecks.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/letta-frontiermemory-agent-harness-benchmark/" rel="noopener"&gt;Five AI agent harnesses took the same memory test. The results weren’t even close.&lt;/a&gt;&lt;/strong&gt; — The New Stack
-  The New Stack reports that five AI agent harnesses performed differently on a memory test, with uneven results.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Comparative data on agent framework capabilities; helps teams select frameworks and design evals for persistence and state management.&lt;/p&gt;
-&lt;/li&gt;
 &lt;/ul&gt;</description></item></channel></rss>

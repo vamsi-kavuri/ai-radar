@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Wed 25 Nov 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-11-24.html">← 2026-11-24</a></nav>
+<h1>AI Engineering Radar · Wed 25 Nov 2026</h1>
+<p class="muted">15 links worth a look</p>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://github.com/EL4CTEO/shrink-anything" rel="noopener">EL4CTEO/shrink-anything</a></strong> — GitHub new repos · ★ 244
+  Shrink-anything is a Rust CLI tool that uses AI agents to delete dead code, files, dependencies, and assets while verifying tests still pass.
+  <em>Why it matters:</em> Practical tool an engineering team can run this week to automate code cleanup while maintaining test coverage—concrete example of agentic code improvement.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.332" rel="noopener">v2.1.332</a></strong> — Claude Code releases
+  Claude Code v2.1.332 adds MCP server skills to the / menu, adds PreSkillShellCommand hook for security controls, and improves model switching feedback for long-running sessions.
+  <em>Why it matters:</em> Claude Code now exposes MCP skills natively; teams can test building custom skills for domain-specific coding workflows without routing through separate agent frameworks.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/mcp-skills-tasks-claude/" rel="noopener">As MCP turns two, Claude gets Skills over MCP and better support for long-running tasks</a></strong> — The New Stack
+  Announcement that Anthropic marked MCP's second anniversary by releasing skills over MCP and better support for long-running tasks in Claude.
+  <em>Why it matters:</em> Teams building Claude-integrated workflows can now expose skills via MCP and run sustained agent tasks, moving beyond stateless request-response patterns.</p>
+</li>
+<li>
+<p><strong><a href="https://www.langchain.com/blog/the-agent-lake" rel="noopener">The Agent Lake</a></strong> — LangChain blog
+  LangSmith's agent lake feature captures traces from agents in production, identifies high-signal patterns at scale, and feeds them into fixes and fine-tuned models.
+  <em>Why it matters:</em> Provides a concrete workflow to instrument and improve agent behavior in production, helping teams measure what agents are actually doing and iterate on results.</p>
+</li>
+</ul>
+<h2>Agentic coding &amp; workflows</h2>
+<ul>
+<li><strong><a href="https://www.infoq.com/news/2026/11/openai-spark-fleet/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">QCon San Francisco 2026: Automating Spark Upgrades with Codex Agents at OpenAI</a></strong> — InfoQ AI
+  Mouli Mukherjee at OpenAI spoke at QCon about how agents excel at open-ended operational work like Spark upgrades rather than fixed playbook tasks, using their Codex agents in practice.
+  <em>Why it matters:</em> Clarifies where coding agents deliver value—operational tasks hard to standardize—versus where they fall short, helping teams scope agent projects realistically.</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://simonwillison.net/2026/Nov/24/llm-inflection-points/" rel="noopener">Three LLM inflection points in twelve months</a></strong> — Simon Willison
+  Simon Willison examines three significant inflection points in LLM and coding agent capabilities over the past year, marking the one-year anniversary of Claude Opus 4.5's release and reflecting on how its capabilities changed what engineering teams can build.
+  <em>Why it matters:</em> Understanding capability shifts over time helps teams calibrate what to try with agents now versus what remains risky or impractical for production use.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.31316" rel="noopener">Diffs Are Cheap, Show Me the Trajectory: An Empirical Study of Trajectory-Informed Code Review</a></strong> — arXiv cs.SE
+  Empirical study comparing code review from final diffs versus review using agent trajectories (intermediate steps, failed attempts, validation evidence), showing trajectories help review agents identify problems the final code hides.
+  <em>Why it matters:</em> Teams using agents for code generation and review should capture and use full trajectories in pull requests; agents doing review can catch issues the final diff alone misses.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.32676" rel="noopener">AI-Generated Code Issues: A Taxonomy from Repository Histories, AI Conversations, and Developer Interviews</a></strong> — arXiv cs.SE
+  Empirical study creating a taxonomy of quality issues in AI-generated code through repository histories, AI conversations, and developer interviews.
+  <em>Why it matters:</em> Essential for teams deploying AI coding: identifies which quality issues are more common in LLM code, helping prioritize code review and testing practices.</p>
+</li>
+<li>
+<p><strong><a href="https://huggingface.co/papers/2611.32884" rel="noopener">Lazy Agents Answer Against Their Own Beliefs: Reinforcement Learning with Verifiable Beliefs Teaches Them to Act on What They Believe</a></strong> — HF Daily Papers · 53 upvotes
+  Paper identifies 'laziness' in long-task agents that commit to answers before gathering enough evidence, and proposes reinforcement learning using verifiable beliefs and posterior probabilities during training to teach agents when sufficient evidence exists before committing.
+  <em>Why it matters:</em> Teams running agentic code generation or task completion should understand this failure mode and consider whether they need intermediate verification or belief confidence scoring during task execution.</p>
+</li>
+<li>
+<p><strong><a href="https://huggingface.co/papers/2611.30962" rel="noopener">Self-Evolving Evaluation Environments for Computer-Use Agents</a></strong> — HF Daily Papers · 37 upvotes
+  Paper introduces CUA-SEE, a closed-loop evaluation environment that co-evolves computer-use agent benchmarks and verifiers from agent rollouts, addressing static evaluation ceilings and weak discriminative power in existing fixed benchmarks.
+  <em>Why it matters:</em> Teams evaluating computer-use agents need dynamic, evolving benchmarks; this approach lets you build evaluations that improve as your agent improves, avoiding early saturation.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.31839" rel="noopener">Spec-Test Coverage Gap: Detecting Overspecified Tests in SWE-Bench-Style Benchmarks</a></strong> — arXiv cs.SE
+  Paper defines Spec-Test Coverage Gap (STCG) to measure overspecification in SWE-bench-style benchmarks where tests enforce implementation details not stated in specs, causing correct alternative fixes to fail, and proposes automated STCG scoring with LLM judges.
+  <em>Why it matters:</em> Teams evaluating coding agents on benchmarks like SWE-bench should audit test overspecification; uneven test rigor inflates agent scores and masks real generalization failures.</p>
+</li>
+<li>
+<p><strong><a href="https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-essay-challenge" rel="noopener">The Pragmatic Engineer Essay Challenge: Category Winners (Part 1)</a></strong> — Pragmatic Engineer
+  Pragmatic Engineer published essay contest winners addressing how AI is changing software development, with excerpts from three category winners and links to 40 more essays by working engineers.
+  <em>Why it matters:</em> Direct voice from practitioners on workflow changes and adoption lessons; multiple perspectives on what works and what doesn't when integrating AI into teams.</p>
+</li>
+</ul>
+<h2>Research</h2>
+<ul>
+<li><strong><a href="https://arxiv.org/abs/2611.32946" rel="noopener">ShellBench: What Matters More for AI Agents, Models, or Harness for Everyday Tasks</a></strong> — arXiv cs.SE
+  ShellBench evaluates 12 models across 5 agent harnesses on 100 real everyday tasks from 10M user requests, 53,100 rollouts total, measuring correctness and safety.
+  <em>Why it matters:</em> Large-scale empirical comparison showing which combinations of model and harness work best for practical tasks. Helps teams choose stack components and set expectations.</li>
+</ul>
+<h2>Industry &amp; adoption</h2>
+<ul>
+<li>
+<p><strong><a href="https://thenewstack.io/confluent-kafka-rust-agents/" rel="noopener">Confluent spent 3 months rewriting Kafka’s Java client in Rust with AI — and had to start over</a></strong> — The New Stack
+  Confluent spent three months using AI coding agents to translate Kafka's Java client to Rust but abandoned the effort and started over, revealing limits of agent-driven translation.
+  <em>Why it matters:</em> Honest case study of agent failure on a large, complex codebase; directly relevant to teams considering similar translation or rewrite projects.</p>
+</li>
+<li>
+<p><strong><a href="https://openai.com/business/customer-stories/ifood" rel="noopener">How iFood scales coding agents across 15,000 repositories</a></strong> — OpenAI news
+  No text provided; title only. iFood scaled coding agents across 15,000 repositories.
+  <em>Why it matters:</em> Real-world case of scaling agents to a large codebase; likely details operational lessons for multi-repository agent workflows.</p>
+</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>
