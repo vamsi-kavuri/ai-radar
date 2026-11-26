@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Thu 26 Nov 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-11-25.html">← 2026-11-25</a></nav>
+<h1>AI Engineering Radar · Thu 26 Nov 2026</h1>
+<p class="muted">15 links worth a look</p>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://www.infoq.com/news/2026/11/vercel-board-agents/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Vercel Launched Experimental Board to Coordinate Tasks Across Humans and Coding Agents</a></strong> — InfoQ AI
+  Vercel launched experimental Board, a headless message store for humans and coding agents to claim leased tasks, declare dependencies, and sync with Slack, GitHub, and Linear.
+  <em>Why it matters:</em> Practical tool for coordinating agent workflows with team infrastructure; teams can trial coordination patterns across humans and agents.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/erkamyaman/rea-games" rel="noopener">erkamyaman/rea-games</a></strong> — GitHub new repos · ★ 280
+  rea-games repo uses agent skills to reverse-engineer games, rebuild them in multiple engines, and verify frame-by-frame parity using behavior specs in GAME.md format.
+  <em>Why it matters:</em> Shows how coding agents can tackle complex specification-driven tasks—reverse-engineering and verification—engineers could adapt for legacy system migration.</p>
+</li>
+</ul>
+<h2>Agentic coding &amp; workflows</h2>
+<ul>
+<li>
+<p><strong><a href="https://huggingface.co/papers/2611.34237" rel="noopener">VibeVideoAgent: Closing the Perceptual Loop for Code-Driven Video Generation</a></strong> — HF Daily Papers · 52 upvotes
+  VibeVideoAgent closes the perceptual loop in code-driven video generation by feeding rendered frames and audio back to agents for iterative critique.
+  <em>Why it matters:</em> Shows practical feedback loop pattern for agentic workflows—teams using code agents for media generation can adopt this perceptual critiquing approach.</p>
+</li>
+<li>
+<p><strong><a href="https://newsletter.pragmaticengineer.com/p/how-anthropic-builds-software-in" rel="noopener">How Anthropic builds software in 2026 with Katelyn Lesse</a></strong> — Pragmatic Engineer
+  Katelyn Lesse from Anthropic describes how the company rewrote Claude's API in Rust and how AI agents are changing engineering practices.
+  <em>Why it matters:</em> Real-world case study from a major AI company about integrating agents into engineering workflows; offers concrete patterns for team adoption.</p>
+</li>
+<li>
+<p><strong><a href="https://jayd.ml/2026/11/14/rockbox-on-yp3.html" rel="noopener">Porting Rockbox to an undocumented $9 Aliexpress 'YP3' MP3 Player with LLMs</a></strong> — Hacker News · 257 points · 97 comments · <a href="https://news.ycombinator.com/item?id=50624446" rel="noopener">discussion</a>
+  Hacker News title: porting Rockbox to undocumented $9 MP3 player using LLMs. Text not provided.
+  <em>Why it matters:</em> Real case study of coding agents reverse-engineering and porting firmware to minimal documentation; relevant hands-on workflow example.</p>
+</li>
+<li>
+<p><strong><a href="https://huggingface.co/papers/2611.33144" rel="noopener">PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents</a></strong> — HF Daily Papers · 41 upvotes
+  PyRUA-Dex framework uses parallel coding agents to develop dexterous manipulation policies without demonstrations, via exploration and skill composition.
+  <em>Why it matters:</em> Demonstrates multi-agent parallel exploration and skill distillation pattern—applicable to teams needing agents to explore solution spaces autonomously.</p>
+</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.33314" rel="noopener">Building a Unified Inline Code Editing Model for GitHub Copilot</a></strong> — arXiv cs.SE
+  GitHub Copilot unified inline code editing model predicts next edits at cursor, nearby lines, or distant locations within single response instead of sequential separate models.
+  <em>Why it matters:</em> Single unified model for inline editing improves developer experience over pipeline of separate completion models; teams using Copilot should understand this workflow shift.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.33480" rel="noopener">DevEx is for Humans, AX is for Agents: Measuring Context Health in Agentic Software Work</a></strong> — arXiv cs.SE
+  Agent Experience (AX) framework measures session quality on Clarity, Actionability, Fidelity, Efficiency, and Security using rubric-guided LM scoring of transcripts.
+  <em>Why it matters:</em> Provides measurable framework for evaluating agent session quality beyond output; teams can adopt CAFE(S) dimensions to audit and improve their prompt and context engineering.</p>
+</li>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.34875" rel="noopener">How Much Do Coding Agents Over-Edit, and Why? An Empirical Study of Unneeded Edits in Repository-Level Agent Patches</a></strong> — arXiv cs.SE
+  Researchers introduce Delta Residue Attribution to measure whether edits in agent-generated patches are actually needed, applying it to 7,660 Copilot CLI trajectories from frontier models on SWE-bench.
+  <em>Why it matters:</em> Provides empirical grounding for understanding agent over-editing; teams can use this method to audit their own agents for unnecessary changes.</p>
+</li>
+<li>
+<p><strong><a href="https://www.infoq.com/presentations/fine-tune-enterprise-rag-embeddings/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener">Presentation: Finetuning Your Embedding Model for Better Search: Learning from Agentic Search at Dell</a></strong> — InfoQ AI
+  Rachel Shalom presents Dell's solution to enterprise RAG failures: fine-tuning open-source embeddings with hard negatives, distributed InfoNCE loss training, and LLM-as-a-judge evaluation.
+  <em>Why it matters:</em> Concrete workflow for fixing retrieval in production agentic search—teams can replicate data prep, training, and evaluation methodology.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/anthropic-siren-sandbox-escape/" rel="noopener">Anthropic set more than 1,700 traps for Claude — what it found is both reassuring and unsettling</a></strong> — The New Stack
+  Anthropic tested Claude with over 1,700 failure traps to examine agent behavior when execution environments fail, finding results that are reassuring and unsettling.
+  <em>Why it matters:</em> Empirical work on agent reliability under failure; directly relevant for teams deploying long-running agents in production systems.</p>
+</li>
+<li>
+<p><strong><a href="https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/" rel="noopener">How to choose the next safe step in application modernization</a></strong> — GitHub Blog
+  GitHub post describes assessing legacy applications, choosing bounded modernization steps, and reusing the method with Copilot agent skills.
+  <em>Why it matters:</em> Practical pattern for teams migrating legacy systems with agents; offers a repeatable framework for scoping incremental changes.</p>
+</li>
+</ul>
+<h2>Research</h2>
+<ul>
+<li>
+<p><strong><a href="https://arxiv.org/abs/2611.33639" rel="noopener">How Much Effort Does an AI Code Reviewer Need? Evidence from Claude 5.5 Models on Plausible-but-Wrong Patches</a></strong> — arXiv cs.SE
+  Research measured effort settings on Claude 5.5 models reviewing agent-written Django patches. High-effort review caught more plausible-but-wrong patches than low-effort, with Opus most effective.
+  <em>Why it matters:</em> Quantifies tradeoff between review cost and defect detection; teams can benchmark their AI reviewer config against these findings.</p>
+</li>
+<li>
+<p><strong><a href="https://huggingface.co/papers/2611.34849" rel="noopener">Real2SimLab: A Unified Platform for Real-to-Simulation Transfer</a></strong> — HF Daily Papers · 83 upvotes
+  Real2SimLab unifies evaluation of coding agents generating simulation programs from video. Standardizes inputs, deliverables, and scoring across benchmarks.
+  <em>Why it matters:</em> Provides a common framework for testing how coding agents handle real-world simulation tasks; teams can use this to benchmark their own agentic workflows.</p>
+</li>
+</ul>
+<h2>Industry &amp; adoption</h2>
+<ul>
+<li><strong><a href="https://leaddev.com/leadership/engineering-leaders-cant-prove-ai-is-paying-off?utm_source=leaddev&amp;utm_medium=RSS" rel="noopener">Engineering leaders can’t prove AI is paying off</a></strong> — LeadDev
+  LeadDev surveyed 165 engineering leaders at Berlin 2026 and found most cannot measure whether AI is delivering value.
+  <em>Why it matters:</em> Direct insight into what peer leaders struggle with; identifies the measurement gap teams face when adopting AI tooling.</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>

@@ -2,7 +2,94 @@
 <rss version="2.0"><channel><title>AI Engineering Radar</title><link>https://vamsi-kavuri.github.io/ai-radar/</link><description>I lead an engineering team, and a good part of my week goes to working out which AI tools
 and habits are actually worth our time and which are just noise. This page is the reading
 list I keep for that.
-</description><item><title>AI Engineering Radar · Wed 25 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-25.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-25.html</guid><pubDate>Wed, 25 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+</description><item><title>AI Engineering Radar · Thu 26 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-26.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-26.html</guid><pubDate>Thu, 26 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/11/vercel-board-agents/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Vercel Launched Experimental Board to Coordinate Tasks Across Humans and Coding Agents&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Vercel launched experimental Board, a headless message store for humans and coding agents to claim leased tasks, declare dependencies, and sync with Slack, GitHub, and Linear.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Practical tool for coordinating agent workflows with team infrastructure; teams can trial coordination patterns across humans and agents.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/erkamyaman/rea-games" rel="noopener"&gt;erkamyaman/rea-games&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 280
+  rea-games repo uses agent skills to reverse-engineer games, rebuild them in multiple engines, and verify frame-by-frame parity using behavior specs in GAME.md format.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Shows how coding agents can tackle complex specification-driven tasks—reverse-engineering and verification—engineers could adapt for legacy system migration.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.34237" rel="noopener"&gt;VibeVideoAgent: Closing the Perceptual Loop for Code-Driven Video Generation&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 52 upvotes
+  VibeVideoAgent closes the perceptual loop in code-driven video generation by feeding rendered frames and audio back to agents for iterative critique.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Shows practical feedback loop pattern for agentic workflows—teams using code agents for media generation can adopt this perceptual critiquing approach.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://newsletter.pragmaticengineer.com/p/how-anthropic-builds-software-in" rel="noopener"&gt;How Anthropic builds software in 2026 with Katelyn Lesse&lt;/a&gt;&lt;/strong&gt; — Pragmatic Engineer
+  Katelyn Lesse from Anthropic describes how the company rewrote Claude's API in Rust and how AI agents are changing engineering practices.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Real-world case study from a major AI company about integrating agents into engineering workflows; offers concrete patterns for team adoption.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://jayd.ml/2026/11/14/rockbox-on-yp3.html" rel="noopener"&gt;Porting Rockbox to an undocumented $9 Aliexpress 'YP3' MP3 Player with LLMs&lt;/a&gt;&lt;/strong&gt; — Hacker News · 257 points · 97 comments · &lt;a href="https://news.ycombinator.com/item?id=50624446" rel="noopener"&gt;discussion&lt;/a&gt;
+  Hacker News title: porting Rockbox to undocumented $9 MP3 player using LLMs. Text not provided.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Real case study of coding agents reverse-engineering and porting firmware to minimal documentation; relevant hands-on workflow example.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.33144" rel="noopener"&gt;PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 41 upvotes
+  PyRUA-Dex framework uses parallel coding agents to develop dexterous manipulation policies without demonstrations, via exploration and skill composition.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Demonstrates multi-agent parallel exploration and skill distillation pattern—applicable to teams needing agents to explore solution spaces autonomously.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.33314" rel="noopener"&gt;Building a Unified Inline Code Editing Model for GitHub Copilot&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  GitHub Copilot unified inline code editing model predicts next edits at cursor, nearby lines, or distant locations within single response instead of sequential separate models.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Single unified model for inline editing improves developer experience over pipeline of separate completion models; teams using Copilot should understand this workflow shift.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.33480" rel="noopener"&gt;DevEx is for Humans, AX is for Agents: Measuring Context Health in Agentic Software Work&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Agent Experience (AX) framework measures session quality on Clarity, Actionability, Fidelity, Efficiency, and Security using rubric-guided LM scoring of transcripts.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Provides measurable framework for evaluating agent session quality beyond output; teams can adopt CAFE(S) dimensions to audit and improve their prompt and context engineering.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.34875" rel="noopener"&gt;How Much Do Coding Agents Over-Edit, and Why? An Empirical Study of Unneeded Edits in Repository-Level Agent Patches&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Researchers introduce Delta Residue Attribution to measure whether edits in agent-generated patches are actually needed, applying it to 7,660 Copilot CLI trajectories from frontier models on SWE-bench.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Provides empirical grounding for understanding agent over-editing; teams can use this method to audit their own agents for unnecessary changes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/presentations/fine-tune-enterprise-rag-embeddings/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Presentation: Finetuning Your Embedding Model for Better Search: Learning from Agentic Search at Dell&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
+  Rachel Shalom presents Dell's solution to enterprise RAG failures: fine-tuning open-source embeddings with hard negatives, distributed InfoNCE loss training, and LLM-as-a-judge evaluation.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Concrete workflow for fixing retrieval in production agentic search—teams can replicate data prep, training, and evaluation methodology.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/anthropic-siren-sandbox-escape/" rel="noopener"&gt;Anthropic set more than 1,700 traps for Claude — what it found is both reassuring and unsettling&lt;/a&gt;&lt;/strong&gt; — The New Stack
+  Anthropic tested Claude with over 1,700 failure traps to examine agent behavior when execution environments fail, finding results that are reassuring and unsettling.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Empirical work on agent reliability under failure; directly relevant for teams deploying long-running agents in production systems.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/" rel="noopener"&gt;How to choose the next safe step in application modernization&lt;/a&gt;&lt;/strong&gt; — GitHub Blog
+  GitHub post describes assessing legacy applications, choosing bounded modernization steps, and reusing the method with Copilot agent skills.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Practical pattern for teams migrating legacy systems with agents; offers a repeatable framework for scoping incremental changes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Research&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://arxiv.org/abs/2611.33639" rel="noopener"&gt;How Much Effort Does an AI Code Reviewer Need? Evidence from Claude 5.5 Models on Plausible-but-Wrong Patches&lt;/a&gt;&lt;/strong&gt; — arXiv cs.SE
+  Research measured effort settings on Claude 5.5 models reviewing agent-written Django patches. High-effort review caught more plausible-but-wrong patches than low-effort, with Opus most effective.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Quantifies tradeoff between review cost and defect detection; teams can benchmark their AI reviewer config against these findings.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://huggingface.co/papers/2611.34849" rel="noopener"&gt;Real2SimLab: A Unified Platform for Real-to-Simulation Transfer&lt;/a&gt;&lt;/strong&gt; — HF Daily Papers · 83 upvotes
+  Real2SimLab unifies evaluation of coding agents generating simulation programs from video. Standardizes inputs, deliverables, and scoring across benchmarks.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Provides a common framework for testing how coding agents handle real-world simulation tasks; teams can use this to benchmark their own agentic workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Industry &amp;amp; adoption&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://leaddev.com/leadership/engineering-leaders-cant-prove-ai-is-paying-off?utm_source=leaddev&amp;amp;utm_medium=RSS" rel="noopener"&gt;Engineering leaders can’t prove AI is paying off&lt;/a&gt;&lt;/strong&gt; — LeadDev
+  LeadDev surveyed 165 engineering leaders at Berlin 2026 and found most cannot measure whether AI is delivering value.
+  &lt;em&gt;Why it matters:&lt;/em&gt; Direct insight into what peer leaders struggle with; identifies the measurement gap teams face when adopting AI tooling.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Wed 25 Nov 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-11-25.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-11-25.html</guid><pubDate>Wed, 25 Nov 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/EL4CTEO/shrink-anything" rel="noopener"&gt;EL4CTEO/shrink-anything&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 244
@@ -2096,54 +2183,4 @@ list I keep for that.
   DynaFlow is a framework where main agents generate free-form executable workflows to coordinate sub-agents dynamically, adapting collaboration as reasoning progresses.
   &lt;em&gt;Why it matters:&lt;/em&gt; Shows practical orchestration pattern: agents that decide when to delegate and generate task-specific coordination logic rather than following predefined structures.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>AI Engineering Radar · Sun 25 Oct 2026</title><link>https://vamsi-kavuri.github.io/ai-radar/2026-10-25.html</link><guid>https://vamsi-kavuri.github.io/ai-radar/2026-10-25.html</guid><pubDate>Sun, 25 Oct 2026 11:30:00 +0000</pubDate><description>&lt;h2&gt;Models &amp;amp; releases&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.310" rel="noopener"&gt;v2.1.310&lt;/a&gt;&lt;/strong&gt; — Claude Code releases
-  Claude Code v2.1.310 adds Monitor tool support on Bedrock, Vertex, and Foundry; fixes gateway compatibility and background cleanup issues.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams on Bedrock or Vertex should update; improves stability with enterprise gateways and reduces accidental file deletion.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Tools &amp;amp; repos&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/morganlinton/BeautifulRust" rel="noopener"&gt;morganlinton/BeautifulRust&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 386
-  BeautifulRust is a Claude Code plugin that teaches Claude to write idiomatic, robust Rust code.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams adopting Claude Code for Rust work can improve code quality by loading this plugin; directly applicable this week.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/C4rohan/Lampline" rel="noopener"&gt;C4rohan/Lampline&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 254
-  Lampline is an open-source Python tool for building and testing AI phone agents locally using an AI caller, with support for Dialogflow CX imports and low per-call costs.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams can prototype and iterate on conversational agents cheaply locally before deploying, testing agent behavior with synthetic calls rather than live users.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://corgi.computer/" rel="noopener"&gt;Show HN: Corgi, a helpful {agent, terminal} multiplexer&lt;/a&gt;&lt;/strong&gt; — Hacker News · 132 points · 43 comments · &lt;a href="https://news.ycombinator.com/item?id=50214373" rel="noopener"&gt;discussion&lt;/a&gt;
-  Corgi is an agent multiplexer with unified launcher for Codex and Claude Code, activity feed, session tracking, and ergonomic shortcuts.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams managing multiple agent accounts can try this as a drop-in workflow tool; reduces friction when switching between agents.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/data-agent-kit-ga/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Google’s Data Agent Kit Hits GA, Splitting Agent Guardrails Between Skills and IAM&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
-  Google's Data Agent Kit is now generally available with 37 open-source skills connecting agents to 15+ Google Cloud data services; includes two kinds of guardrails—skill-level and IAM-level.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams using Claude Code with Google Cloud data can integrate these skills; important to distinguish skill guardrails from IAM policies.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/Charonyuu/whatsmyagentdoing" rel="noopener"&gt;Charonyuu/whatsmyagentdoing&lt;/a&gt;&lt;/strong&gt; — GitHub new repos · ★ 203
-  whatsmyagentdoing is a dashboard that shows live activity from Claude Code and Codex agents running on your machine.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Useful for teams running multiple agents to monitor what agents are doing and spot bottlenecks or hangs in real time.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://thenewstack.io/aws-says-its-ai-security-agent-fixes-89-of-bugs-but-theres-a-catch/" rel="noopener"&gt;AWS says its AI security agent fixes 89% of bugs — but there’s a catch&lt;/a&gt;&lt;/strong&gt; — The New Stack
-  AWS made Continuum generally available, an AI security agent that finds and validates code vulnerabilities in repositories, claiming 89% bug fix rate.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Engineering teams can evaluate whether Continuum's vulnerability detection and validation workflow integrates into existing security practices and CI/CD pipelines.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Agentic coding &amp;amp; workflows&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://www.infoq.com/news/2026/10/google-argon-optimizes-adk/?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=AI%2C+ML+%26+Data+Engineering" rel="noopener"&gt;Google Optimizes Agent Development Kit's 200K-line Python Codebase Overnight with Gemini 4 Argon&lt;/a&gt;&lt;/strong&gt; — InfoQ AI
-  Google ran Gemini 4 Argon unattended overnight to optimize Google Agent Development Kit's 200K-line Python codebase, reducing session-preparation overhead by 40% and cold import time by 21%.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Shows a workflow pattern: use reasoning models overnight for codebase optimization; teams can apply this to performance-critical paths.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Practices &amp;amp; patterns&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://www.langchain.com/blog/context-engineering-starts-with-retrieval" rel="noopener"&gt;Context Engineering (Agent Memory) for AI Agents Starts with Retrieval&lt;/a&gt;&lt;/strong&gt; — LangChain blog
-  LangChain Deep Agents use specific retrieval techniques to give agents the right context efficiently, addressing wasted time from clumsy searches and stale data.
-  &lt;em&gt;Why it matters:&lt;/em&gt; Teams can adopt better retrieval patterns to reduce agent token waste and latency; directly applicable to memory and context engineering.&lt;/li&gt;
 &lt;/ul&gt;</description></item></channel></rss>
