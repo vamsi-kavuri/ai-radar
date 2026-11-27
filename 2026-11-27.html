@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Engineering Radar · Fri 27 Nov 2026</title><link rel="alternate" type="application/rss+xml" title="AI Engineering Radar" href="feed.xml"><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#6b6b70;--link:#1f5fbf;--rule:#e4e2dc}
+@media (prefers-color-scheme: dark){:root{--bg:#141416;--fg:#ececef;--muted:#a1a1a8;--link:#8ab4ff;--rule:#2c2c31}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 16px 4rem}
+a{color:var(--link)}h1{font-size:1.6rem;line-height:1.25;margin:.2rem 0 1rem}
+h2,h3{font-size:1.15rem;margin:2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--rule)}
+li{margin:0 0 1rem}ul{padding-left:1.2rem}nav,footer,.muted{color:var(--muted);font-size:.9rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap}footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem}
+code{font-size:.85em;word-break:break-word}
+</style></head><body><main>
+<nav><a href="index.html">All days</a> <a href="2026-11-26.html">← 2026-11-26</a></nav>
+<h1>AI Engineering Radar · Fri 27 Nov 2026</h1>
+<p class="muted">9 links worth a look</p>
+<h2>Tools &amp; repos</h2>
+<ul>
+<li>
+<p><strong><a href="https://techstackups.com/articles/google-workspace-ai-agents-mcp/" rel="noopener">Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email</a></strong> — Hacker News · 350 points · 307 comments · <a href="https://news.ycombinator.com/item?id=50653477" rel="noopener">discussion</a>
+  Google is building MCP servers for AI agents, including Gmail integration, though the Gmail server cannot send email.
+  <em>Why it matters:</em> MCP server infrastructure is relevant for agent tooling. Limited Gmail capabilities suggest practical constraints teams should know when building agent workflows.</p>
+</li>
+<li>
+<p><strong><a href="https://www.producthunt.com/products/contral" rel="noopener">Contral</a></strong> — Product Hunt AI
+  Contral is an AI coding agent that verifies its own work and provides teaching, available on Product Hunt.
+  <em>Why it matters:</em> Tool worth evaluating: an agent with built-in verification and teaching mechanisms; relevant for teams exploring coding agents and testing patterns with AI reliability.</p>
+</li>
+</ul>
+<h2>Practices &amp; patterns</h2>
+<ul>
+<li>
+<p><strong><a href="https://stackoverflow.blog/2026/11/27/sandboxes-secure-inference-and-rogue-agents/" rel="noopener">Sandboxes, secure inference, and keeping agents from going rogue</a></strong> — Stack Overflow blog
+  Stack Overflow blog covers agent sandboxes and secure inference, interviewing Daytona CEO on agent sandboxes and Blackbox AI CTO on encrypted inference.
+  <em>Why it matters:</em> Safety and containment patterns for agents are directly relevant to teams deploying agentic systems. Sandboxes and encryption address practical operational concerns.</p>
+</li>
+<li>
+<p><strong><a href="https://huggingface.co/blog/training-swarms" rel="noopener">Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems</a></strong> — Hugging Face Blog
+  Hugging Face blog post on building, training, and evaluating multi-agent systems using swarms, flocks, and gangs patterns.
+  <em>Why it matters:</em> Multi-agent coordination patterns and evaluation methods directly apply to engineering teams orchestrating multiple coding or analysis agents in production.</p>
+</li>
+<li>
+<p><strong><a href="https://www.thoughtworks.com/insights/blog/machine-learning-and-ai/refactoring_the_engine_an_incremental_path_to_AI_assisted_delivery" rel="noopener">Refactoring the Engine: An Incremental Path to AI-Assisted Delivery</a></strong> — Thoughtworks
+  Thoughtworks explores an incremental path to AI-assisted delivery, addressing how teams can refactor their approach to integrate AI into their workflow and delivery processes.
+  <em>Why it matters:</em> Practical guide for adoption: how to transition delivery practices incrementally with AI assistance rather than all-at-once overhauls, directly applicable to engineering teams planning their AI integration strategy.</p>
+</li>
+<li>
+<p><strong><a href="https://swyx.io/a-design-audit-of-an-ai-built-github-clone" rel="noopener">A design audit of an AI-built GitHub clone</a></strong> — swyx
+  Swyx published a design audit of a GitHub clone built entirely by AI.
+  <em>Why it matters:</em> Practical case study of AI-built software. Useful for teams understanding what AI produces end-to-end and where limitations appear in real products.</p>
+</li>
+<li>
+<p><strong><a href="https://thenewstack.io/ai-agents-remote-sandboxes/" rel="noopener">A developer ran 50 agents at once. Then his Mac became the bottleneck.</a></strong> — The New Stack
+  A developer ran 50 concurrent AI agents on a Mac and found the hardware became the bottleneck, illustrating resource constraints when scaling agent orchestration.
+  <em>Why it matters:</em> Concrete infrastructure insight: teams orchestrating many agents simultaneously will hit hardware limits. Useful for capacity planning in multi-agent workflows.</p>
+</li>
+</ul>
+<h2>Research</h2>
+<ul>
+<li>
+<p><strong><a href="https://huggingface.co/papers/2611.34232" rel="noopener">OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms</a></strong> — HF Daily Papers · 96 upvotes
+  OS-Omni benchmarks generalist computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web on long-horizon workflows spanning multiple platforms and persistent application states.
+  <em>Why it matters:</em> Tests whether agents work in real cross-platform scenarios, not isolated environments. Useful for assessing practical agent reliability for engineering workflows.</p>
+</li>
+<li>
+<p><strong><a href="https://huggingface.co/papers/2611.34852" rel="noopener">DRBench Pro: A Knowledge-Centric Benchmark for Professional Deep Research Agents</a></strong> — HF Daily Papers · 23 upvotes
+  DRBench Pro benchmarks deep research agents on complex open-ended questions, using knowledge trees and structured rubrics to evaluate coverage depth rather than just report quality.
+  <em>Why it matters:</em> Addresses eval methodology for agentic systems beyond surface metrics. Useful framework for teams building or testing research or analysis agents.</p>
+</li>
+</ul>
+<footer>Summaries are AI-assisted; every link goes to the original. <a href="feed.xml">RSS feed</a></footer>
+</main></body></html>
